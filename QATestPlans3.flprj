@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<CatapultProject Version="1" MasterPageLayout="/Content/Resources/PageLayouts/Default.flpgl" xml:lang="en-us" MasterToc="/Project/TOCs/AAA - Master TOC.fltoc" SourceControlBound="false" MasterStylesheet="/Content/Resources/Stylesheets/Styles.css">
+<CatapultProject Version="1" MasterPageLayout="/Content/Resources/PageLayouts/Default.flpgl" xml:lang="en-us" MasterToc="/Project/TOCs/AAA - Master TOC.fltoc" SourceControlBound="true" MasterStylesheet="/Content/Resources/Stylesheets/Styles.css" SourceControlProviderType="Git" ProjectGuid="a645df19-3ec0-45c0-80ad-f88b3792a24a">
     <Synchronize>
         <Mapping ProjectPath="Content/Resources/Images/UI---InsertTable---GeneralTab.PNG" ExternalPath="file:///C:/Users/dmills/Desktop/UI---InsertTable---GeneralTab.PNG" />
     </Synchronize>
