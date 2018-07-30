@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="4146" MadCap:lastWidth="1307" MadCap:fileTags="Status.Not Updated,AuthorFileTagSet.Jay,Product.Capture">
+    <head>
+        <title>
+        </title>
+    </head>
+    <body>
+        <h2>Conditions - UI  </h2>
+        <h3>Opening the UI</h3>
+        <p>!View |Conditional Indicators</p>
+        <p>!Shape Properties |&#160;Conditions</p>
+        <p>!File Properties |&#160;Condition Tags</p>
+        <p>!File Properties |&#160;Conditional Text</p>
+        <h3>UI</h3>
+        <h4>View | Conditional Indicators</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture_Conditions-ShowIndicators.png" />
+        </p>
+        <p>&#160;</p>
+        <h4>Shape Properties |&#160;Conditions</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture_Conditions-Properties.png" class="leftPopup" />
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4>File Properties |&#160;Conditional Text</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture_Conditions-FilePropertiesCText.png" class="leftPopup" />
+        </p>
+        <p>&#160;</p>
+        <h3>UI - Creating and Editing Conditions:</h3>
+        <p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Capture/Capture_Conditions-FilePropertiesCTags.png" class="properties" />
+            </p>
+        </p>
+        <h4>File Properties |&#160;Condition Tags</h4>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>To edit a field in the name column, simply click it and start typing<ul><li>Alternatively, select the field and press F2 to start editing</li></ul></li>
+                <li>
+                    <p>To edit a background field, select it and pick a color from the <span class="bold">Pick Color...</span> dialog.</p>
+                </li>
+                <li>To edit a field in the Comment column, simply click it and start typing<ul><li>Alternatively, select the field and press F2 to start editing</li></ul></li>
+                <li>To Create a new condition, click in the Name field of the bottom row and give the condition a name.&#160;<ul><li>As soon as you start typing, a unique color for the condition should be provided automatically</li></ul></li>
+                <li>To delete a condition, select the Name and press delete</li>
+            </ul>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            <p>&#160;</p>
+        </div>
+        <h3>UI - Using Conditions:</h3>
+        <h4>Project</h4>
+        <h4>File Properties |&#160;Conditional Text</h4>
+        <p>When working in the context of a Project conditions are created, maintained and included/excluded at the Project level instead of the image level.</p>
+        <hr />
+        <p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Capture/Capture_Conditions-FilePropertiesCText.png" class="properties" />
+            </p>
+        </p>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>
+                    <p>The <span class="bold">Tags</span> section will list the available Conditions will be labeled as <span class="bold">Project.&lt;Condition Name&gt;</span>, where&#160;&lt;condition name&gt; is the name of the condition.</p>
+                </li>
+                <li>The unnamed column shows the associated color of the tag to each condition name</li>
+                <li>The <span class="bold">Include </span>column shows which condition tags are set to be "included" in the output</li>
+                <li>The <span class="bold">Exclude </span>column shows which condition tags are set to be&#160;"excluded" in the output</li>
+                <li>If all options are unchecked, all content will display</li>
+                <li>If one Include item is checked, all other content (flagged by conditions) will not display</li>
+                <li>The top box area is the Include expression area. All conditions set to include will be shown in this box</li>
+                <li>The bottom box area is the exclude expression area. All conditions set to exclude will be shown in this box</li>
+                <li>Clicking on the Include/Exclude column header will select/deselect all options</li>
+            </ul>
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            <p>&#160;</p>
+        </div>
+        <h4>Image in a Project</h4>
+        <p>
+            <span class="bold">!File Properties | Conditions</span> tab</p>
+        <hr />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Mimic/Condition_Selection.flsnp" />
+        <p>
+            <p>&#160;</p>
+        </p>
+        <div class="SnippetIndent">
+            <hr>
+            </hr>
+            <ul style="list-style-type: square;">
+                <li>Applying a condition to a object will display a colored box on the object.<ul style="list-style-type: square;"><li>The color will be the color of the condition applied</li><li>If multiple conditions are applied, the condition indicator will show all colors applied.</li></ul></li>
+            </ul>
+        </div>
+        <p>&#160;</p>
+        <h4>Stand Alone Image</h4>
+        <p>
+            <span class="bold">!File Properties |&#160;Conditions</span> tab</p>
+        <p>When working in a Stand Alone image, the condition tab of the image will function like that of a Project condition tab. Essentially, it becomes the tab where you select what conditions are included/excluded. </p>
+        <hr />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Conditions/Conditions_Tab_Movie_StandAlone.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <ul style="list-style-type: square;">
+                <li>
+                    <p>The <span class="bold">Tags</span> section will list the available Conditions will be labeled as <span class="bold">Movie.&lt;Condition Name&gt;</span>, where&#160;&lt;condition name&gt; is the name of the condition</p>
+                </li>
+                <li>Conditions belonging to a linked Flare project will be labeled as <span class="bold">&lt;Flare Tag Set Name&gt;.&lt;Condition Name&gt;</span>, where &lt;Flare Tag Set name&gt; is the name of the Condition Tag Sets linked from Flare and &lt;Condition Name&gt; is the name of the condition</li>
+                <li>The unnamed column shows the associated color of the tag to each condition name</li>
+                <li>The <span class="bold">Include </span>column shows which condition tags are set to be "included" in the output</li>
+                <li>The <span class="bold">Exclude </span>column shows which condition tags are set to be&#160;"excluded" in the output</li>
+                <li>If all options are unchecked, all content will display</li>
+                <li>If one Include item is checked, all other content (flagged by conditions) will not display</li>
+                <li>The top box area is the Include expression area. All conditions set to include will be shown in this box</li>
+                <li>The bottom box area is the exclude expression area. All conditions set to exclude will be shown in this box</li>
+                <li>Clicking on the Include/Exclude column header will select/deselect all options</li>
+            </ul>
+            <p>&#160;</p>
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+        </div>
+        <div class="SnippetIndent">
+            <p>&#160;</p>
+        </div>
+        <h4>Object</h4>
+        <p>
+            <span class="bold">Right-Click &lt;object&gt;|&#160;Properties |&#160;Conditions</span> tab</p>
+        <p>Applying conditions onto objects control what objects are shown on generated output. Depending what conditions are included/excluded, any number of objects can be included/excluded from the output.</p>
+        <hr>
+        </hr>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Mimic/Condition_Selection.flsnp">
+        </MadCap:snippetBlock>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Conditions/Conditions_Object_Indicator.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <hr>
+            </hr>
+            <ul style="list-style-type: square;">
+                <li>Applying a condition to an object will display a colored box on the box on the object in the main editor.<ul style="list-style-type: square;"><li>The color will be the color of the condition applied</li><li>If multiple conditions are applied, the condition indicator will show all colors applied</li></ul></li>
+                <li>The timeline pane will also indicate when an object has a condition<ul style="list-style-type: square;"><li>The Object will be the color of the condition applied</li><li>If multiple conditions are applied, the object will have a checkered pattern with the colors used</li></ul></li>
+                <li>If this object is excluded from output, the movie will generate the movie without this object<ul style="list-style-type: square;"><li>Any actions associated with the object will not occur</li></ul></li>
+            </ul>
+        </div>
+        <h3>UI - Indicator Toggle:</h3>
+        <p>In the main editor window, clicking the <img src="../../../../../Resources/Images/TestPlans/Mimic/Conditions/Conditions_Toggle_Indicator.png" /> button will toggle on/off the conditional indicators you see on the objects.&#160;This will not effect the output in any manner.</p>
+    </body>
+</html>

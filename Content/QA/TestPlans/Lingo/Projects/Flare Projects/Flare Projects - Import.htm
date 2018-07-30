@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1756" MadCap:lastWidth="1329" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Flare Projects - Import   </h2>
+        <h3>Opening the UI</h3>
+        <p>See the New and Open Project Test plan for information on importing projects.</p>
+        <p>&#160;</p>
+        <ul>
+            <li>
+                <a href="../../Tools/Import-New-Open Project/New and Open Project - UI.htm">New and Open Project - UI.htm</a>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>Importing a flare project into Lingo adds a new dialog that comes after Select files or projects to translate dialog and the Select Translation memories to use for this project dialog. The dialog details is listed below:</p>
+        <h4>Start a new&#160;Project Wizard- Select Flare project Settings</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/New &amp; Open Project/UI--FlareSettings.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] ">
+            </MadCap:snippetBlock>
+        </div>
+        <p>
+            <b>Controls:</b>
+        </p>
+        <p>Select variables to flatten section:</p>
+        <p class="indent" style="font-weight: bold;">
+            <span style="text-decoration: underline; font-weight: normal;">Select Variables to flatten section:</span>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>
+                <b>Flatten (left panel):</b>&#160;Check-box column that is not sortable. <br />- Selecting this check-box would select all variables within that variable set (listed to the right) to be flattened. <br />- Deselecting the this check box for a variable set would deselect all variables belonging to that variable set. </li>
+            <li>
+                <b>Variable Sets:</b> Shows the available variable sets with their folder paths. This column is sortable. <br /><p class="note"><b>Notes:</b> <br />- Highlighting any row on the left panel should show all variables belonging to that variable set to the panel to the right.<br />- Clicking back and then Next should always highlight the 1st variable set and how its variable on the right panel. </p> </li>
+            <li>
+                <b>Flatten (right panel):</b> Check-box column that is not sortable. <br />- Selecting to flatten variables would show a square in the parent variable set check-box if not all variables are selected. <img src="../../../../../Resources/Images/TestPlans/Lingo/New &amp; Open Project/UI--SomeVariableFlattening.png" class="smallThumb" /><br />-&#160;Selecting to flatten all variables belonging to a variable set, should show a check mark for the variable set flatten check-box. <img src="../../../../../Resources/Images/TestPlans/Lingo/New &amp; Open Project/UI--AllVariableFlattening.png" class="smallThumb" /></li>
+        </ul>
+        <p class="note">Selected flattened variables are going to be converted to text in the files they exist in. </p>
+        <ul style="list-style-type: square;">
+            <li>
+                <b>Names: </b>Lists the variable names contained in the selected variable set. This column is sortable. </li>
+            <li>
+                <b>Definitions:&#160;</b> Lists the variable definition associated with the highlighted variable. This column is sortable. </li>
+            <li>
+                <b>Comment: </b>Lists comments of the highlighted variable. This column is sortable. </li>
+            <li>
+                <li>
+                    <b>Convert sub-segment snippets to text: </b>This converts the inline segments to text. </li>
+                <li>
+                    <b>Create Language skin: </b>This option creates a language skin upon lingo project creation to be translated in the target language and be in the exported translated project.</li>
+            </li>
+            <li>
+                <b>Back:&#160;</b>Goes to the Add files/ Projects dialog </li>
+            <li>
+                <b>Next: </b>Goes to the Select TM dialog</li>
+            <li>
+                <b>Finish: </b> Finishes creating the project</li>
+            <li>
+                <b>Cancel:</b> Closes the Start New Project Wizard with no changes. </li>
+            <li>
+                <b>Filter by target: </b> Drop menu control that should list the imported project targets. <img src="../../../../../Resources/Images/TestPlans/Lingo/New &amp; Open Project/UI--FilterByTarget.png" class="smallThumb" /><br /><p class="note">- Parsed files listed for translation should be associated with the selected targets only. Other files should not be parsed for translation. <br />- Exporting the project should include all files with only the parsed files translated. </p></li>
+            <li>
+                <b>Filter out condition:</b> Selecting this option enables the <b style="font-style: italic;">Select Conditions...</b> button and let's you select conditions to exclude by selecting them from the Select condition dialog</li>
+        </ul>
+        <p>
+            <b>Select Conditions... :</b>
+        </p>
+        <p> This dialog Lists all the condition tag sets and tags in the imported flare project </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/New &amp; Open Project/UI--SelectConditions.png" class="smallThumb" />
+        </p>
+        <ul style="list-style-type: square;">
+            <li>
+                <b>Exclude&#160;(left side pane):&#160;</b>Check-box control if checked all condition tags belonging that tag are checked to be excluded. &#160;This column is not sortable. </li>
+            <li>
+                <b>Condition Tag set: </b>Lists the condition sets included in the imported flare project. This column is sortable.</li>
+            <li>
+                <b>Exclude (right side pane): </b>Check-box control if checked, the selected condition tag is marked to be excluded. This column is not sortable.<br /><p class="note"><b>Note:</b><br />- Selecting all condition tags belonging to a condition tag set should show a check mark for the associated condition tag set where as selecting some of the condition tags would put a square in the parent condition set tag check-box.<img src="../../../../../Resources/Images/TestPlans/Lingo/New &amp; Open Project/UI--SelectConditionsSquare.png" class="smallThumb" /></p></li>
+            <li>
+                <b>Tags:&#160;</b>This column lists the condition tags contained in the selected conditions tag set in the left panel. This column is sortable. </li>
+            <li>
+                <b>3rd column: </b>currently listing the parent condition tag set. Should be changed to list the comment <i>Bug 127823</i>.<br /><p class="note">- After the condition tags are selected, they're added to the field below Filter out condition option. <img src="../../../../../Resources/Images/TestPlans/Lingo/New &amp; Open Project/UI--FilterByCondition.png" class="smallThumb" /></p></li>
+        </ul>
+        <p>
+            <b>Test cases:</b>
+        </p>
+        <ul class="checkbox">
+            <li>Select a variable set, random variables belonging to a variable set and select no variable to be flattened, go back, Next, Next Back - Selected variable sets/ variables should be remembered</li>
+            <li>Selected variable set/ variables should be flattened when project is created - Open the files containing these variables and verify that their definition is listed in segments instead of tags</li>
+            <li>Import a Flare project that includes variables inserted in various elements -&#160;Verify that these variables are being flattened and exported back properly when applicable. </li>
+            <li>Filter by target menu should list targets included in subfolders, conditioned targets, contained in folders with special /foreign characters, Targets name including special /foreign characters.</li>
+            <li>Exclude conditions applied to a Folder, sub-folder, different file types, different content. - Finish creating the project and verify that the excluded content does not show up for translation</li>
+            <li>Excluded content (from Target and Condition filtering) should be exported back to flare (no data loss)</li>
+            <li>Test convert sub-segment snippets with inline snippets that exists in subfolders and folders that has special name and inserted in different content locations. </li>
+            <li>Test create language skin option with flare projects that has a language skin and another one that does not have a language skin</li>
+            <li>Filtered by targets should be remembered when clicking Back&#160;&gt;&#160;Next &gt;&#160;Next &gt;&#160;Back from this dialog</li>
+            <li>Filtered out conditions should be remembered when clicking Back&#160;&gt;&#160;Next &gt;&#160;Next &gt;&#160;Back from this dialog</li>
+            <li>Convert sub-segment snippets to text option and create language skin option should be remembered when going Back &gt;&#160;Next &gt; Next &gt;&#160;Back from this dialog. </li>
+        </ul>
+    </body>
+</html>

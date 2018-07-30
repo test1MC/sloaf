@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="379" MadCap:lastWidth="1260" MadCap:fileTags="AuthorFileTagSet.Matthew,Product.Help Viewer,Status.Not Applicable">
+    <head>
+    </head>
+    <body>
+        <h2>MadCap Help Viewer SDK</h2>
+        <h3>Help Viewer SDK Setup</h3>
+        <ul style="list-style-type: square;">
+            <li>MadCap Help Viewer must be installed on the machine (<a href="http://www.madcapsoftware.com/downloads/redistributables.aspx">http://www.madcapsoftware.com/downloads/redistributables.aspx</a>). </li>
+            <li>Microsoft Visual Studio 2010 must be installed on the machine as this is needed to compile the Help Viewer. Then the Flare output will be used with the Help Viewer to view the generated help system.</li>
+        </ul>
+        <p>&#160;</p>
+        <ol>
+            <li>Download the Help Viewer SDK from the madcapsoftware.com redistributables page (<a href="http://www.madcapsoftware.com/downloads/redistributables.aspx">http://www.madcapsoftware.com/downloads/redistributables.aspx</a>). </li>
+            <li>Unzip the package &gt; go to the Bin folder &gt;&#160;verify MadCap.HelpViewerClient.dll matches the version of the API (e.g. MadCap Help Viewer Api 6.3)</li>
+            <li>Package should contain 4 API's<ul style="list-style-type: square;"><li><p>HelpViewerClientTester</p></li><li><p>HelpViewerEmbeddedClientTester</p></li><li><p>HelpViewerEmbeddedClientTesterWpf</p></li><li><p>HelpViewerMergeModuleTester</p></li></ul></li>
+            <li>Double-click the *.sln file to open each API&#160;in Microsoft Visual Studio 2010.</li>
+            <li>In VIsual Studio &gt;&#160;Build &gt;&#160;Build Solution</li>
+            <li>In Visual Studio &gt;&#160;Project &gt;&#160;Open Folder in Windows Explorer</li>
+            <li>The bin folder should contain either a Debug and/or Release folder. These are the generated help viewer applications that can be installed on your machine. </li>
+            <li>Copy either folder to a clean VM and run the *.exe</li>
+            <li>Browse for the DotNet help system created in Flare.</li>
+            <li>Use the various functions in the tester against Flare generated DotNet Help.</li>
+        </ol>
+    </body>
+</html>

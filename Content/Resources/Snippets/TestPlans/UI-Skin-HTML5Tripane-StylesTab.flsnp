@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="6" MadCap:lastHeight="1133" MadCap:lastWidth="1466" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <b>Global</b>
+                <ul>
+                    <li>Main Page</li>
+                </ul>
+            </li>
+            <li>
+                <b>Header</b>
+                <ul>
+                    <li>Header</li>
+                    <li>Logo</li>
+                    <li>Search Bar</li>
+                    <li>Search Input</li>
+                    <li>Search&#160;Filter</li>
+                    <li>Search Filter Drop-down</li>
+                    <li>Search Filter Drop-down (hover)</li>
+                    <li>Search Submit Button</li>
+                </ul>
+            </li>
+            <li>
+                <b>Navigation</b>
+                <ul>
+                    <li>Navigation Link</li>
+                    <li>Navigation Panel</li>
+                    <li>Navigation Panel Hide Arrow</li>
+                    <li>Navigation Panel Item</li>
+                    <li>Navigation Panel Item (hover)</li>
+                    <li>Navigation Panel Item (selected)</li>
+                    <li>Navigation Panel Search Bar</li>
+                    <li>Navigation Tab</li>
+                    <li>Navigation Tab (active)</li>
+                    <li>Navigation Tab (inactive)</li>
+                    <li>Toc Entry</li>
+                    <li>Index Highlight</li>
+                    <li>Glossary Highlight</li>
+                    <li>Glossary Item Definition</li>
+                </ul>
+            </li>
+            <li>
+                <b>Topic</b>
+                <ul>
+                    <li>Topic Container</li>
+                    <li>Toolbar Button</li>
+                    <li>Toolbar Button Separator</li>
+                </ul>
+            </li>
+            <li>
+                <b>Search&#160;Results</b>
+                <ul>
+                    <li>Search Heading</li>
+                    <li>Search&#160;Results</li>
+                    <li>Search&#160;Highlight</li>
+                    <li>Search&#160;Result Abstract</li>
+                    <li>Search&#160;Result Link</li>
+                    <li>Search&#160;Result Link (active)</li>
+                    <li>Search&#160;Result Link (focus)</li>
+                    <li>Search&#160;Result Link (hover)</li>
+                    <li>Search&#160;Result Link (visited)</li>
+                    <li>Search&#160;Result Path</li>
+                    <li>Search Pagination</li>
+                    <li>Search Pagination Item</li>
+                    <li>Search Pagination Item (selected)</li>
+                    <li>Search Pagination Item (hover)</li>
+                </ul>
+            </li>
+            <li>
+                <b>Feedback</b>
+                <ul>
+                    <li>Feedback Comment Comment</li>
+                    <li>Feedback Comment Header</li>
+                    <li>Feedback Comment Item</li>
+                    <li>Feedback Comment Subject</li>
+                    <li>Feedback Comment Timestamp</li>
+                    <li>Feedback Comment Username</li>
+                    <li>Feedback User Profile Body</li>
+                    <li>Feedback User Profile Button</li>
+                    <li>Feedback User Profile Header</li>
+                    <li>Feedback User Profile Item</li>
+                    <li>Feedback User Profile Item Group</li>
+                    <li>Feedback User Profile Item Input</li>
+                    <li>Feedback User Profile Item Label</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="6717" MadCap:lastWidth="785" MadCap:conditionTagExpression="include[Default.UITestsEditors or FlareFileTypes.Skin] exclude[AddFile--UIControls.ContentFiles or AddFile--UIControls.Preview or Default.UITestsDialogs or FlareFileTypes.!ContentFile or FlareFileTypes.!ProjectFileAdvanced or FlareFileTypes.!ProjectFileImport or FlareFileTypes.!ProjectFileStandard or FlareFileTypes.Alias or FlareFileTypes.AutoIndexPhraseSet or FlareFileTypes.AutoSuggestionList or FlareFileTypes.BatchTarget or FlareFileTypes.BrowseSequence or FlareFileTypes.ConditionTagSet or FlareFileTypes.Destination or FlareFileTypes.Dictionary or FlareFileTypes.DitaImportFile or FlareFileTypes.FileTagSet or FlareFileTypes.FlareImportFile or FlareFileTypes.FrameMakerImportFile or FlareFileTypes.Glossary or FlareFileTypes.HeaderFile or FlareFileTypes.HTMLImportFile or FlareFileTypes.HyphenationDictionary or FlareFileTypes.IgnoredWords or FlareFileTypes.Image or FlareFileTypes.IndexLinkSet or FlareFileTypes.MasterPage or FlareFileTypes.MSWordImportFile or FlareFileTypes.Multimedia or FlareFileTypes.PageLayout or FlareFileTypes.RelationshipTable or FlareFileTypes.Report or FlareFileTypes.SearchFilterSet or FlareFileTypes.Snippet or FlareFileTypes.Stylesheet or FlareFileTypes.SynonymsFile or FlareFileTypes.TableStyle or FlareFileTypes.Target or FlareFileTypes.Toc or FlareFileTypes.Topic or FlareFileTypes.VariableSet] " MadCap:fileTags="Product.Flare,AuthorFileTagSet.Jessica,Status.Flare V9 Verified">
+    <head>
+    </head>
+    <body>
+        <h2>Skins - Editor (HTML5 Tripane)</h2>
+        <h3>Opening a Skin File</h3>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--ProjectOrganizer.flsnp">
+        </MadCap:snippetBlock>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--LinkViewer.flsnp" />
+        <ul class="checkbox">
+            <li>
+                <span class="UI">Target Editor</span>:&#160;In the General tab of the <span class="UI">Target Editor</span>, in the Skin section, select a Skin File and click the "Edit"&#160;button.</li>
+        </ul>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/OpenFile--PendingCheckIns.flsnp" />
+        <h3>Skin Editor (HTML5 Tripane)&#160;- UI Test Cases</h3>
+        <h4>Skin Editor (HTML5 Tripane):  Local Toolbar</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Skins/SkinEditor--HTML5Tripane--LocalToolbar.png" alt="" title="" />
+        </p>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Preview:</span> Click the button to preview an example of what the skin will look like in the generated HTML5 Tripane output</li>
+            <li>
+                <b>Web Medium:</b> Disabled unless in Styles tab. Click the button to edit the styles in the web medium - Live Preview window switches to web medium.</li>
+            <li>
+                <b>Tablet Medium:</b> Disabled unless in Styles tab. Click the button to edit the styles in the tablet medium - Live Preview window switches to tablet medium.</li>
+            <li>
+                <b>Mobile Medium:</b> Disabled unless in Styles tab. Click the button to edit the styles in the mobile medium - Live Preview window switches to mobile medium.</li>
+            <li>
+                <b>Highlight:</b>Disabled unless in Styles tab. Click the button to enable highlighting function Live Preview pane in the Styles tab.</li>
+            <li>
+                <span class="bold">Add Class:</span> Disabled unless the TOC Entry or Toolbar Button styles are selected in the Styles list in the Styles tab- Click to add a new class to the selected style in the Styles list</li>
+            <li>
+                <b>Delete Class:</b> Disabled unless a custom TOC&#160;Entry or Toolbar Button style class is selected in the Styles list in the Styles tab - Click to delete the style class created in the Style list</li>
+        </ul>
+        <h4>Skin Editor (HTML5 Tripane): General Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Skins/SkinEditor--HTML5Tripane--GeneralTab.PNG" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Caption:</span> Insert a caption for your skin.</li>
+            <li>
+                <span class="bold">Features:</span> Select which features you want to appear in the output. Options include: TOC, Index, Glossary, Browse Sequences.</li>
+            <li>
+                <span class="bold">Make Default:</span> Click this button if you want to make the feature currently selected (and highlighted) to be the default pane displayed on the left in the browser output</li>
+            <li>
+                <span class="bold">Options:</span> <ul style="list-style-type: square;"><li><span class="bold">Automatically Synchronize TOC:</span> Select this option is you want to automatically synchronize the TOC.</li></ul></li>
+            <li>
+                <span class="bold">Unreferenced Images: </span>If an image is added to the skin and then later replaced with another image, Flare does not automatically remove the initial image from the Skin file.<ul class="checkbox"><li><span class="bold">Keep: </span>(The default behavior) Image that cease to be referenced by any skin style are kept in the skin so they can be references at a later time.
+</li><li><span class="bold">Remove On Save: </span>If this option is selected, unreferenced images are removed from the skin the next time the skin file is modified and saved.
+</li><li><span class="bold">[Unused Images Count]: </span>Displays the number of unreferenced images that are currently included in the skin file.</li></ul></li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Verify that images used for any new skin styles do not get deleted when using the "Remove on Save"&#160;option. The mechanism used to delete images only checks specific styles, so if new style are added that reference images, we must account for those.</li>
+                <li>Verify that images associated with custom buttons (Toolbar Items)&#160;do not get deleted when "Remove on Save"&#160;is enabled.</li>
+            </ul>
+        </div>
+        <h4>Skin Editor (HTML5 Tripane): Size Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Skins/SkinEditor--HTML5Tripane--SizeTab.PNG" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Use Browser Default Size:</span> This option is checked by default and will use the default size of your web browser. You may deselect this option and set a manual size.<ul style="list-style-type: square;"><li><span class="bold">Top:</span> adjust distance from the top of the screen</li><li><span class="bold">Bottom:</span> adjust distance from the bottom of the screen.</li><li><span class="bold">Left:</span> adjust distance from the left of the screen.</li><li><span class="bold">Right:</span> adjust distance from the right of the screen.</li><li><span class="bold">Width:</span> adjust the width of the skin</li><li><span class="bold">Height: </span>adjust the height of the skin</li></ul></li>
+            <li>
+                <span class="bold">Preview Full Size:</span> Click this to open the <span class="UI">Preview Window Size</span> dialog. You are able to edit the size of the skin in the <span class="UI">Preview Window Size</span> dialog.<br /><img src="../../../../../Resources/Images/TestPlans/Flare/Skins/SkinEditor--PreviewWindowSize.png" style="width: 164px;height: 135px;" /></li>
+            <li>
+                <span class="bold">Anchors:</span> anchor the position so resizing the skin in output will not override the manual size settings.</li>
+        </ul>
+        <hr />
+        <h4>Skin Editor (HTML5 Tripane): Setup Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Skins/SkinEditor--HTML5Tripane--SetupTab.PNG" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Navigation Pane:</span>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <span class="bold">Pane Position:</span> Dropdown to select the position of the Webhelp pane. i.e. Left right, top, bottom.</li>
+                </ul>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <span class="bold">Pane Size:</span> Select the size of the pane in px.</li>
+                    <li>
+                        <span class="bold">Hide Navigation Pane on startup:</span> Select this option to hide the navigation pane on startup.</li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Browser Settings:</span> Selected by default. Deselect to manually choose browser settings i.e. toolbar, menu, location bar, status bar, resizable.</li>
+            <p class="note">Note: In order for browser setting to take effect it must be launched via another browser window using either a JavaScript or URL.</p>
+            <li>
+                <span class="bold">Topic Settings:</span>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <span class="bold">Show navigation link at the top of topic:</span> Select to show the navigation link at the top of the topic.</li>
+                    <li>
+                        <span class="bold">Show navigation link at the bottom of topic:</span> Select to show the navigation link at the bottom of the topic.</li>
+                </ul>
+            </li>
+            <li>
+                <b>Responsive Output Settings:</b>
+                <ul>
+                    <li>
+                        <b>Enable responsive output:</b> Select to enable responsive output.</li>
+                    <li>
+                        <b>Tablet Max-Width:</b> Enter max width values for tablet medium.</li>
+                    <li>
+                        <b>Mobile Max-Width:</b> Enter max width values for mobile medium.</li>
+                </ul>
+            </li>
+        </ul>
+        <hr />
+        <h4>Skin Editor (HTML5 Tripane): Toolbar Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Skins/SkinEditor--HTML5Tripane--ToolbarTab.PNG" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <hr>
+        </hr>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/SkinEditor--ToolbarTab--UIControls.flsnp" />
+        <hr>
+        </hr>
+        <h4>Skin Editor (HTML5 Tripane): Community Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Skins/SkinEditor--HTML5Tripane--CommunityTab.PNG" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Skin-CommunityTab.flsnp" />
+        <hr>
+        </hr>
+        <h4>Skin Editor (HTML5 Tripane): Styles Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Skins/SkinEditor--HTML5Tripane--StylesTab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <hr>
+        </hr>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Skin-HTML5Tripane-StylesTab.flsnp" />
+        <hr />
+        <h4>Skin Editor (HTML5 Tripane): UI Text Tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Skins/SkinEditor--HTML5Tripane--UITextTab.PNG" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <hr>
+        </hr>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Language:</span> Select the language that the UI text will be displayed in</li>
+            <li>
+                <span class="bold">Name:</span> Displays the name of the customizable fields</li>
+            <li>
+                <span class="bold">Property:</span> Displays the type of entry for the fields</li>
+            <li>
+                <span class="bold">Value:</span> Editable column where you can overwrite the default value</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

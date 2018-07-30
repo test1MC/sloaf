@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1032" MadCap:lastWidth="1041">
+    <head>
+    </head>
+    <body>
+        <h1 class="fortestingWhiteGray">QA Testing Procedures</h1>
+        <p style="margin-top: -20px;margin-bottom: 20px;">
+            <i>Updated for Flare V11 - Jay Wulkowicz 1/21/2015</i>
+        </p>
+        <h2>Process to follow a Feature from development to finished/shelved.</h2>
+        <p>&#160;</p>
+        <ol class="QAList">
+            <li>Move your name to a <a href="https://trello.com/b/DS9FfWPw/flare-11" target="_blank">Trello</a> card that has been moved to <b>Ready&#160;For Testing</b><ul><li class="qali">Verify that there is a Feature in the bug base (<a href="https://s3.madcapsoftware.com:4343/sourcecollection/SOURCE/QA Team/_workItems#path=Shared+Queries/QA/Flare/11/!V11+Features&amp;_a=query" target="_blank">TFS</a>) for this Feature and the Trello card links to it</li><li class="qali">If no Feature exists, one needs to be created and then linked to the Trello card</li></ul></li>
+            <li class="qali">Move the card over to the <b>Testing</b> column in Trello</li>
+            <li>Check the <a href="../Subsystems/TestPlans/Subsystems/ReleaseNotes/Content/QA/Release%20Notes/Release%20Notes.htm">Release Notes</a> webpage for detailed information on the new Feature and for testing ideas to get you started<ul><li class="qali"><u>This will be more up-to-date than appnews!</u></li></ul></li>
+            <li>Test the feature. Document if time permits. (Update or create a new test plan)<ul><li class="qali">Work with the assigned developer with any questions or concerns</li></ul></li>
+            <li class="qali">
+                <u>Link all bugs to the Feature in bug base</u> (TFS).</li>
+            <li>Move the card back to <b>In Development</b> if the feature has outstanding issues. That means:<ul><li class="qali">If you cannot proceed due to a critical bug</li><li class="qali">or if you have tested everything you can, but bugs remain and the feature cannot be shelved</li></ul></li>
+            <li class="qali">Email the Developer and QA&#160;lead if the card is moved back to <b>In Development</b></li>
+            <li class="qali">If the feature has no more bugs and can be shelved, move the Trello card over to <b>Finished</b></li>
+            <li class="qali">Once you have updated/created a test plan for the feature, mark the card with the appropriate label</li>
+        </ol>
+        <p>&#160;</p>
+        <h2>Process for FFT</h2>
+        <ol>
+            <li>Move your name to a <a href="https://trello.com/b/1svR6TgP/v11-fft">Trello</a> card under "Modules for FFT"</li>
+            <li>Move the card over to the <span class="bold">Testing </span>column in Trello</li>
+            <li>Find and execute the associated Test Plan(s)<ol><li>Either use the QA Test Plan Project</li><li>or the published output on <a href="http://maddev/#../Subsystems/TestPlans/Content/QA/TestPlans/Flare/Flare.htm">maddev</a></li></ol></li>
+            <li>Most test plans are not 100% up-to-date. Use your knowledge of the app to cover the gaps. Helpful tips:<ol><li>Basic components of a test plan are:<ol><li>UI</li><li>Editor</li><li>Output (all)</li><li>Baseline</li></ol></li><li>How does your module impact new features</li><li>How do new features impact your module</li></ol></li>
+            <li>If you find a bug:<ol><li>Compare to previous version.&#160;<ol><li>If same, write it up and kick it Previous Version. Let us know.</li><li>If new, write it up and let us know</li></ol></li></ol></li>
+            <li>When done with a module:<ol><li>Move the card over to the Done column</li><li>Update the time on the card if needed. Turn on the green label on the card.</li><li>If there were bugs that must be fixed, turn the red label on the card.</li></ol></li>
+        </ol>
+        <p>&#160;</p>
+        <h2>Process for Baseline and Regression testing</h2>
+        <ol>
+            <li>Launch the appropriate query for the baseline/regression</li>
+            <li>Select some bugs and assign them all to you</li>
+            <li>When finished regressing a bug, remove the "Yes" from the "Regression" field and Save the bug<ol><li><u>Do not clear the "Baseline" field</u></li></ol></li>
+            <li>Any bug that has resurfaced, email us immediately</li>
+        </ol>
+        <p>&#160;</p>
+        <p>Notes:</p>
+        <ul>
+            <li>Read the History of a bug. Many questions you will have will already be answered in the History section</li>
+            <li>Feel free to edit a bug or its test project if needed. <ul><li>Keep the old info and projects. </li></ul></li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

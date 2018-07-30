@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="157" MadCap:lastWidth="1286">
+    <head>
+    </head>
+    <body>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Help System Path:</span> Path of DotNet Help output created with Flare. </li>
+            <li>
+                <span class="bold">Browse:</span> Click button to browse for the DotNet Help output created with Flare. </li>
+            <li>
+                <b>Enter Context-Sensitive Help IDs in any of the text boxes below and press F1 to navigate:</b>
+            </li>
+            <li>
+                <b>HVC</b> HelpViewerClient</li>
+            <li>
+                <b>HVEC</b> HelpViewerEmbeddedClient</li>
+            <li>
+                <b>CL</b>
+            </li>
+        </ul>
+    </body>
+</html>

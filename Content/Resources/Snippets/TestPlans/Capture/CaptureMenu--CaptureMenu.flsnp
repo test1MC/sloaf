@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="5" MadCap:lastHeight="268" MadCap:lastWidth="1479">
+    <head>
+    </head>
+    <body>
+        <div>
+            <p class="bold">Capture |&#160;Menu Items (Tooltips in parentheses)</p>
+            <p class="bold">&#160;</p>
+            <ul class="checkbox">
+                <li>
+                    <span class="bold">Capture Full Screen:</span>Capture full screen.</li>
+                <li>
+                    <span class="bold">Capture Full Screen without Taskbar: </span>Capture Full Screen without the taskbar.</li>
+                <li>
+                    <span class="bold">Capture Window: </span>Capture application or UI window.</li>
+                <li>
+                    <span class="bold">Capture Window with Auto-scroll: </span>Auto-scroll and capture window.</li>
+                <li>
+                    <span class="bold">Capture Region: </span>Capture a screenshot.</li>
+                <li>
+                    <span class="bold">Capture Regions Consecutively: </span>Capture regions consecutively.</li>
+                <li>
+                    <span class="bold">Capture Shape Area: </span>Capture area of selected object.</li>
+                <li>
+                    <span class="bold">Capture New Image from Clipboard:</span>Capture new image from clipboard.</li>
+                <li>
+                    <span class="bold">Capture Last Capture: </span>Capture last capture.</li>
+                <li>
+                    <span class="bold">Restore Last Capture Region: </span>Restore last capture region.</li>
+                <li>
+                    <span class="bold">Time Delay: </span>Provide a delay before capturing image.</li>
+            </ul>
+        </div>
+    </body>
+</html>

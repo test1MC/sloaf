@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Tail</span>
+                <ul>
+                    <li>
+                        <span class="bold">Length:</span> Set length of last half of Arrow Tail. </li>
+                    <li>
+                        <span class="bold">Width:</span> Set Width of Arrow Tail.</li>
+                    <li>
+                        <span class="bold">Curve Factor:</span> Set Curve Factor of Arrow Tail. </li>
+                    <li>
+                        <span class="bold">Curved Tail:</span> Enable/ disable Curved Tail.</li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Head Tail</span>
+                <ul>
+                    <li>
+                        <span class="bold">Tail Length:</span> Set pixel value for Tail Length. </li>
+                    <li>
+                        <span class="bold">Base Width:</span> Set pixel value for Base Width. </li>
+                    <li>
+                        <span class="bold">Tail Curve Factor:</span> Set tail curve factor. </li>
+                    <li>
+                        <span class="bold">Curved Head Tail:</span> Enable/ disable curved Head Tail.</li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Head</span>
+                <ul>
+                    <li>
+                        <span class="bold">Length:</span> Set pixel value for Head Length. </li>
+                    <li>
+                        <span class="bold">Width:</span> Set pixel value for Head Width. </li>
+                    <li>
+                        <span class="bold">Curve Factor:</span> Set head curve factor. </li>
+                    <li>
+                        <span class="bold">Curved Head:</span> Enable/ disable curved Head.</li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Sides</span>
+                <ul>
+                    <li>
+                        <span class="bold">Top Curve Factor:</span> Set top curve factor for arrow sides.</li>
+                    <li>
+                        <span class="bold">Bottom Curve Factor:</span> Set bottom curve factor for arrow sides.</li>
+                    <li>
+                        <span class="bold">Curved Sides:</span> Enable/ disable curved sides.</li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Rotation:</span>
+                <ul>
+                    <li>
+                        <span class="bold">Head:</span> set arrow head rotation.</li>
+                    <li>
+                        <span class="bold">Head Base:</span> set arrow head base rotation.</li>
+                    <li>
+                        <span class="bold">Head Tail Top Tip:</span> set arrow head tail top tip.</li>
+                    <li>
+                        <span class="bold">Head Tail Bottom Tip:</span> set arrow head tail bottom tip.</li>
+                    <li>
+                        <span class="bold">Head Tip:</span> set arrow head tip.</li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Overall</span>
+                <ul>
+                    <li>
+                        <span class="bold">Overall Curve Factor:</span> set curve factor for entire row.</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Conditions</span>
+                <ul>
+                    <li>
+                        <span class="bold">Condition Tag Set:</span> Condition tag sets will be listed here. </li>
+                    <li>
+                        <span class="bold">Condition Tag:</span> Available Condition Tags in tag sets will be shown here. </li>
+                    <li>
+                        <span class="bold">Comment:</span> Comments entered in Condition Tags will be shown here. </li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Unselect All:</span> Unselect All Condition Tags. </li>
+            <li>
+                <span class="bold">Select All:</span> Select All Condition Tags. </li>
+        </ul>
+    </body>
+</html>

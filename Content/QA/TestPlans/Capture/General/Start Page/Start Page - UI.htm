@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2931" MadCap:lastWidth="1307" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " MadCap:fileTags="Status.Not Updated,AuthorFileTagSet.Jay,Product.Capture">
+    <head>
+    </head>
+    <body>
+        <h2>Start Page - UI</h2>
+        <h3>Opening the Start Page</h3>
+        <p>The <span class="UI">Start Page</span> should be open and docked in the MDI using Flare's default layout. If the <span class="UI">Start Page</span> is closed or not currently in focus, it can be reopened or given focus by:</p>
+        <p>!View |&#160;Start Page</p>
+        <p>Click the Open Start Page button in the Standard Toolbar</p>
+        <h3>Start Page - UI&#160;Test Cases</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture- StartPage.png" class="properties" />
+        </p>
+        <p style="margin-left: 200pt;">By default, the <span class="UI">Start Page</span> will appear open in the MDI. It is still, essentially, a pane that can be floated and docked anywhere. Right-click the <span class="UI">Start Page</span> tab and select Floating to dock it somewhere else and test the following:</p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-PaneCommands.flsnp" />
+        </div>
+        <h3>Open an Existing Files</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture- StartPage_RecentFiles.png" />
+        </p>
+        <p>&#160;</p>
+        <p>
+            <span class="bold">Open Existing Files: </span>Lists recently opened Capture Files. Clicking on any listed file will open that file in the current instance of Capture</p>
+        <p class="bold">Test Cases:</p>
+        <ul style="list-style-type: square;">
+            <li>Title is correct</li>
+            <li>Spelling and Grammar are correct</li>
+            <li>This area does resize horizontally when the window is resized</li>
+            <li>This area does not resize vertically when the window is resized</li>
+            <li>Files are listed with “FileName” an extension and then “Path”</li>
+            <li>Only Capture files should appear in this list</li>
+            <li>Tooltips with full paths will display when hovering over the links</li>
+            <li>Clicking the link will open the file</li>
+            <li>The most recently used project should be listed on top</li>
+            <li>Files removed from !File | Recent Files | Manage Recent Files will be removed from the list</li>
+            <li>Pinning files should be an available option </li>
+            <li>Pinned files should be a the top and within that section most recently used will be listed on top</li>
+        </ul>
+        <h3>Getting Started</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture- StartPage_GettingStarted.png" />
+        </p>
+        <p>
+            <span class="bold">Getting Started: </span>Lists ways to create or open image files. Included as part of the Start Screen.</p>
+        <p>&#160;</p>
+        <p class="bold">UI&#160;Controls (Tooltips in parentheses):</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <span class="bold">Capture: </span>Launches the Capture Region.</li>
+            <li>
+                <span class="bold">New: </span>Opens "Create New Image' dialog for creating images from Profiles..</li>
+            <li>
+                <span class="bold">Open: </span>Opens the Open File dialog.</li>
+        </ul>
+        <p class="bold">Test Cases:</p>
+        <ul style="list-style-type: square;">
+            <li>Title is correct</li>
+            <li>Spelling and Grammar are correct</li>
+            <li>This area does resize horizontally when the window is resized</li>
+            <li>This area does not resize vertically when the window is resized</li>
+            <li>Icons are correct</li>
+            <li>Tooltips with full paths will display when hovering over the links</li>
+        </ul>
+        <h3>Help Resources</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture- StartPage_HelpResources.png" class="leftPopup" />
+        </p>
+        <p class="bold">UI&#160;Controls (Tooltips in parentheses):</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <span class="bold">Browse the Help System: </span>Launches the Help TOC&#160;pane.</li>
+            <li>
+                <span class="bold">Browse PDF&#160;Guides: </span>Opens "PDF_Guides.htm" from the Help system.</li>
+            <li>
+                <span class="bold">Live and Recorded Webinars: </span>Opens dedicated page on our website.</li>
+            <li>
+                <span class="bold">Search the Help System: </span>Opens the Help Search pane.</li>
+            <li>
+                <span class="bold">Visit the Community: </span>Opens https://forums.madcapsoftware.com/ in your browser.</li>
+            <li>
+                <span class="bold">Visit MadBlog: </span>Opens http://www.madcapsoftware.com/blog/ in your browser.</li>
+        </ul>
+        <p class="bold">Test Cases:</p>
+        <ul style="list-style-type: square;">
+            <li>Title is correct</li>
+            <li>Spelling and Grammar are correct</li>
+            <li>This area does resize horizontally when the window is resized</li>
+            <li>This area does not resize vertically when the window is resized</li>
+            <li>Icons/Images are correct</li>
+        </ul>
+        <h3>News and Updates</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/StartPage/StartPage---NewsAndUpdates.png" />
+        </p>
+        <p class="bold">Test Cases</p>
+        <ul style="list-style-type: square;">
+            <li>The correct pages open for all sections</li>
+            <li>The correct product and version should be populated in the fields for the bug reporting link (including "Beta"&#160;or "Early Experience").</li>
+            <li>If there is no Internet access, the News and Updates Section should display a message indicating such.</li>
+        </ul>
+    </body>
+</html>

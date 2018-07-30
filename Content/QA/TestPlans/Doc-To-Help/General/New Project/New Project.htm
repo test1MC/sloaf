@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="418" MadCap:lastWidth="1422">
+    <head>
+    </head>
+    <body>
+        <h1>New Project</h1>
+        <p class="bold">Testing Notes:</p>
+        <p>New behavior for v5 when creating a new project based on existing file: See notes in Bug <a href="https://s3.madcapsoftware.com:4343/tfs/DocToHelpCollection/DocToHelp/_workitems?_a=edit&amp;id=98563">98563</a>:Ability to create a new project based on importing existing documents is missing from Create New Project wizard</p>
+        <div class="example">
+            <p>From Andrey:</p>
+            <p>The problem  is we must add into a new project at least one Word document to open it in Word, otherwise Word don't know about the new project.</p>
+            <p>So now:</p>
+            <p>- if some Word documents have been imported we open the first one in Word.</p>
+            <p>- if you cancel Import wizard or don't import any Word document, we suggest to add a default Word document and open it,</p>
+            <p>- if you cancel adding a default Word document we add a glossary Word document without prompt and open it.</p>
+        </div>
+        <p class="bold">&#160;</p>
+        <p>&#160;</p>
+        <p class="bold">Checklist:</p>
+        <ul class="checkbox">
+            <li>
+                <MadCap:snippetBlock src="../../../../../Resources/Images/TestPlans/DocToHelp/ToDo TestPlan.flsnp" />
+            </li>
+            <li>Installed Sample Projects<ul><li>Verify each one for spelling errors, missing bookmarks, full functionality</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Documentation:</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <a href="http://help.madcapsoftware.com/d2h4/Content/Tutorials/D2H/New_User/Creating a Project.htm">Creating a Project</a>
+            </li>
+            <li>
+                <a href="http://help.madcapsoftware.com/d2h4/Content/Introduction_Topics/D2H/Steps/Creating and Converting Projects_DNH.htm">Creating and Converting Projects</a>
+            </li>
+            <li>
+                <a href="http://help.madcapsoftware.com/d2h4/Content/Projects_Starting/D2H/Migrating a Project.htm">Migrating a Project</a>
+            </li>
+        </ul>
+    </body>
+</html>

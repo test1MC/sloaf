@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="3321" MadCap:lastWidth="681">
+    <head>
+    </head>
+    <body>
+        <h1>Installation</h1>
+        <p class="bold">Testing Notes:</p>
+        <p>Since side-by-side installation is not allowed, when you install a new version (major or minor build), the previous version should uninstall automatically during the wizard.</p>
+        <p>&#160;</p>
+        <p>New to V5 these files are created on install (instead of after launching the application):</p>
+        <ul>
+            <li>&#160;Template files<ul><li>C:\Users\ebrown\AppData\Roaming\Microsoft\Templates</li><li>C:\Users\ebrown\AppData\Roaming\Microsoft\Word\STARTUP</li></ul></li>
+            <li>My Doc-To-Help&#160;Projects&#160;folder, C:\Users\ebrown\Documents\My Doc-To-Help Projects<ul><li>Contains a Samples folder with sample projects <ul><li>These also live here: C:\Program Files (x86)\MadCap Software\DocToHelp\Samples so you can copy these over again if you want fresh ones</li></ul></li><li>Contains a Doc-To-Help\Themes folder with your output themes.</li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <MadCap:menuProxy mc-linked-toc="$topicHeadings" style="mc-toc-depth: 3;mc-context-sensitive: True;mc-include-parent: True;mc-include-siblings: True;mc-include-children: True;" />
+        <h3>System&#160;Requirements</h3>
+        <ul class="checkbox">
+            <li>Look at the previous version's system requirements <a href="http://kb.madcapsoftware.com/Content/DocToHelp/Installation-Activation-Registration/IAR1003D_-_DocToHelp_4_System_Requirements.htm">KB article</a> - tell Tech Support lead if there need to be any changes for this release.</li>
+        </ul>
+        <h3>Notes on Installation</h3>
+        <ul>
+            <li>Close Microsoft Word before beginning Doc-To-Help installation. Microsoft Outlook should also be closed if Microsoft Word is your default email editor.</li>
+            <li>In earlier versions of D2H&#160;documentation, there was this note about anti-virus software.&#160;&#160;I&#160;don't think we have this issue any more and you should be able to install even with you anti-virus software running. &#160;For reference, this is the outdated documentation:<ul><li style="color: #a9a9a9;">&#160;Turn off your anti-virus software. (You can turn it back on after installation is complete, although you may need to modify it later.<ul><li><div><p style="color: #a9a9a9;">Note that some anti-virus software can limit the functionality of a range of software applications, including Doc-To-Help.</p><p style="color: #a9a9a9;">For example, anti-virus software may:</p><p style="color: #a9a9a9;">-Interfere with the integration between Doc-To-Help and Microsoft® Word.</p><p style="color: #a9a9a9;">-Limit or prohibit the use of scripting technology.</p><p style="color: #a9a9a9;">If your anti-virus software alerts you with a warning while using Doc-To-Help, it may be necessary to modify the</p><p style="color: #a9a9a9;">properties of your anti-virus software.</p></div></li></ul></li></ul></li>
+            <li>If you have projects, templates, and style sheets from existing Doc-To-Help projects, it is recommended that you back up those files before installing Doc-To-Help.</li>
+            <li>To install Doc-To-Help, you must have administrative privileges.</li>
+            <li>Doc-To-Help requires the Microsoft .NET Framework 4.0, and will install it for you automatically if it is not found during installation. If Doc-To-Help installs the .NET Framework, you may be required to restart your machine before continuing the Doc-To-Help install. After the restart, you must log in as the same user who began the install, or the installation won't continue.</li>
+            <li>Silent installs of Doc-To-Help are supported.<ul><li><div><p>To install DocToHelp silently into a specific folder with log, use the following command:</p><p>"pathtexeifile" /qn /l*v "pathtologfile" INSTALLLOCATION="pathtofolder" /i</p><p>Note: The /i switch must be the last switch in the command line.</p><p>Note: To install Doc-To-Help silently, Microsoft .NET Framework 4.0 must be already installed on those machines (because the automatic .NET Framework installation requires a restart).</p></div></li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <h3>Installation Wizard</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/DocToHelp/General/Installation/InstallWizard_01.png" class="propertiesNoFloat" />
+        </p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <span class="bold">Back: </span>Should always be disabled on this page</li>
+            <li>
+                <span class="bold">Next: </span> Next page of wizard</li>
+            <li>
+                <span class="bold">Cancel: </span>Closes the Wizard and cancels install</li>
+        </ul>
+        <hr class="HRclear" />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/DocToHelp/General/Installation/InstallWizard_02.png" class="propertiesNoFloat" />
+        </p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <span class="bold">Accept checkbox:</span>Should not be able to proceed through wizard if not selected</li>
+            <li>
+                <span class="bold">Print:</span>Prints the software agreement text</li>
+            <li>
+                <span class="bold">Back: </span>Previous page of wizard</li>
+            <li>
+                <span class="bold">Next: </span> Next page of wizard</li>
+            <li>
+                <span class="bold">Cancel: </span>Closes the Wizard and cancels install</li>
+        </ul>
+        <hr class="HRclear" />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/DocToHelp/General/Installation/InstallWizard_03.png" class="propertiesNoFloat" />
+        </p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <span class="bold">Change:</span>Browse to another location to install Doc-To-Help</li>
+            <li>
+                <span class="bold">Back: </span>Previous page of wizard</li>
+            <li>
+                <span class="bold">Next: </span> Next page of wizard</li>
+            <li>
+                <span class="bold">Cancel: </span>Closes the Wizard and cancels install</li>
+        </ul>
+        <hr class="HRclear" />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/DocToHelp/General/Installation/InstallWizard_04.png" class="propertiesNoFloat" />
+        </p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <span class="bold">Back: </span>Previous page of wizard</li>
+            <li>
+                <span class="bold">Install: </span>Proceeds with installation</li>
+            <li>
+                <span class="bold">Cancel: </span>Closes the Wizard and cancels install</li>
+        </ul>
+        <hr class="HRclear" />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/DocToHelp/General/Installation/InstallWizard_05.png" class="propertiesNoFloat" />
+        </p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <span class="bold">Show the readme file:</span>Opens the readme file in notepad</li>
+            <li>TBD&#160;if we will have another checkbox here for v5 - we don't want to launch the application.&#160;We may launch Word.</li>
+            <li>
+                <span class="bold">Back: </span>Should always be disabled on this page</li>
+            <li>
+                <span class="bold">Finish: </span> Closes wizard</li>
+            <li>
+                <span class="bold">Cancel: </span>Should always be disabled on this page</li>
+        </ul>
+        <hr class="HRclear" />
+        <h3>Using Live Update - deprecated?</h3>
+        <p>I'm not sure if we still use Live Update, or if we use the update code that Marcus has from our licensing wizard.</p>
+        <p>For reference, this is the previous documentation for using live update:</p>
+        <div>
+            <p style="color: #a9a9a9;">Using Live Update</p>
+            <p style="color: #a9a9a9;">Live Update is a utility that automatically checks for software updates every time you open Doc-To-Help.</p>
+            <p style="color: #a9a9a9;">If a new version is available, the Doc-To-Help Live Update dialog box will open. The update number and new feature</p>
+            <p style="color: #a9a9a9;">list will be displayed. Click the Download button to download the update.</p>
+            <p style="color: #a9a9a9;">To disable Live Update</p>
+            <p style="color: #a9a9a9;">1. Choose the File tab &gt; Tools &gt; Options. The Options dialog box will open.</p>
+            <p style="color: #a9a9a9;">2. Click the Updates button.</p>
+            <p style="color: #a9a9a9;">3. Select the Do not check for updates automatically radio button.</p>
+            <p style="color: #a9a9a9;">4. Click OK.</p>
+            <p style="color: #a9a9a9;">To check for updates manually</p>
+            <p style="color: #a9a9a9;">Choose the File tab &gt; Tools &gt; Check for Updates.</p>
+            <h3>Quick&#160;Install&#160;Checklist</h3>
+            <p>This is maintained for Flare install testing - use the same list, but you will omit some things that are not relevant for Doc-To-Help</p>
+            <p>https://trello.com/c/3Oo4ixpa</p>
+            <h3>Test various OSs and Word Versions</h3>
+            <p>Verify the following configurations:</p>
+            <ul class="checkbox">
+                <li>Install on a system with German Office (\\fs1\Virtual Machines\Windows 10\x64\Germany\Windows 10 x64 Enterprise Germany + German Office 2010 x64) . On the German system, please create a project which uses the source template called Normal A4 Template, and ensure the "special formatting" ribbon displays.</li>
+                <li>
+                    <p>Install on a system with Japanese Office -- copy from \\fs1\Virtual Machines\Windows 8\Windows 8.1\Windows 8.1\Japanese\x64\Japanese Office 2016 -- On the Japanese system, please create a project which uses the source template called Normal A4 Template, and ensure the "special formatting" ribbon displays.</p>
+                </li>
+                <li>Install on a German OS</li>
+                <li>Win 7</li>
+                <li>Win 8.1</li>
+                <li>Win 10</li>
+                <li>Office 2010</li>
+                <li>Office 2013</li>
+                <li>Office 2016</li>
+                <li>
+                    <p>Install on a clean system (no other MadCap product has been installed on this system)</p>
+                </li>
+                <li>
+                    <p>Install on a machine without Word. Should be prompted "Word 2010 or newer is required to run Doc-To-Help" (Regression of <a href="https://s3.madcapsoftware.com:4343/tfs/DocToHelpCollection/DocToHelp/_workitems?_a=edit&amp;amp;id=97703">97703</a>)</p>
+                </li>
+            </ul>
+            <p>&#160;</p>
+            <p>Ideas for sanity testing on these various systems</p>
+            <ul>
+                <li>
+                    <p>Create a new project, make edits, build targets</p>
+                </li>
+                <li>Open a project created in a previous version, should prompt to upgrade and continue working. Make edits, build targets</li>
+                <li>
+                    <p>Open and make an edit to a source template. Ensure that edit is reflected in any new document you create based on that template. (http://help.madcapsoftware.com/d2h3/Content/z_DuplicateTopics/D2H/About_Templates_and_Styles_D2H.htm )</p>
+                </li>
+                <li>Open and make and edit to a target template. Ensure that edit is reflected in the manual output which uses that target template.</li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="2250" MadCap:lastWidth="1343">
+    <head>
+    </head>
+    <body>
+        <h1>License Testing</h1>
+        <p class="bold">Testing Notes:</p>
+        <p class="bold" style="font-weight: normal;">Known bugs:</p>
+        <p>Bug 98361:Use Doc-To-Help icon for Session Timeout dialog</p>
+        <p>Bug 98362:Increase offline grace period to 48 hours (currently 24 hours)</p>
+        <p>&#160;</p>
+        <p class="bold">Checklist:</p>
+        <ul class="checkbox">
+            <li>All key types, see Flare's License Testing documentation</li>
+            <li>
+                <p>make sure the Purchase Online button is going to the correct website</p>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Documentation:</p>
+        <p>&#160;</p>
+        <h3>More information about how Floating Key Sessions work with the Word Add-In and the Doc-To-Help Application</h3>
+        <p>abbreviations... these are the possible states to have:</p>
+        <p>
+            <b>D2H_pr</b> = Doc-To-Help application and project loaded. Counts as a session.</p>
+        <p>
+            <b>D2H_no</b> = Doc-To-Help application, no project loaded. Counts as a session.</p>
+        <p>
+            <b>TFR</b> = Topic is part of D2H project. Word Full Ribbon, meaning add-in is loaded and word document is connected to a project. Counts as a session. You can open unlimited number of documents in this project and it will share the same session.</p>
+        <p>
+            <b>TBR</b> = Topic is part of D2H project. Word Basic Ribbon, meaning add-in is in basic-mode and cannot connect to project. Does not count as a session.</p>
+        <p>
+            <b>WBR</b> = Word document is not associted with a project.  Doc-To-Help Ribbon is in basic mode. Does not count as a session.</p>
+        <p>&#160;</p>
+        <p>Note:&#160;Adding _a or _b indicates which project is open. For example, TFR_a means that this Word document is a topic in project a.&#160;&#160;TBR_b means that this Word document is a topic in project b, and the T<u>B</u>R means the ribbon is in <u>b</u>asic mode.</p>
+        <p>&#160;</p>
+        <h4>Tests with just the D2H&#160;application:</h4>
+        <p>These are the expected results when using a 1-user floating key (1 session allowed)</p>
+        <ol>
+            <li>D2H_no = 1 session</li>
+            <li>D2H_no = unable to create session</li>
+        </ol>
+        <p>&#160;</p>
+        <ol>
+            <li>D2H_pr = 1 session</li>
+            <li>D2H_pr = unable to create session</li>
+        </ol>
+        <p>&#160;</p>
+        <ol>
+            <li>D2H_pr = 1 session</li>
+            <li>D2H_no = unable to create session</li>
+        </ol>
+        <p>&#160;</p>
+        <ol>
+            <li>D2H_no = 1 session</li>
+            <li>D2H_pr = unable to create session</li>
+        </ol>
+        <p>&#160;</p>
+        <h4>Test with just Word Add-in</h4>
+        <p>These are the expected results when using a 1-user floating key (1 session allowed)</p>
+        <ol>
+            <li>TFR_a = 1 session</li>
+            <li>TFR_a = same session</li>
+            <li>TBR_b = unable to create session (you'll see full ribbon but only basic buttons enabled)</li>
+            <li>---If you now close TFR_a and TFR_b, TBR_b stays in this inactive state. you must relaunch Word to get the session to be created.</li>
+        </ol>
+        <p>&#160;</p>
+        <ol>
+            <li>WBR = doesn't count as session</li>
+            <li>WBR = doesn't count as session</li>
+            <li>WBR = doesn't count as session</li>
+            <li>etc...</li>
+        </ol>
+        <p>&#160;</p>
+        <ol>
+            <li>WBR = doesn't count as session</li>
+            <li>WBR = doesn't count as session</li>
+            <li>TFR_a = 1 session</li>
+            <li>TFR_a = same session</li>
+            <li>TBR_b = unable to create session</li>
+        </ol>
+        <p>&#160;</p>
+        <h4>Test with both application and Word</h4>
+        <p>These are the expected results when using a 1-user floating key (1 session allowed)</p>
+        <ol>
+            <li>D2H_pr_a = 1 session</li>
+            <li>TFR_a = same session</li>
+            <li>TFR_a = same session</li>
+            <li>Change D2H_pr_b = 1 session still, even though you have different project loaded</li>
+            <li>TFR_b = allowed - same session</li>
+            <li>etc... you can open as many word documents from as many project as you want, if you keep opening them from D2H&#160;application. But only the word docs associated with the active session will be able to build/create links and d2h features from the d2h ribbon. In the inactive word docs, you'll get the message 'unable to create session' if you attempt to use those features.</li>
+            <li>Now Close D2H_pr_a (Word docs are still open)</li>
+            <li>Reopen D2H = unable to create session</li>
+            <li>Reopen D2H&#160;from D2H&#160;Ribbon of Word doc in step 3 -- unable to create session</li>
+            <li>Reopen D2H&#160;from D2H&#160;Ribbon of Word doc step 5 (or whatever your last opened project was) -- this will be allowed</li>
+        </ol>
+        <p>&#160;</p>
+        <h4>FAQs</h4>
+        <p>
+            <b>Question</b>:&#160;I'm using a 1-user floating key. I have 1 Word doc open- full d2h ribbon. When I open the 2nd word doc and am unable to create a session (correct) so that doc is in basic/full mode.. you'll see the loading gif in the project panel.  At this point, if i close my first document the my session is free. But the second document doesn't become active. I have to close &amp; reopen Word.  That's because the server is only checked when opening word, right?</p>
+        <p>
+            <b>Answer</b>:&#160;correct. the license controller only attempts to get a session when it starts up. In Flare if it fails, Flare closes. With this plugin we can't do that/we wouldn't want to because they can still work in Word.</p>
+        <p>&#160;</p>
+        <p>
+            <b>Question</b>:&#160;what happens when you have multiple word docs open and D2H&#160;is closed?</p>
+        <p>
+            <b>Answer</b>:&#160;You can have unlimited word docs open that belong to the same project. If you open from another project, it requests another session</p>
+        <p>&#160;</p>
+        <p>
+            <b>Question</b>:&#160;if you open MS Word and started using the plugin to build and all of that..without opening d2h - is that one session?</p>
+        <p>
+            <b>Answer</b>: Yes</p>
+        <p>&#160;</p>
+        <p>
+            <b>Question</b>:&#160;if you're using just Word on it's own without d2h involved, is that a session? are you preventing others from using a session just because you're using Word?</p>
+        <p>
+            <b>Answer</b>: No. If you're using Word on it's own, it is not a session.&#160;If you see the D2H&#160;Ribbon and it is in Basic Mode, that is not a session.&#160;If it is in Full&#160;Mode, then that is a session.</p>
+        <p>&#160;</p>
+        <p style="font-weight: normal;">
+            <b>Question:</b>&#160;If you have a few word documents open from various projects - you'll only be able to use the d2h ribbon features (like adding links) as well as building if you are in the word instance which is active, correct?&#160;But we prompt you "unable to create session" when you attempt to use these d2h features in the inactive word docs?</p>
+        <p style="font-weight: normal;">
+            <b>Answer:</b>&#160;Correct.</p>
+        <p style="font-weight: normal;">&#160;</p>
+        <h3>24-hour tests in D2H</h3>
+        <p>Some different testing scenarios:</p>
+        <p>&#160;</p>
+        <p>
+            <b>Test A:&#160;only Word open.</b>
+        </p>
+        <p>-do you get Session Timeout message? (You should. If not, NV bug for Marcus)</p>
+        <p>-can you continue working in the open word doc? (You will be able to use full ribbon features, but *should* not be able to - NV bug 98359)</p>
+        <p>-can you open another word document in same project as above and use the full ribbon (Yes you can)</p>
+        <p>-can you open another word doc in a different project and see the full ribbon? (No)</p>
+        <p>-can you close and reopen a word document in a project and see the full ribbon? (Should not be able to.)</p>
+        <p>&#160;</p>
+        <p>
+            <b>Test B: only Word open.</b>
+        </p>
+        <p>-do you get Session Timeout message? (You should. If not, NV bug for Marcus)</p>
+        <p>-can you continue working in the open word doc? (You will be able to use full ribbon features, but *should* not be able to - NV bug 98359)</p>
+        <p>-keep word open and reestablish your net connection, you will now need to relaunch Word to get full ribbon. (this cases a crash, but it may have been VMWare)</p>
+        <p>&#160;</p>
+        <p>
+            <b>Test C: app and Word open.</b>
+        </p>
+        <p>-do you get Session Timeout message? (Yes, on top of d2h app)</p>
+        <p>-With net still disconnected, request a session, it will fail, what happens now to the word ribbon? (Assuming that similarly to 98359, you will be able to continue working. Verify you cannot build)</p>
+        <p>-can you open another word doc in a project and see the full ribbon? (Should not be able to.)</p>
+        <p>-can you close and reopen a word document in a project and see the full ribbon? (Should not be able to.)</p>
+        <p>&#160;</p>
+        <p>
+            <b>Test D: app and Word open.</b>
+        </p>
+        <p>-do you get Session Timeout message? (Yes, on top of d2h app)</p>
+        <p>-can you continue working in the open word doc? (You will be able to use full ribbon features like making links - this is a NV bug 98359 - we really should prevent this.)</p>
+        <p>-you will not be able to build in that word document</p>
+        <p>-can you open another word document in same project as above, can you use the full ribbon? (No)</p>
+        <p>-can you open another word doc in a project and see the full ribbon? ((No)</p>
+        <p>-can you close and reopen a word document in a project and see the full ribbon? ((No, you'll see basic ribbon)</p>
+        <p>-reestablish net connection</p>
+        <p>-you can use full Word ribbon and build from both Word and app.&#160;(you'll have to relaunch Word probably)</p>
+        <p>&#160;</p>
+        <p>
+            <b>Test E: only app open.</b>
+        </p>
+        <p>-do you get Session Timeout message? (Yes, on top of d2h app)</p>
+        <p>-With net still disconnected, requested a session, it wasn't able to. D2H closed.</p>
+        <p>-Unable to open app now</p>
+        <p>-Opening Word document in a project, D2H ribbon was in "timeout full" mode, which means you see the full ribbon but only the basic-mode buttons are active. Cannot build.</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="851" MadCap:lastWidth="1317">
+    <head>
+    </head>
+    <body>
+        <h1>SC Repository</h1>
+        <p class="bold">Testing Notes:</p>
+        <p>WebDAV instructions to supplement the help topics</p>
+        <p>http://docs.doctohelp.com/nethelp/d2h2014v2/#!WordDocuments/settingupateamproject.htm</p>
+        <p>http://docs.doctohelp.com/nethelp/d2h2014v2/#!WordDocuments/sharingaprojecttoarepository.htm</p>
+        <p>You will need to enable WebDAV from Control Panel &gt; Programs and Features &gt; Turn Windows Features on or off. &gt; Expand Internet Information Services, then World Wide Web Services, then Common HTTP Features. &gt; Select WebDAV Publishing, and then click OK.</p>
+        <p>You may need to enable Windows and Basic authentication from Control Panel &gt; Programs and Features &gt; Turn Windows Features on or off. &gt; Expand Internet Information Services, then World Wide Web Services, then Security &gt; Select Basic Authentication and Windows Authentication, and then click OK.  (close/reopen IIS Manager)</p>
+        <p>In IIS Manager, Select the Website &gt; Open Authentication &gt; Enable Windows Authentication</p>
+        <p>&#160;</p>
+        <p>When setting up WebDAV, make sure the app pool being used for the site is 2.0 (.net 2.0)</p>
+        <p>&#160;</p>
+        <p>Note for WebDAV:</p>
+        <p>In IIS Manager, select the Website &gt; WebDAV Authoring Rules. In the Actions column (on the right), select Add Authoring Rule. Select Allow access to this content to: All users and Permissions: Read, Source, Write and then Click OK.</p>
+        <p>&#160;</p>
+        <p class="bold">Checklist:</p>
+        <ul class="checkbox">
+            <li>
+                <MadCap:snippetBlock src="../../../../../Resources/Images/TestPlans/DocToHelp/ToDo TestPlan.flsnp" />
+            </li>
+            <li>WebDAV - all functions</li>
+            <li>TFS - all functions</li>
+            <li>File System - all functions</li>
+            <li>TFS 2008 (Note:&#160;Bug 98307:Error: Unable to connect to TFS 2008 server)</li>
+            <li>TFS 2010</li>
+            <li>TFS 2012</li>
+            <li>TFS 2013</li>
+            <li>TFS 2015 (limited support? - Feature 97971:Source Control: Support for TFS 2015)</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Documentation:</p>
+        <ul style="list-style-type: square;">
+            <li style="font-weight: normal;">
+                <a href="http://help.madcapsoftware.com/d2h4/Content/Team_Authoring/D2H/About Team Authoring.htm">About Team Authoring</a>
+            </li>
+            <li>Setting Up a Team Project</li>
+            <li>Connecting to a Team Project</li>
+            <li>Working in a Team Project<ul style="list-style-type: square;"><li><p>Adding a New File to the Team Project</p></li><li><p>Checking Out the Project File</p></li><li>Comparing Documents</li><li><p>Deleting a File from the Team Project</p></li><li><p>Editing a Document</p></li><li><p>Getting the Latest Version of a File</p></li><li><p>Viewing the Document History</p></li><li><p>Viewing File Properties</p></li><li>Working Offline</li></ul></li>
+            <li>Team Authoring Administrative Functions<ul style="list-style-type: square;"><li><p>Changing Repository Settings</p></li><li><p>Removing Backup Files from the Repository</p></li><li>Removing Team Authoring Support from a Working Copy</li><li><p>Unlocking Files in the Repository</p></li><li><p>Unlocking the DHV File</p></li><li><p>Upgrading a Team Authoring Project</p></li></ul></li>
+        </ul>
+    </body>
+</html>

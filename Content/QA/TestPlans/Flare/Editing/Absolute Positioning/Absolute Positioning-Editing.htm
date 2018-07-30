@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="3164" MadCap:lastWidth="1060">
+    <head>
+    </head>
+    <body>
+        <h1>Absolute Positioning-Editing</h1>
+        <h3>Text Wrap Context Menu</h3>
+        <p>
+            <img src="../../../../../Resources/Images/Context_TextWrap.png" style="width: 226px; height: 251px;" class="properties" alt="">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p>Using the context menu will set local styles to "float:left;" for online media and "Madcap:Mediastyle="@media print {position: absolute; z-index:0;}", with the "z-index" property value (0, 1, -1 Square, in front, or behind)</p>
+        <p>&#160;</p>
+        <h4>Text Wrap Properties</h4>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">In Line with Text: </span> Resets absolute position options back to the default inline setting.</li>
+            <li>
+                <span class="bold">Square: </span> <ul><li><span class="bold">Layout(Print): </span>Wraps text around the absolutely positioned element on any or all sides ( <i style="font-weight: bold;">MadCap:mediastyle="@media print { position: absolute; z-index: 0; }"</i>)</li><li><span class="bold">Layout(Web): </span>Sets the Element to "float:left;" (<i style="font-weight: bold;">float: left;</i>)</li></ul></li>
+            <li>
+                <span class="bold">Behind Text: </span>Places the absolutely positioned element behind text. (<i style="font-weight: bold;">position: absolute; z-index: -1;</i>)</li>
+            <li>
+                <span class="bold">In Front of Text: </span>Places the absolutely positioned element in front of text. (<b style="font-style: italic;">position: absolute; z-index: 1;</b>)</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>StyleSheet</h3>
+        <p>This also can be set in the "Positioning group" in a stylesheet</p>
+        <p>
+            <img src="../../../../../Resources/Images/Capture.png" alt="" style="clear: both;mc-thumbnail: popup;" />
+        </p>
+        <p class="note">Currently, Setting an element to Text Wrap:Square in a stylesheet will display that element as Text Wrap: In Front of Text in web layout</p>
+        <h3>Elements to test</h3>
+        <ul class="checkbox">
+            <li>Images</li>
+            <li>Multimedia</li>
+            <li>QR Codes</li>
+            <li>Divs</li>
+            <li>Paragraphs</li>
+        </ul>
+        <p class="note">Currently, Absolute Positioning is not supported for SlideShow, Snippets, and Tables</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Selecting.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-CutCopyPaste.flsnp" />
+        <p class="note">Note: Paste will place the element at it's defined "top" and "left" position</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-Deleting.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/WYS-ConditionalTags.flsnp" />
+        <div class="TestCases">
+            <p>
+                <b>Test Cases</b>
+            </p>
+            <ul style="list-style-type: square;">
+                <li>Ensure all Absolutely Positioned elements display correctly when spanned across multiple columns in a multipage layout.</li>
+                <li>Ensure all Absolutely Positioned elements display correctly in Headers, Footers, and Decoration Frames in a page layout.</li>
+                <li>Ensure Absolutely Positioned Expanding Text and Text popups are converted to footnotes in all print outputs.</li>
+                <li>Ensure all Absolutely Positioned text-based outputs can be resized (Knobbie Controls).</li>
+                <li>Ensure you can select an element that has been set to "Behind Text" by placing cursor over element and clicking five times.</li>
+                <li>Ensure Find/Replace works correctly on text that has been Absolutely Positioned.</li>
+                <li>Ensure Spell Check works correctly on text that has been Absolutely Positioned.</li>
+            </ul>
+        </div>
+        <h3>Misc</h3>
+        <h4>Code</h4>
+        <p>
+            <b>Text Wrap: Square</b>
+        </p>
+        <p>&lt;img src="Resources/Images/Sbdisney.jpeg" alt="" style="width: 229px;height: 153px;float: left;left: 47px;top: 126px;" MadCap:mediastyle="@media print { position: absolute;z-index: 0; }" /&gt;</p>
+        <p style="font-weight: bold;">Text Wrap: Behind Text</p>
+        <p>&lt;img src="Resources/Images/Sbdisney.jpeg" alt="" style="width: 229px;height: 153px;left: 47px;top: 126px;position: absolute;z-index: -1;" /&gt;</p>
+        <p style="font-weight: bold;">Text Wrap: In Front of Text</p>
+        <p>&lt;img src="Resources/Images/Sbdisney.jpeg" alt="" style="width: 229px;height: 153px;left: 155px;top: 129px;position: absolute;z-index: 1;" /&gt;</p>
+    </body>
+</html>

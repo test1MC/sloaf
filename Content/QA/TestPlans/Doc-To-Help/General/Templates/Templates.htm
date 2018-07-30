@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="1738" MadCap:lastWidth="1291">
+    <head>
+    </head>
+    <body>
+        <h1>Templates</h1>
+        <p class="bold">Testing Notes:</p>
+        <p>Templates installed &gt;&gt; <MadCap:xref href="../../QA Tasks/Overview.htm#System">See System Files</MadCap:xref></p>
+        <p>&#160;</p>
+        <p class="bold">Checklist:</p>
+        <ul class="checkbox">
+            <li>
+                <MadCap:snippetBlock src="../../../../../Resources/Images/TestPlans/DocToHelp/ToDo TestPlan.flsnp" />
+            </li>
+            <li>Upgrading templates - verify this is true:&#160;If you uninstall Doc-To-Help and reinstall a newer version, the templates will remain in that folder. However, if one of your customized templates uses the same name as one of Doc-To-Help’s default templates, and there is a newer version of that template in the installation, Doc-To-Help will save your version of the template to the following folder: \\Users\&lt;user name&gt;\AppData\Roaming\Microsoft\Templates\Backup</li>
+            <li>Verify:&#160;Bug 97968:Add option to upgrade D2H project source templates to new D2H_*.dotm when upgrading projects to V3</li>
+            <li>Sanity check all target templates - Build a manual output with all installed target templates (template names which contain PR* are target templates)</li>
+            <li>Sanity check all source templates - Create a project based on all intalled source templates (template names without PR* are source templates)</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Documentation:</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p>
+                    <a href="http://help.madcapsoftware.com/d2h4/Content/Templates/D2H/About_Templates_and_Styles_D2H.htm">About Templates and Styles</a>
+                </p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <p>Editing a Template</p>
+                    </li>
+                    <li>
+                        <p>Selecting Templates</p>
+                    </li>
+                    <li>
+                        <p>Copying Custom Styles to a New Template</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p>Quick reference:&#160;these are the templates which have a Special&#160;Formatting ribbon</p>
+        <p>[D2H_SMAL.dotx, D2H_SMAL_A4.dotx, D2H_NORM.dotx, or D2H_NORM_A4.dotx]</p>
+        <p>&#160;</p>
+        <MadCap:dropDown>
+            <MadCap:dropDownHead>
+                <MadCap:dropDownHotspot>List of Templates and some of their properties:</MadCap:dropDownHotspot>
+            </MadCap:dropDownHead>
+            <MadCap:dropDownBody>
+                <table>
+                    <col />
+                    <col />
+                    <col />
+                    <col />
+                    <thead>
+                        <tr>
+                            <th>Source Templates</th>
+                            <th>[Title in document properties]</th>
+                            <th>Target Templates</th>
+                            <th>[Title in document properties]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>&#160;</td>
+                            <td>Doc-To-Help Sandcastle Author Template</td>
+                            <td>&#160;</td>
+                            <td>&#160;</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>D2H_FANCY.DOTX </p>
+                                <p>&#160;</p>
+                                <p>This source template has a page layout similar to D2H_NOMARGIN.DOTX, but it has a fancier styles that use color and a different font. When used with the complimentary target template, it will have a fancy design.</p>
+                            </td>
+                            <td>Fancy 8.5" x 11" Source Template</td>
+                            <td>
+                                <p>D2H_PRFANCY.DOTX</p>
+                                <p>&#160;</p>
+                                <p>This is the target template that is intended to accompany the D2H_FANCY.DOTX source template. It includes a page layout similar to D2H_PRNOMARGIN.DOTX, but it has a fancier design. This includes color, an image placed behind the text on the title page, an image placed behind the text in the headers, and a decorative image in the footers.</p>
+                            </td>
+                            <td>Fancy 8.5" x 11" Target Template</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>D2H_FANCY_A4.DOTX </p>
+                                <p>&#160;</p>
+                                <p>This is the source template for A4-sized paper.</p>
+                            </td>
+                            <td>Fancy A4 Source Template</td>
+                            <td>
+                                <p>D2H_PRFANCY_A4.DOTX</p>
+                                <p>&#160;</p>
+                                <p>This is the target template used to format the printed manual target (A4-sized paper).</p>
+                            </td>
+                            <td>Fancy A4 Target Template</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>D2H_FANCY_POLICIES.DOTX</p>
+                                <p>&#160;</p>
+                                <p> This source template is used to create policies &amp; procedures documents. It has sample text and headings that you can use as a starting point for these manuals. It is based on D2H_FANCY.DOTX and uses the same styles and page layout as in that template.
+By default, the headers in this template are numbered.</p>
+                            </td>
+                            <td>Policies and Procedures 8.5" x 11" Fancy Source Template</td>
+                            <td>
+                                <p>D2H_PRFANCY_POLICIES.DOTX </p>
+                                <p>&#160;</p>
+                                <p>This is the target template that is intended to accompany the D2H_FANCY_POLICIES.DOTX source template. Like the PR_FANCY.DOTX target template, this template includes color, an image placed behind the text on the title page, an image placed behind the text in the headers, and a decorative image in the footers.</p>
+                            </td>
+                            <td>Policies and Procedures 8.5" x 11" Fancy Target Template</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>D2H_FANCY_POLICIES_A4.DOTX</p>
+                                <p>&#160;</p>
+                                <p> This is the source template for A4-sized paper.</p>
+                            </td>
+                            <td>Policies and  Procedures A4 Fancy Source Template</td>
+                            <td>
+                                <p>D2H_PRFANCY_POLICIES_A4.DOTX</p>
+                                <p>&#160;</p>
+                                <p> This is the target template used to format the printed manual target (A4-sized paper).</p>
+                            </td>
+                            <td>Policies and Procedures A4 Fancy Target Template</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>D2H_NOMARGIN.DOTX</p>
+                                <p>&#160;</p>
+                                <p>This is the Doc-To-Help default source template. It will be used unless you use your own or choose an alternate from this list.</p>
+                                <p>In the New Project Wizard, this template is called Normal 8.5" x 11" Template (no left indent).</p>
+                            </td>
+                            <td>Doc-To-Help Standard Without Margins Author Template</td>
+                            <td>
+                                <p>D2H_PRNOMARGIN.DOTX </p>
+                                <p>&#160;</p>
+                                <p>This is the target template used to format the printed manual target. It differs from D2H_PRNORM.DOTX in that it does not have the wide 2-inch left margin.</p>
+                            </td>
+                            <td>Doc-To-Help Standard Without Margins Manual Target Template</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>D2H_NOMARGIN_A4.DOTX </p>
+                                <p>&#160;</p>
+                                <p>This is the source template for A4-sized paper. In the New Project Wizard, this template is called Normal A4 Template (no left indent)</p>
+                            </td>
+                            <td>Doc-To-Help Standard Without Margins Author A4 Template</td>
+                            <td>
+                                <p>D2H_PRNOMARGIN_A4.DOTX </p>
+                                <p>&#160;</p>
+                                <p>This is the target template used to format the printed manual target (A4-sized paper).</p>
+                            </td>
+                            <td>Doc-To-Help Standard Without Margins Manual Target  A4 Template</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>D2H_NOMARGIN_POLICIES.DOTX </p>
+                                <p>&#160;</p>
+                                <p>This source template is used to create policies &amp; procedures documents. It has sample text and headings that you can use as a starting point for these manuals. It is based on D2H_NOMARGIN.DOTX and uses the same styles and page layout as in that template.
+By default, the headers in this template are numbered.</p>
+                            </td>
+                            <td>Policies and  Procedures 8.5" x 11" Plain Source Template</td>
+                            <td>
+                                <p>D2H_PRNOMARGIN_POLICIES.DOTX </p>
+                                <p>&#160;</p>
+                                <p>This is the target template used to format the printed manual target for a policies &amp; procedures manual.</p>
+                            </td>
+                            <td>Policies and  Procedures 8.5" x 11" Plain Target Template</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>D2H_NOMARGIN_POLICIES_A4.DOTX</p>
+                                <p>&#160;</p>
+                                <p> This is the source template for A4-sized paper.</p>
+                            </td>
+                            <td>Policies and  Procedures A4 Plain Source Template</td>
+                            <td>
+                                <p>D2H_PRNOMARGIN_POLICIES_A4.DOTX</p>
+                                <p>&#160;</p>
+                                <p> This is the target template used to format the printed manual target (A4-sized paper).
+Add Comment Add Comment Collapse</p>
+                            </td>
+                            <td>Policies and Procedures A4 Plain Target Template</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>D2H_NORM.DOTX </p>
+                                <p>&#160;</p>
+                                <p>This is Doc-To-Help’s default source template for versions prior to Doc-To-Help 2007. This matches D2H_NOMARGIN.DOTX, but it has a 2-inch left margin.
+In the New Project Wizard, this template is called Normal 8.5" x 11" Template.</p>
+                            </td>
+                            <td>Doc-To-Help Standard Author Template</td>
+                            <td>
+                                <p>D2H_PRNORM.DOTX </p>
+                                <p>&#160;</p>
+                                <p>This is the target template used to format the printed manual target. It differs from D2H_PRNOMARGIN.DOTX in that it has a 2-inch left margin.</p>
+                            </td>
+                            <td>Doc-To-Help Standard Manual Target Template</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>D2H_NORM_A4.DOTX </p>
+                                <p>&#160;</p>
+                                <p>This is the source template for A4-sized paper with a 2-inch left margin.
+In the New Project Wizard, this template is called Normal A4 Template.</p>
+                            </td>
+                            <td>Doc-To-Help Standard Author A4 Template</td>
+                            <td>
+                                <p>D2H_PRNORM_A4.DOTX </p>
+                                <p>&#160;</p>
+                                <p>This is the target template used to format the printed manual target (A4-sized paper).</p>
+                            </td>
+                            <td>Doc-To-Help Standard Manual Target A4 Template</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>D2H_SIDE.DOTX</p>
+                                <p>&#160;</p>
+                                <p> This is the source template for sidehead source documents. In the New Project Wizard, this template is called Sidehead 8.5" x 11" Template.</p>
+                            </td>
+                            <td>Doc-To-Help Sidehead Author Template</td>
+                            <td>
+                                <p>D2H_PRSIDE.DOTX </p>
+                                <p>&#160;</p>
+                                <p>This is the target template used to format the standard sidehead printed manual.</p>
+                            </td>
+                            <td>Doc-To-Help Sidehead Manual Target Template</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>D2H_SIDE_A4.DOTX</p>
+                                <p>&#160;</p>
+                                <p> This is the source template for sidehead source documents on A4-sized paper.
+In the New Project Wizard, this template is called Sidehead A4 Template.</p>
+                            </td>
+                            <td>Doc-To-Help Sidehead Author A4 Template</td>
+                            <td>
+                                <p>D2H_PRSIDE_A4.DOTX</p>
+                                <p>&#160;</p>
+                                <p> This is the target template used to format the standard sidehead printed manual (A4-sized paper).</p>
+                            </td>
+                            <td>Doc-To-Help Sidehead Manual Target A4 Template</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>D2H_SMAL.DOTX </p>
+                                <p>&#160;</p>
+                                <p>This is the source template used to format small-sized manuals.
+In the New Project Wizard, this template is called Small 7" x 9" Crop-Marked Template.</p>
+                            </td>
+                            <td>Doc-To-Help Small Author Template</td>
+                            <td>
+                                <p>D2H_PRSMAL.DOTX </p>
+                                <p>&#160;</p>
+                                <p>This is the target template used to format the standard small printed manual.</p>
+                            </td>
+                            <td>Doc-To-Help Small Manual Target Template</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>D2H_SMAL_A4.DOTX </p>
+                                <p>&#160;</p>
+                                <p>This is the source template used to format small-sized manuals on A4-sized paper.
+In the New Project Wizard, this template is called Small 17.78 cm x 22.68 cm Crop-Marked Template.</p>
+                            </td>
+                            <td>Doc-To-Help Small Author A4 Template</td>
+                            <td>
+                                <p>D2H_PRSMAL_A4.DOTX</p>
+                                <p>&#160;</p>
+                                <p> This is the target template used to format the standard small printed manual (A4-sized paper).</p>
+                            </td>
+                            <td>Doc-To-Help Small Manual Target A4 Template</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </MadCap:dropDownBody>
+        </MadCap:dropDown>
+    </body>
+</html>

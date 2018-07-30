@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="1600" MadCap:lastWidth="1315" MadCap:conditionTagExpression="include[Default.UITestsDialogs]">
+    <head>
+    </head>
+    <body>
+        <h2>Font Families - UI</h2>
+        <h3>Font Sets</h3>
+        <h4>Font Set Manager Dialog</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Font Families/FontSetManager.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls:</p>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Add:</span> Opens the <span class="UI">Define Font Set</span> dialog.</li>
+            <li>
+                <span class="bold">Edit:</span> Opens the <span class="UI">Define Font Set</span> dialog with the selected Font Set name displayed in the grayed out Name field.</li>
+            <li>
+                <span class="bold">Remove:</span>Removes the selected Font Set.</li>
+            <li>
+                <span class="bold">OK:</span> Applies changes and exits dialog.</li>
+            <li>
+                <span class="bold">Cancel:</span> Discards changes and exits dialog.</li>
+        </ul>
+        <div class="TestCases">
+            <p class="bold">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Scroll bar should appear if you create many font sets.</li>
+                <li>Double clicking a font set will open the <span class="UI">Define Font Set</span> dialog with the selected Font Set name displayed in the grayed out Name field.</li>
+            </ul>
+        </div>
+        <h4>Define Font Set Dialog</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Font Families/DefineFontSet.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <hr />
+        <p class="bold">UI Controls:</p>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Name:&#160;</span>Enter a name for the font family. If you are editing the font set, this name cannot be changed.</li>
+            <li>
+                <span class="bold">(Font Family field): </span>This is the field above the list of fonts on the left side of the dialog. If you know the name of the font family you want to add to your font set, you can enter it in this field.</li>
+            <li>
+                <span class="bold">(Available Font&#160;Families List):</span>&#160;This is the list of fonts on the left side of the dialog. You can add these fonts to the font set.</li>
+            <li>
+                <span class="bold">(Select Font Families List):</span> This is the list of fonts on the right side of the dialog. These fonts are part of the font set.</li>
+            <li>
+                <span class="bold">[&lt;&lt;&lt;]:</span> Removes the selected font family from the font set.</li>
+            <li>
+                <span class="bold">[&gt;&gt;&gt;]:</span> Adds the selected font family to the font set.</li>
+            <li>
+                <span class="bold">
+                    <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveUp.png" /> (Move Up):</span>Moves the selected font up in the order of fonts in the font set.</li>
+            <li>
+                <span class="bold">
+                    <img src="../../../../../Resources/Images/TestPlans/Buttons/Button---MoveDown.png" /> (Move Down):</span>Moves the selected font down in the order of fonts in the font set.</li>
+            <li>
+                <span class="bold">OK:</span> Applies changes and exits dialog.</li>
+            <li>
+                <span class="bold">Cancel:</span> Discards changes and exits dialog.</li>
+        </ul>
+        <div class="TestCases">
+            <p class="bold">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Click in the Available Font Families list (left) or Select Font Families list (right) and type a letter, it should scroll to a font that begins with that letter.</li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Enable Audio:</span> Enable audio for selected cursor.</li>
+            <li>
+                <span class="bold">Sound File:</span> This field shows selected audio file. <ul><li><span class="bold">Clear:</span> Clears/ removes the audio file. </li><li><span class="bold">Edit:</span> Triggers the edit audio dialog.</li><li><span class="bold">Pick Built-In Sound...:</span>  Pick a built-in Windows system sound. <![CDATA[ ]]></li><li><span class="bold">Pick From Movie Sound Library...:</span>  Pick an audio file from the sound library. <![CDATA[ ]]></li><li><span class="bold">Import Into Sound Library...:</span>  Triggers file explorer to import audio file.<![CDATA[ ]]></li><li><span class="bold">Record A New Audio Clip...:</span>  Triggers the Record dialog. <![CDATA[ ]]></li></ul></li>
+            <li>
+                <span class="bold">Loop Sound:</span>  Loop sound for the object. <![CDATA[ ]]></li>
+        </ul>
+    </body>
+</html>

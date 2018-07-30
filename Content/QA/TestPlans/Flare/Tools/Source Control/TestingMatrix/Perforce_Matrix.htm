@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="2796.333" MadCap:lastWidth="1154" MadCap:fileTags="Status.Flare V7 Needs Review,Product.Flare" MadCap:conditionTagExpression="include[SourceControl.SVN] exclude[SourceControl.DetailedTesting or SourceControl.TFS or SourceControl.VSS] ">
+    <head>
+        <link href="../../../../../../Resources/TableStyles/Columns.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../../Resources/TableStyles/Columns.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../../Resources/TableStyles/Columns.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>Perforce Protocol- Testing Matrix</h1>
+        <h2>Authentication Testing</h2>
+        <p class="note">Clear any login cache currently stored by deleting the information stored at the following location <br /><b>Perforce:</b> C:\Users\{userid} folder and delete the p4tickets.txt file</p>
+        <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/Authentication.flsnp" />
+        <h2>Functionality Testing</h2>
+        <p class="note">Before proceeding with the following tests...   install Perforce P4V so that status of files in the repository can be checked with P4V application</p>
+        <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/SourceControl.flsnp" />
+        <p>&#160;</p>
+        <h3>Basic Testing of Perforce using Third Party Plug-in instead of Native Integration</h3>
+        <p>Steps to bind a project to Perforce using Perforce Plug in</p>
+        <ol>
+            <li>Install the perforce plug-in and P4V (\\fs1\software\Perforce)</li>
+            <li>Open any Flare project (not bound to source control) and go to !File | Project | Project Properties | Source Control | Bind Project</li>
+            <li>Select "Third Party Plug-in", then select Perforce SCM, and click on the browse (...) button</li>
+            <li>Enter in the Perforce server and user name (cent64perforce:1666, test1)</li>
+            <li>
+                <p>Click on "New" for the workspace and create a workspace name- enter credentials as needed</p>
+                <p>
+                    <img src="../../../../../../Resources/Images/TestPlans/Flare/Source Control/PerforcePlugIn1.png" class="smallThumb" />
+                </p>
+            </li>
+            <li>
+                <p>In the New Workspace Dialog, enter in the path to the project in the "Root" field and edit the View field to include the Project name (see screenshot - highlight parts are the modified sections - delete depot paths that are not needed)</p>
+                <p>
+                    <img src="../../../../../../Resources/Images/TestPlans/Flare/Source Control/PerforcePlugIn2.png" class="smallThumb" />
+                </p>
+            </li>
+            <li>Click on "Save" to save changes and return to "Open Connection" dialog, click OK, then OK on Bind Project dialog</li>
+            <li>
+                <p>Submit Changelist dialog appears from Perforce- click on Submit</p>
+                <p>
+                    <img src="../../../../../../Resources/Images/TestPlans/Flare/Source Control/PerforcePlugIn3.png" class="smallThumb" />
+                </p>
+            </li>
+            <li>
+                <p>Click OK again on Open Connection dialog - Click Submit on Submit ChangeList that appears again - this time for the flprj file</p>
+                <p>
+                    <img src="../../../../../../Resources/Images/TestPlans/Flare/Source Control/PerforcePlugIn4.png" class="smallThumb" />
+                </p>
+            </li>
+            <li>Click OK to close out of the Project Properties dialog</li>
+        </ol>
+        <p>&#160;</p>
+        <h4>Test some basic functionality</h4>
+        <ul class="checkbox">
+            <li>Bind a Project</li>
+            <li>Unbind a Project</li>
+            <li>Bind a Project with previous version of Flare and open it in the current version of Flare</li>
+            <li>Check out a single file</li>
+            <li>Edit a file, save changes.<ol><li>Should prompt to check out file if option to automatically check out file option is not selected in !File | Options</li><li>Should check out file automatically if option to automatically check out file option is selected in !File | Options</li></ol></li>
+            <li>Check out multiple files</li>
+            <li>Check in a single file</li>
+            <li>Check in multiple files</li>
+            <li>Check out all - Then Undo Check Out All</li>
+            <li>Check in all</li>
+            <li>Add a new file and check it in</li>
+            <li>Add a new folder and add a file - check it in</li>
+        </ul>
+        <h4>Some known bugs</h4>
+        <p>
+            <a href="https://s3.madcapsoftware.com:4343/tfs/SourceCollection/SOURCE/_workitems/edit/53069" class="caption">Bug 53069:</a>For project bound to Perforce, if the option "Remove from source control" is selected when deleting a file, Flare crashes</p>
+        <p>Related to the bug above - moving and renaming files will be an issue</p>
+        <p>&#160;</p>
+    </body>
+</html>

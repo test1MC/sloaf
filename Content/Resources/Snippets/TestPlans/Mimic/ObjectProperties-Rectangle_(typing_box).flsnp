@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="190" MadCap:lastWidth="1322">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Anchor</span>
+                <ul>
+                    <li>
+                        <span class="bold">Top:</span> click to enable the "Top" anchor. </li>
+                    <li>
+                        <span class="bold">Left:</span> click to enable the "Left" anchor. </li>
+                    <li>
+                        <span class="bold">Right:</span> click to enable the "Right" anchor. </li>
+                    <li>
+                        <span class="bold">Bottom:</span> click to enable the "Bottom" anchor. </li>
+                    <li>
+                        <span class="bold">Horizontally Center:</span>  click to Horizontally Center the rectangle. </li>
+                    <li>
+                        <span class="bold">Vertically Center:</span>  click to Vertically Center the rectangle. </li>
+                    <li>
+                        <span class="bold">Left:</span> enter Left anchor value.</li>
+                    <li>
+                        <span class="bold">Right:</span> enter Right anchor value.</li>
+                    <li>
+                        <span class="bold">Top:</span> enter Top anchor value.</li>
+                    <li>
+                        <span class="bold">Bottom:</span> enter Bottom anchor value.</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

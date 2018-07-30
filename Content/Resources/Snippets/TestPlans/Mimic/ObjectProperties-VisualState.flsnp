@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Visual States</span>
+                <ul>
+                    <li>
+                        <span class="bold">Name:</span>Enter name for a visual state.</li>
+                    <li>
+                        <span class="bold">New Visual State:</span>Click to add a new visual state.</li>
+                    <li>
+                        <span class="bold">Delete:</span>Delete selected visual state.</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

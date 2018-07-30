@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="460" MadCap:lastWidth="994">
+    <head>
+    </head>
+    <body>
+        <h2>Debug Ribbon</h2>
+        <p>The debug ribbon can be used during development for testing features that are not yet visible in the daily builds.</p>
+        <h4>Enable Debug Ribbon</h4>
+        <ol>
+            <li>Navigate to \\fs1\QA</li>
+            <li>Double-click EnableDebugMode.reg</li>
+            <li>Relaunch Flare and you will see Debug in the Ribbon</li>
+        </ol>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/Flare/RibbonMenu/RibbonMenu--Debug.png" />
+        </p>
+        <h4>Disable Debug Ribbon</h4>
+        <ol>
+            <li>Before you disable the ribbon, if you had checked any additional boxes in this ribbon, uncheck them so they are back to default.</li>
+            <li>Open your registry<ol><li>Start</li><li>type "regedit" &gt;&#160;Enter &gt;&#160;Yes to User Account Control prompt</li></ol></li>
+            <li>Navigate to HKEY_CURRENT_USER\Software\MadCap Software\Shared</li>
+            <li>Right-click the DebugMode registry entry &gt;&#160;Delete</li>
+        </ol>
+    </body>
+</html>

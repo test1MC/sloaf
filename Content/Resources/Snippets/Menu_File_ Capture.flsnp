@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="4" MadCap:lastHeight="489" MadCap:lastWidth="1492">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">New… (New Image from Profile): </span>Opens the <span class="UI">Create New Image</span> dialog</li>
+            <li>
+                <p>
+                    <span class="bold">New&#160;Batch Job:</span>Open Batch Job Editor</p>
+            </li>
+            <li>
+                <span class="bold">Open (Open File): </span>Invokes an <span class="UI">Open</span> dialog which lets you browse for appropriate file types to open in the application</li>
+            <li>
+                <span class="bold">Recapture:</span> invokes the Capturing Region in order to replace the background image</li>
+            <li>
+                <span class="bold">Replace Background Image...</span> invokes the Select New Background Image dialog in order to replace the background image with an existing file</li>
+            <li>
+                <span class="bold">Apply Profile...</span> invokes the Apply Profile dialog in order to apply an existing Profile</li>
+            <li>
+                <b>New Profile:</b> Create a new profile</li>
+            <li>
+                <b>Link to a Profile:</b> Open a profile from an external source</li>
+            <li>
+                <b>New Palette:</b> Create a new palette</li>
+            <li>
+                <b>Link to a Palette:</b> Open a palette from an external source</li>
+            <li>
+                <span class="bold">Close (Close File): </span>Closes the current file</li>
+            <li>
+                <span class="bold">Save (Save File): </span>Saves the current file</li>
+            <li>
+                <span class="bold">Rename and Save (Save As): </span>Invokes a <span class="UI">Save As</span> dialog which lets you save the current file with a new filename, and opens the new file in place of the current file.</li>
+            <li>
+                <span class="bold">Save As (Save As): </span>Invokes a <span class="UI">Save As</span> dialog which lets you save the current file with a new filename, and opens the new file in place of the current file.</li>
+            <li>
+                <span class="bold">Save To (Save To): </span>Invokes a <span class="UI">Save As</span> dialog which lets you save the current file with a new name but does not open the new file.</li>
+            <li>
+                <span class="bold">Save All (Save All): </span>Saves all open documents</li>
+            <li>
+                <span class="bold">Save Print Version:</span> Saves a copy of the image with print settings applied to it.</li>
+            <li>
+                <span class="bold">Save to Targets:</span> Prompts you to save the image to multiple profile targets.</li>
+            <li>
+                <b>Open Containing Folder:</b> Opens the folder containing the image via Windows Explorer</li>
+            <li>
+                <span class="bold">Send To:</span> Send to Clipboard and Email Recipient</li>
+            <li>
+                <b class="bold">Page Setup:</b> Setup file for printing</li>
+            <li>
+                <span class="bold">Print (Print): </span>Prints the current file</li>
+            <li>
+                <span class="bold">Properties (File Properties): </span>Opens the <span class="UI">Properties</span> dialog for the selected item.</li>
+            <li>
+                <span class="bold">Recent Files: </span>Invokes the Recent Files sub-menu which lets you select a recently opened file to open again or manage the list of files that are considered "recent"</li>
+            <li>
+                <span class="bold">Exit (Exit the application): </span>Exits the application</li>
+        </ul>
+    </body>
+</html>

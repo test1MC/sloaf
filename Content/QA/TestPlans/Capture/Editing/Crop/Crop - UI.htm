@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="6244" MadCap:lastWidth="1427" MadCap:fileTags="Status.Not Updated,AuthorFileTagSet.Jay,Product.Capture">
+    <head>
+        <title>
+        </title>
+    </head>
+    <body>
+        <h2>Crop - UI  </h2>
+        <h3>Opening the UI</h3>
+        <p>
+            <span class="MenuItem">!Edit |&#160;Crop Image</span> <b>(Tool Strip)</b></p>
+        <p>
+            <span class="MenuItem">!Edit |&#160;Crop Image |&#160;Crop Image</span> <b>(Ribbon)</b></p>
+        <p>
+            <span class="MenuItem">!Edit |&#160;Crop Image |&#160;Crop Image Object</span> <b>(Ribbon)</b></p>
+        <p>
+            <span class="MenuItem">!Local Toolbar |&#160;Crop Image</span>
+        </p>
+        <h3>UI</h3>
+        <h4>Crop Image (Cropping Full Image)</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture_Crop-RibbonFullImage.png" MadCap:mediastyle="@media print { position: absolute;z-index: 0; }" style="float: left;left: 10px;top: 237px;" />
+        </p>
+        <p>&#160;</p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <h5>Local Toolbar</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture_Crop-ToolbarFullImage.png" />
+        </p>
+        <h5>Toolstrip</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture_Crop-ToolStripFullImage.png" MadCap:mediastyle="@media print { position: absolute;z-index: 0; }" style="float: left;left: 10px;top: 853px;" />
+        </p>
+        <p>&#160;</p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <h5>Context menu for the canvas</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture_Crop-RightClickFullImage.png" class="leftclear" />
+        </p>
+        <div class="SnippetIndentShort">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p>
+            <b>UI&#160;Controls:</b>
+        </p>
+        <ul class="checkbox">
+            <li>
+                <b>Crop Image:</b> Initiates crop mode</li>
+        </ul>
+        <h5>Crop Mode Selection Rectangle</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture-CropMode.png" class="leftPopup" />
+        </p>
+        <p>
+            <b>Test cases:</b>
+        </p>
+        <ul class="checkbox">
+            <li>Region can be moved intact</li>
+            <li>Region can be redrawn</li>
+            <li>Handles allows for region to be resized. </li>
+            <li>Local Toolbar changes to just show crop specific options only. <ul><li>All other controls (Ribbon or Toolstrip) should be disabled.</li></ul></li>
+        </ul>
+        <h5>Local Toolbar Controls</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture_Crop-FullImageControls1.png">
+            </img>
+        </p>
+        <p>
+            <b>UI&#160;Controls:</b>
+        </p>
+        <ul class="checkbox">
+            <li>
+                <b>Cancel:</b> Cancels the crop action</li>
+            <li>
+                <b>Crop:</b> Accepts the crop and returns to the canvas</li>
+            <li>
+                <b>Maximize Crop:</b> Restore Crop rectangle to full size</li>
+            <li>
+                <b>Hand&#160;Mode:</b> Allows user to pan</li>
+            <li>
+                <b>Discard History:</b> Does not retain history of changes to the background size</li>
+        </ul>
+        <h5>Context Menu</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture_Crop-FullImageControls2.png" class="left" />
+        </p>
+        <div class="SnippetIndentShort">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p>
+            <b>UI&#160;Controls:</b>
+        </p>
+        <ul class="checkbox">
+            <li>
+                <b>Crop Image:</b> Accepts the cropped region</li>
+        </ul>
+        <h4>Crop Selection (Cropping Image Object)</h4>
+        <h5>Ribbon</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture_Crop-RibbonImageObject.png" />
+        </p>
+        <h5>Local Toolbar</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture_Crop-ToolbarImageObject.png" />
+        </p>
+        <h5>Context Menu on an image object</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture_Crop-RightClickImageObject.png" class="left" />
+        </p>
+        <div class="SnippetIndentShort">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-ContextMenuOpen.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p>
+            <b>Crop Selection:</b> Enters Crop Mode</p>
+        <h5>Image Object Crop&#160;Mode</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture_Crop-ImageObjectGrid.png" />
+        </p>
+        <ul>
+            <li>Handles can be resized. </li>
+            <li>Region cannot be redrawn</li>
+            <li>Area around the image object being crop should be blurred (Feature request to have it darkened too)</li>
+            <li>Grid inside is not adjustable and should always be 3x3 perfect rectangles</li>
+            <li>Local Toolbar changes to show crop specific options only. <ul><li>All other controls (Ribbon or Toolstrip) should be disabled.</li></ul></li>
+        </ul>
+        <h5>Local Toolbar Controls</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture_Crop-FullImageControls1.png" />
+        </p>
+        <p>
+            <b>UI&#160;Controls:</b>
+        </p>
+        <ul class="checkbox">
+            <li>
+                <b>Cancel:</b> Cancels the crop action</li>
+            <li>
+                <b>Crop:</b> Accepts the crop and returns to the canvas</li>
+            <li>
+                <b>Maximize Crop:</b> Restore Crop rectangle to full size</li>
+            <li>
+                <b>Hand&#160;Mode:</b> Allows user to pan</li>
+            <li>
+                <b>Discard History:</b> Does not retain history of changes to the background size</li>
+        </ul>
+        <h5>Grid and Context Menu in Grid</h5>
+        <p>
+            <b>UI&#160;Controls:</b>
+        </p>
+        <ul class="checkbox">
+            <li>
+                <b>Maximize Crop:</b> Restore Crop rectangle to full size</li>
+            <li>
+                <b>Cancel:</b> Cancels the crop action</li>
+            <li>
+                <b>Crop:</b> Accepts the crop and returns to the canvas</li>
+        </ul>
+        <h4>Selection Rectangle - Quick Crop Method</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture_Crop-SelectionRectContextOption.png" />
+        </p>
+        <ul>
+            <li>Select an area within the image/canvas with the Selection Rectangle. </li>
+            <li>Then right click to open the context menu</li>
+            <li>Choose Crop Area which accepts the cropping region defined by Selection Rectangle.</li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Manually Resizing the Canvas</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture- CanvasHandles.png" />
+        </p>
+        <p>
+            <b>UI&#160;Controls:</b>
+        </p>
+        <ul class="checkbox">
+            <li>
+                <b>Canvas handles:</b> white square knobbies around the canvas edge</li>
+        </ul>
+        <ul>
+            <li>Knobbies should always remain the same size no matter the zoom level</li>
+            <li>Knobbies can be grabbed and moved in any direction<ul><li>Should not go past the opposite handle on other end (Should not be able to invert the canvas)</li></ul></li>
+            <li>Adjusting canvas should act like cropping<ul><li>Therefore it should crop according to Discard History is on or off</li></ul></li>
+            <li>The handles and outline represent the edges of the true canvas<ul><li>Anything outside is just auto-padding</li></ul></li>
+        </ul>
+        <h3>Discard History</h3>
+        <p>Can be toggled on/off:</p>
+        <ul>
+            <li>!Edit |&#160;Discard History (Tool&#160;Strip and Ribbon)</li>
+            <li>Also found in local toolbars for Crop Image and Crop Selection</li>
+        </ul>
+        <h4>Discard History On</h4>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture- DiscardHistoryOn.png" />
+        </p>
+        <ul>
+            <li>With Option toggled on, previous background history is not retained (new behavior in v7).</li>
+            <li>Any areas of the original image should not appear if they were previously cropped out.</li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Discard&#160;History Off</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture- DiscardHistoryOff.png" />
+        </p>
+        <ul>
+            <li>With the option off (default setting), previous background is retained and can be viewed when readjusting crop region or canvas handles.</li>
+            <li>Full image shows each time you re-crop.</li>
+            <li>As you move the cropping region (orange color) a green history outline remains for reference of your last crop.</li>
+        </ul>
+        <h3>Test Cases</h3>
+        <ul>
+            <li>When cropping a full image, only the true base canvas area can be cropped, excluding any auto extended areas.</li>
+            <li>Make sure whatever state of Discard History is respected when reopening file.</li>
+            <li>Make sure whatever state of Discard History is respected when hitting undo.</li>
+            <li>Try switching between Discard History on and off.</li>
+            <li>Make sure behavior for Crop Image, Crop Selection (Image Objects), and manually adjusting canvas are the same</li>
+            <li>Make sure you can create image objects via Magic Wand or Selection Rectangle and be able to crop them just like imported image objects.</li>
+            <li>Make sure that after cropping that any further changes to canvas or placements of objects respond as expected.</li>
+            <li>Cropping history should be remembered in the undo buffer<ul><li>If you undo, then the previous crop should be remembered next time you crop.</li></ul></li>
+        </ul>
+    </body>
+</html>

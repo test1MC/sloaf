@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Shadow</span>
+                <ul>
+                    <li>
+                        <span class="bold">Enable Shadow:</span> Enable/disable shadow effect.</li>
+                    <li>
+                        <span class="bold">Left/Right:</span> enter the number of pixels that the shadow will be extended to the right or left of the object.</li>
+                    <li>
+                        <span class="bold">Up/Down:</span> enter the number of pixels that the shadow will be extended above or below the object</li>
+                    <li>
+                        <span class="bold">Color:</span> Set color of the shadow.<ul><li><span class="bold">More colors:</span> Triggers preset color picker. </li><li><span class="bold">Pick Screen Colors:</span> Triggers color picker on screen</li></ul></li>
+                    <li>
+                        <span class="bold">Opacity:</span> Set opacity for shadow. </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

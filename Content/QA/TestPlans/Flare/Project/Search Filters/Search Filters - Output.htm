@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="3937" MadCap:lastWidth="1380" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Search Filters - Output</h2>
+        <h3>Support in Web Outputs: </h3>
+        <p>Summary: \\fs1\QA\Test Projects\Test Plan Projects\Search Filters\SearchFilters.xlsx</p>
+        <h4>Support in HTML5 Output:</h4>
+        <ul>
+            <li> By default, no Search Filter Sets will be included in the output. In order to include a Search Filter set in the output, you must associate a Search Filter Set with the Target file in the <span class="UI">Target Editor</span>, in the Advanced tab. Only one Search Filter Set can be used per target:<br /><img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/TargetEditor--Set Search Filter.png" alt="" /></li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;" class="checkbox">
+            <li>
+                <span class="bold">Filter File:&#160;</span>Drop-down displays a list of all Search Filter Set files that exist in the project. You can select one to associate with the Target.</li>
+            <li>
+                <span class="bold">Edit:&#160;</span>Opens the selected Search Filter Set file in the <span class="UI">Search Filter Set Editor</span>.           
+                <table><col /><col /><tbody><tr><td><p class="bold">HTML5 Tripane</p></td><td><p class="bold">HTML5 Top Navigation</p></td></tr><tr><td><img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/SearchFilters--HTML5 Output.PNG" alt="" /></td><td><img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/SearchFilters-HTML5TopOutput.PNG" alt="" /></td></tr></tbody></table></li>
+        </ul>
+        <div class="TestCases">
+            <p class="bold" style="font-size: 11pt;">Test cases</p>
+            <ul style="list-style-type: square;">
+                <li>Ordered search filters should display the order specified in the search filter file. &#160;If no order is set, list will be alphabetical.<ul style="list-style-type: square;"><li>Note:&#160;Ordered search filters are not currently supported in HTML5+ output, they will display in alphabetical order (bug 93786)</li><li>Note:&#160;If 'Include server-side' in HTML5 target | Publishing tab is selected, no search filters will show up if you view the output before doing the steps to publish to IIS.</li><li>Note: Search filters are not supported in <i>merged</i> HTML5/HTML5+ projects using TopNav or No&#160;Skin.</li></ul></li>
+                <li>Test that applying the filter limits the search results to only those topics which contain the Concept link.</li>
+                <li>Test that single words, multiple words, numbers, words with international characters, etc. set in the Search Filter Set Editor generate properly to the output</li>
+                <li>Drop-down generates a scroll bar if the filter list is long.</li>
+                <li>Up Arrow and Down Arrow keys navigate through Filter list. With each new filter selection, the results list should refresh.</li>
+                <li>Character keys select and scroll through filters beginning with that character.  (Ex. If you have three filters called Cars, Cats and Cows, keying “C” on the keyboard will cycle through those three in the order in which they appear in the filter list)</li>
+            </ul>
+        </div>
+        <h4>Support in Web Help Outputs: </h4>
+        <p style="font-weight: bold;">Skin Editor setup: </p>
+        <ul>
+            <li>Since the Search Filter UI&#160;is part of the Search Pane in the output, make sure the Search is toggled "on"&#160;in the Basic tab of the <span class="UI">Skin Editor</span>. By default, it will be toggled "on."</li>
+        </ul>
+        <p style="font-weight: bold;">Target Editor setup: </p>
+        <ul>
+            <li> By default, no Search Filter Sets will be included in the output. In order to include a Search Filter set in the output, you must associate a Search Filter Set with the Target file in the <span class="UI">Target Editor</span>, in the Advanced tab. Only one Search Filter Set can be used per target:<br /><img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/TargetEditor--SetSearchFilter.png"></img></li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;" class="checkbox">
+            <li>
+                <span class="bold">Filter File:&#160;</span>Drop-down displays a list of all Search Filter Set files that exist in the project. You can select one to associate with the Target.</li>
+            <li>
+                <span class="bold">Edit:&#160;</span>Opens the selected Search Filter Set file in the <span class="UI">Search Filter Set Editor</span>. <table style="margin-left: 0; margin-right: auto;"><col style="width: 3in;" /><col style="width: 3in;" /><tbody><tr><td style="text-align: center;"><p class="bold">WebHelp, WH+, WH AIR</p></td><td style="text-align: center;"><p class="bold">DotNet Output</p></td></tr><tr><td style="text-align: center;"><img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/SearchFilters--WebOutput.png" /></td><td style="text-align: center;"><img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/SearchFilters--DotNetOutput.png" /></td></tr></tbody></table></li>
+        </ul>
+        <div class="TestCases">
+            <p class="bold" style="font-size: 11pt;">Test cases</p>
+            <ul style="list-style-type: square;">
+                <li>Ordered search filters should display the order specified in the search filter file. &#160;If no order is set, list will be alphabetical.</li>
+                <li>Test that applying the filter limits the search results to only those topics which contain the Concept link.</li>
+                <li>Test that single words, multiple words, numbers, words with international characters, etc. set in the Search Filter Set Editor generate properly to the output</li>
+                <li>Drop-down generates a scroll bar if the filter list is long.</li>
+                <li>Up Arrow and Down Arrow keys navigate through Filter list. With each new filter selection, the results list should refresh.</li>
+                <li>Character keys select and scroll through filters beginning with that character.  (Ex. If you have three filters called Cars, Cats and Cows, keying “C” on the keyboard will cycle through those three in the order in which they appear in the filter list)</li>
+            </ul>
+        </div>
+        <h4>Support in Web Help Mobile Outputs: </h4>
+        <ul>
+            <li>Search Filter Sets are not supported in WebHelp Mobile output.</li>
+        </ul>
+        <h4>Support in Web Help Air Outputs: </h4>
+        <p style="font-weight: bold;">Skin Editor setup: </p>
+        <ul>
+            <li>Since the Search Filter UI&#160;is part of the Search Pane in the output, make sure the Search is toggled "on"&#160;in the Basic tab of the <span class="UI">Skin Editor</span>. By default, it will be toggled "on."</li>
+        </ul>
+        <p style="font-weight: bold;">Target Editor setup: </p>
+        <ul>
+            <li> By default, no Search Filter Sets will be included in the output. In order to include a Search Filter set in the output, you must associate a Search Filter Set with the Target file in the <span class="UI">Target Editor</span>, in the Advanced tab. Only one Search Filter Set can be used per target:<br /><img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/TargetEditor--SetSearchFilter.png"></img><br /></li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;" class="checkbox">
+            <li>
+                <span class="bold">Filter File:&#160;</span>Drop-down displays a list of all Search Filter Set files that exist in the project. You can select one to associate with the Target.</li>
+            <li>
+                <span class="bold">Edit:&#160;</span>Opens the selected Search Filter Set file in the <span class="UI">Search Filter Set Editor</span>. <table style="margin-left: 0; margin-right: auto;"><col style="width: 3in;" /><col style="width: 3in;" /><tbody><tr><td style="text-align: center;"><p class="bold">WebHelp, WH+, WH AIR</p></td><td style="text-align: center;"><p class="bold">DotNet Output</p></td></tr><tr><td style="text-align: center;"><img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/SearchFilters--WebOutput.png" /></td><td style="text-align: center;"><img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/SearchFilters--DotNetOutput.png" /></td></tr></tbody></table></li>
+        </ul>
+        <div class="TestCases">
+            <p class="bold" style="font-size: 11pt;">Test cases</p>
+            <ul style="list-style-type: square;">
+                <li>Ordered search filters should display the order specified in the search filter file. &#160;If no order is set, list will be alphabetical.</li>
+                <li>Test that applying the filter limits the search results to only those topics which contain the Concept link.</li>
+                <li>Test that single words, multiple words, numbers, words with international characters, etc. set in the Search Filter Set Editor generate properly to the output</li>
+                <li>Drop-down generates a scroll bar if the filter list is long.</li>
+                <li>Up Arrow and Down Arrow keys navigate through Filter list. With each new filter selection, the results list should refresh.</li>
+                <li>Character keys select and scroll through filters beginning with that character.  (Ex. If you have three filters called Cars, Cats and Cows, keying “C” on the keyboard will cycle through those three in the order in which they appear in the filter list)</li>
+            </ul>
+        </div>
+        <h4>Support in Web Help Plus Outputs: </h4>
+        <p style="font-weight: bold;">Skin Editor setup: </p>
+        <ul>
+            <li>Since the Search Filter UI&#160;is part of the Search Pane in the output, make sure the Search is toggled "on"&#160;in the Basic tab of the <span class="UI">Skin Editor</span>. By default, it will be toggled "on."</li>
+        </ul>
+        <p style="font-weight: bold;">Target Editor setup: </p>
+        <ul>
+            <li> By default, no Search Filter Sets will be included in the output. In order to include a Search Filter set in the output, you must associate a Search Filter Set with the Target file in the <span class="UI">Target Editor</span>, in the Advanced tab. Only one Search Filter Set can be used per target:<br /><img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/TargetEditor--SetSearchFilter.png"></img></li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;" class="checkbox">
+            <li>
+                <span class="bold">Filter File:&#160;</span>Drop-down displays a list of all Search Filter Set files that exist in the project. You can select one to associate with the Target.</li>
+            <li>
+                <span class="bold">Edit:&#160;</span>Opens the selected Search Filter Set file in the <span class="UI">Search Filter Set Editor</span>. <table style="margin-left: 0; margin-right: auto;"><col style="width: 3in;" /><col style="width: 3in;" /><tbody><tr><td style="text-align: center;"><p class="bold">WebHelp, WH+, WH AIR</p></td><td style="text-align: center;"><p class="bold">DotNet Output</p></td></tr><tr><td style="text-align: center;"><img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/SearchFilters--WebOutput.png" /></td><td style="text-align: center;"><img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/SearchFilters--DotNetOutput.png" /></td></tr></tbody></table></li>
+        </ul>
+        <div class="TestCases">
+            <p class="bold" style="font-size: 11pt;">Test cases</p>
+            <ul style="list-style-type: square;">
+                <li>Ordered search filters should display the order specified in the search filter file. &#160;If no order is set, list will be alphabetical.</li>
+                <li>Test that applying the filter limits the search results to only those topics which contain the Concept link.</li>
+                <li>Test that single words, multiple words, numbers, words with international characters, etc. set in the Search Filter Set Editor generate properly to the output</li>
+                <li>Drop-down generates a scroll bar if the filter list is long.</li>
+                <li>Up Arrow and Down Arrow keys navigate through Filter list. With each new filter selection, the results list should refresh.</li>
+                <li>Character keys select and scroll through filters beginning with that character.  (Ex. If you have three filters called Cars, Cats and Cows, keying “C” on the keyboard will cycle through those three in the order in which they appear in the filter list)</li>
+            </ul>
+        </div>
+        <h4>Support in CHM Outputs: </h4>
+        <ul>
+            <li>Search filter sets are not supported in HTML Help (CHM)&#160;Outputs</li>
+        </ul>
+        <h4>Support in DotNet Outputs: </h4>
+        <p style="font-weight: bold;">Skin Editor setup: </p>
+        <ul>
+            <li>Since the Search Filter UI&#160;is part of the Search Pane in the output, make sure the Search is toggled "on"&#160;in the Basic tab of the <span class="UI">Skin Editor</span>. By default, it will be toggled "on."</li>
+        </ul>
+        <p style="font-weight: bold;">Target Editor setup: </p>
+        <ul>
+            <li> By default, no Search Filter Sets will be included in the output. In order to include a Search Filter set in the output, you must associate a Search Filter Set with the Target file in the <span class="UI">Target Editor</span>, in the Advanced tab. Only one Search Filter Set can be used per target:<br /><img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/TargetEditor--SetSearchFilter.png"></img></li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;" class="checkbox">
+            <li>
+                <span class="bold">Filter File:&#160;</span>Drop-down displays a list of all Search Filter Set files that exist in the project. You can select one to associate with the Target.</li>
+            <li>
+                <span class="bold">Edit:&#160;</span>Opens the selected Search Filter Set file in the <span class="UI">Search Filter Set Editor</span>. <table style="margin-left: 0; margin-right: auto;"><col style="width: 3in;" /><col style="width: 3in;" /><tbody><tr><td style="text-align: center;"><p class="bold">WebHelp, WH+, WH AIR</p></td><td style="text-align: center;"><p class="bold">DotNet Output</p></td></tr><tr><td style="text-align: center;"><img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/SearchFilters--WebOutput.png" /></td><td style="text-align: center;"><img src="../../../../../Resources/Images/TestPlans/Flare/SearchFilters/SearchFilters--DotNetOutput.png" /></td></tr></tbody></table></li>
+        </ul>
+        <div class="TestCases">
+            <p class="bold" style="font-size: 11pt;">Test cases</p>
+            <ul style="list-style-type: square;">
+                <li>Ordered search filters should display the order specified in the search filter file. &#160;If no order is set, list will be alphabetical.</li>
+                <li>Test that applying the filter limits the search results to only those topics which contain the Concept link.</li>
+                <li>Test that single words, multiple words, numbers, words with international characters, etc. set in the Search Filter Set Editor generate properly to the output</li>
+                <li>Drop-down generates a scroll bar if the filter list is long.</li>
+                <li>Up Arrow and Down Arrow keys navigate through Filter list. With each new filter selection, the results list should refresh.</li>
+                <li>Character keys select and scroll through filters beginning with that character.  (Ex. If you have three filters called Cars, Cats and Cows, keying “C” on the keyboard will cycle through those three in the order in which they appear in the filter list)</li>
+            </ul>
+        </div>
+        <h4>Support in Eclipse Output:</h4>
+        <ul>
+            <li>Search filter sets are not supported in Eclipse output.</li>
+        </ul>
+        <h3>Support in Print Outputs: </h3>
+        <h4>Support in PDF Outputs: </h4>
+        <ul>
+            <li>Search Filter Sets are not supported in PDF, XPS, XHTML Book, Word and FrameMaker outputs.</li>
+        </ul>
+        <h4>Support in Word Outputs: <br /></h4>
+        <ul>
+            <li>Search Filter Sets are not supported in PDF, XPS, XHTML Book, Word and FrameMaker outputs.</li>
+        </ul>
+        <h4>Support in Frame Outputs: </h4>
+        <ul>
+            <li>Search Filter Sets are not supported in PDF, XPS, XHTML Book, Word and FrameMaker outputs.</li>
+        </ul>
+        <h4>Support in XPS Outputs: </h4>
+        <ul>
+            <li>Search Filter Sets are not supported in PDF, XPS, XHTML Book, Word and FrameMaker outputs.</li>
+        </ul>
+        <h4>Support in XHTML Book Outputs: </h4>
+        <ul>
+            <li>Search Filter Sets are not supported in PDF, XPS, XHTML Book, Word and FrameMaker outputs.</li>
+        </ul>
+        <h3>Support in DITA Output: </h3>
+        <ul>
+            <li>DITA&#160;does offer an equivalent functionality to Flare Search Filters. When generating DITA&#160;output, confirm that the Search Filter Set file does not affect the generated output.</li>
+        </ul>
+        <h3>Compiler errors:</h3>
+    </body>
+</html>

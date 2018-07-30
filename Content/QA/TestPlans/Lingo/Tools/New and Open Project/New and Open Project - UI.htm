@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="6994" MadCap:lastWidth="1500" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Import/New/Open Project-- UI  </h2>
+        <h3>New Project UI</h3>
+        <p class="bold"> To start the new project wizard:</p>
+        <ul class="checkbox">
+            <li>!File &gt;&#160;New Project</li>
+            <li>!FIle &gt;&#160;New Project &gt;&#160;New Project </li>
+            <li>Shortcut keys Ctrl +&#160;Shift +&#160;N</li>
+            <li>Clicking New Project from the Start page - Under Getting Started. <img src="../../../../../Resources/Images/NewProjectStartPage.png" class="smallThumb" /></li>
+        </ul>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/New &amp; Open Project/UI-FileList.png" class="smallThumb" />
+        </p>
+        <p>&#160;</p>
+        <p class="bold">Other tests:</p>
+        <ul class="checkbox">
+            <li>Test tooltips for both New Project options - they should both match to <img src="../../../../../Resources/Images/NewProjectTooltip.png" class="smallThumb" /></li>
+            <li>Test navigation and using the Enter key on the keyboard to create a new project. </li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Start New Project Wizard-Enter name and folder for the translated project...</h4>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/NewProjectWizard.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] ">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p>
+            <b>Controls:</b>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <b>Name:</b> Default name is NewProject&lt;incremented&#160;#&gt;</li>
+            <li>
+                <b>Folder:</b> Default path is (C:\Users\<i>UrUser</i>\Documents\My Translated Projects). Lingo creates the My Translated Projects folder when you install the program.) All subfolders and files related to the translated project will be placed in this folder as you work on the project.  If you want to have the project files placed in a different folder, use the "Browse" button.</li>
+            <li>
+                <b>Domain:</b> You can type a subject category for your project, or select one from the drop-down. If you enter your own custom category in the Domain field, it will appear in the drop-down the next time you create a new project. Domain metadata appears throughout the project, such as when you select a suggestion in the translation memory.</li>
+            <li>
+                <b>Client:</b>You can type the name of the client you are creating a translation project for. When you enter a client name in the field, it will appear in the Client drop-down the next time you create a new project. Client metadata appears throughout the project, such as when you select a suggestion in the translation memory.</li>
+            <li>
+                <b>Source language:</b> 	Select the original language that is used in the project you are translating.</li>
+            <li>
+                <b>Target language:</b>	Select the language(s) that you want to use for the translation and click the right arrow to move it to the Selected Languages grid. If you need to remove a language from the Selected Languages grid, click the left arrow.</li>
+            <li>
+                <b>Bind to source control</b>:&#160;This check-box will show the bind project to source control dialog when clicking next from the current dialog. </li>
+            <li>
+                <b>Back:</b> 	This button is disabled in this window.</li>
+            <li>
+                <b>Next:</b> 	Opens the next page of the wizard.</li>
+            <li>
+                <b>Finish:</b>This button is disabled in this window.</li>
+            <li>
+                <b>Cancel:</b>	Closes the wizard.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <b>Test:</b>
+        </p>
+        <ul class="checkbox">
+            <li>Project name field should be highlighted by default. </li>
+            <li>Make sure that ‘Generate’ generates project name with the format ProjectName{n+}</li>
+        </ul>
+        <ul class="checkbox">
+            <li>Clicking ’Browse’ invokes the Browse For Folder dialog window.</li>
+            <li>Min-Max for all the fields</li>
+            <li>Add a Domain and a Client for the project and make sure that the appear on TM segments' Meta data (Local and Server)</li>
+            <li>Left pointing arrow should be disabled when no language is added to the Selected langauges column</li>
+            <li>Sort Target languages and Selected languages should work</li>
+            <li>Pressing a keyboard letter should move focus to the language in the selected drop menu /column (Source language, Target languages and Selected Languages)</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4>
+            <a name="Start">
+            </a>Start New Project Wizard-Select files or project to translate...</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/New &amp; Open Project/UI--NewProjectSelectFiles--Dialog.png" class="properties" style="width: 252px;height: 191px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] ">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p>
+            <b>Controls:</b>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <b>Add&#160;Files:</b>Will open the ‘Select file(s) or project to translate’ dialog window.<p class="note"><b>Notes:</b><br />- Test adding multiple files using the Ctrl and Shift keys within the same dialog<br />- Add a file &gt;&#160;Close the dialog &gt; add another file again<br />- Adding MadCap project type files should add the project to the Source language files list and disable the Add File and Add Folder buttons. <br />- Verify that the file-type filter drop-down is filtering files correctly and it's listing all supported file-types<img src="../../../../../Resources/Images/TestPlans/Lingo/New &amp; Open Project/FileTypes.png" class="smallThumb" /><br />- Adding a Flare project should show an additional dialog prior to the Select TM dialog. This is covered in the <a href="../../Projects/Flare Projects/Flare Projects - Import.htm">import flare</a> topic. <br />- Adding a Ditamap should show an additional dialog prior to the Select TM dialog. This is covered in the <a href="../../Projects/Dita Projects/Dita Projects - Import.htm">import DITA</a> topic. <br /></p></li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>
+                <b>Add Folder:</b>Will open the ‘Add Folder’ dialog window. <img src="../../../../../Resources/Images/TestPlans/Lingo/New &amp; Open Project/UI--AddFolderDialog.png" class="smallThumb" /><p class="note"> <b>Notes:</b><br />- You should not be able to select a folder that only contains a Flare project, doing so would return an error message and not add that folder for translation <img src="../../../../../Resources/Images/TestPlans/Lingo/New &amp; Open Project/UI--AddFolderFlareProject--Dialog.png" class="smallThumb" /><br />- It's possible to add a folder that contains a flare project with other files (e.g. a folder containing 2 flare projects). Translatable files should be parsed for translation as if you're adding them separately. <br />- Adding a folder that includes word ,excel ,text ,string or xml files Should list the filter's drop-down next to the folder entry <img src="../../../../../Resources/Images/TestPlans/Lingo/New &amp; Open Project/UI--AddFolderFilters.png" class="smallThumb" /><br />- Clicking customize filters in the drop-menu above would invoke the File-Types dialog <img src="../../../../../Resources/Images/TestPlans/Lingo/New &amp; Open Project/UI--FileTypesDialog.png" class="smallThumb" /><br />- File types dialog should list all files, that filters can be applied to or not. Those where filters are applied to will have an active drop-menu, others will have a dead drop menu. <br />-&#160;In File types dialog, it can be specified to what to be translated and what not by checking the Check-box under the Translate column next to a certain file. <img src="../../../../../Resources/Images/TestPlans/Lingo/New &amp; Open Project/UI--FileTypesDialogTranslateColumn.png" class="smallThumb" /><br /><br /></p></li>
+            <ul style="list-style-type: circle;">
+                <li>
+                    <b>Filter: </b>This drop-down should enable you to create a new file filter or select an existing on for Word, Excel, XML, Text and string <img src="../../../../../Resources/Images/TestPlans/Lingo/FileFilters/NewProjectWizardFilters1.png" class="smallThumb" /><br /><p class="note"><b>Notes:</b><br />- For other file types, there should be no drop down for the filters column. <br />- Adding a folder should show the correct filter drop-down for the associated file listed (Text filter for txt and string file types, Excel filter for excel files, etc.</p></li>
+            </ul>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li style="font-weight: normal;">
+                <b>Copy all files in the selected folder:&#160;</b>This option should only be active with Add Folder work-flow. When checked, files are not translated will be exported when exporting the folder. </li>
+            <li>
+                <b>Add From Source Control:</b>
+                <a name="Add">
+                </a>Shows the Select source control provider dialog to add files /projects to translate from Source control. This will be tested in the Source Control topic.<br /><p class="note"><b>Note:</b> there should be no files /project added locally to be able to translate files imported from Source control. Having a local file added then click Add from Source Control should show the following error:<img src="../../../../../Resources/Images/TestPlans/Lingo/New &amp; Open Project/AddFilesFromSCError.png" class="smallThumb" /></p><br /></li>
+            <li>
+                <b>Remove:</b>	Will remove the selected file(s) or project - Should be grayed out when no file(s) /project is added </li>
+            <li>
+                <b>Back:</b> 	Opens the previous page of the wizard.</li>
+            <li>
+                <b>Next:</b> 	Opens the next page of the wizard.</li>
+            <li>
+                <b>Finish:</b> 	This button is disabled in this window.</li>
+            <li>
+                <b>Cancel:</b> 	Closes the wizard.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <b>Tests</b>
+        </p>
+        <ul style="list-style-type: square;" class="checkbox">
+            <li>Clicking Back then Next should Remember the added files with their filter settings. </li>
+            <li>Clicking Next then Back should Remember the added files with their filter settings. </li>
+            <li>Remove added flare project - Verify that Add File and Add Folder buttons are active again </li>
+            <li>Remove File(s) /project added Locally and Add file(s) /project from Source control &gt;&#160;Finish creating the project - Verify that file(s) /project from source control are added.</li>
+            <li>Add File(s) /project from Source Control &gt;&#160;Click back to return to the Select files or project dialog &gt;&#160;Add local file(s) /project &gt;&#160;Finish creating the project - Verify that local file(s) /project are added.</li>
+        </ul>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4>Start New Project Wizard-Select Translation Memories to use for this project...</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/New &amp; Open Project/UI--NewProjectSelectTM--Dialog.png" class="properties" style="width: 252px;height: 191px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] ">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p>
+            <b>Controls:</b>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <b>Add:</b>Click Add and from the drop-down select one of the following:<ul style="list-style-type: circle;"><li><b>Local:</b>Test this option if with local TM(s) default path (C:\Users\<i>URUSER</i>\Documents\Lingo Translation Memories). Test adding TM(s) from different directory.<img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--ExistingLocalTM.png" class="smallThumb" /><br /><p class="note">- After a TM file is (added) opened, it gets listed in the dialog with the Use check-box checked and Access set to Read &amp;&#160;write &lt;- Test adding a TM that already exists in the dialog <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--AlreadyExists.png" class="smallThumb" /><br />- Test adding TMs from a network drive.<br />- Run different dialog tests (from the snippet above)</p></li><li><b>Server:</b>Test this option server TM(s) on local and remote SQL&#160;servers.<img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--ExistingServerTM.png" class="smallThumb" /><br /><p class="note">- After a TM is added, it gets listed in the dialog with the Use check-box checked and Access set to Read &amp;&#160;write &lt;- Test adding a TM that already exists in the dialog <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--AlreadyExistsServer.png" class="smallThumb" /><br />- Test adding TMs from a remote SQL&#160;server <br />- Run different dialog tests (from the snippet above)</p><br /><br /></li></ul></li>
+            <li>
+                <b>Create:</b> Click Create and from the drop-down select one of the following:<ul style="list-style-type: circle;"><li><b>Local:</b>Test this option to create a local TM. Default location should be (C:\Users\<i>URUSER</i>\Documents\Lingo Translation Memories)<img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--NewLocalTM.png" class="smallThumb" /><br /><p class="note">- After a TM file is created, it should be listed in the dialog and a TM&#160;should be created in the chosen location with the Use check-box checked and Access set to Read &amp;&#160;write  &lt;- Test adding a TM that already exists in the dialog <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--AlreadyExistsServer.png" class="smallThumb" /><br />- Test creating TMs with location on the network drive<br />- Run different dialog tests (from the snippet above)</p></li><li><b>Server:</b>Test this option to create a server TM on your local SQL instance and a remote SQL&#160;instance <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--NewServerTM.png" class="smallThumb" /><br /><p class="note">- After a server TM is added, it gets listed in the dialog with the Use check-box checked and Access set to Read &amp;&#160;write &lt;- Test adding a TM that already exists in the dialog <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--AlreadyExistsServer.png" class="smallThumb" /><br />- Test creating TMs on a remote SQL server<br />- Run different dialog tests (from the snippet above)<br /></p></li></ul></li>
+            <li>
+                <b>Remove:</b>Allows you to remove a particular TM from the grid with the following warning <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--RemoveTM.png" class="smallThumb" /> Cancel should do nothing, OK should remove the TM. <br /><p class="note"><b>Note:</b><br />- Removing a TM&#160;that is connected to the project (Use check-box is checked) should throw a warning. <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--RemoveUsedTMWarning.png" class="smallThumb" /> Deselect the Use check-box, go back to the previous dialog then Next would remove the TM.<br /></p></li>
+            <li>
+                <b>Import:</b>Allows you to import a TMX file into a TM database that's listed on the grid <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--ImportTMX.png" class="smallThumb" /><br /><p class="note">- Test different dialog options using the Snippet above<br />- Browse and select a TMX file and import it into a TM - Verify that the TMX file is imported after creating the project. </p></li>
+            <li>
+                <b>Select Machine Translation Provider:</b> Clicking the drop-down would show the available MT providers <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--MTProviders.png" class="smallThumb" /> Clicking to select Google and /or Microsoft should show provider settings dialog to enter credential. If credentials were previously, Provider settings dialog should not show up.<ul style="list-style-type: circle;"><li><p><b>Google:</b> Google provider settings.<img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--GoogleProviderSettings.png" class="smallThumb" /> Test this dialog test cases above.</p></li><li><p><b>Microsoft:</b> Enter your Client ID and Client secret in the fields.<img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--MicrosoftProviderSettings.png" class="smallThumb" /> Test this dialog test cases above.</p></li></ul></li>
+            <li>
+                <b>Pre-translate options: </b> Drop down control <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--Pretranslate.png" class="smallThumb" /><ul style="list-style-type: circle;"><li><p><b>No pre-translation:</b> Do not pre-translate the project - Finish creating the project and verify that nothing is translated with the connected TM</p></li><li><b>Pre-translate with TM:</b> Apply matches from the translation memory to segments in the project. Finish creating the project and verify  that suggestions are applied from the connected TM</li><li><p><b>Pre-translate with TM then MT:</b> Apply matches from the translation memory to segments in the project, then apply machine translation to any segments that are not translated. Finish creating the project and verify  that suggestions are applied from the connected TM and have segments in the translated project that don't have matches </p></li></ul></li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>
+                <b>Back:</b> 	Opens the previous dialog of the wizard.</li>
+            <li>
+                <b>Next:</b> 	Opens the next dialog of the wizard.</li>
+            <li>
+                <b>Finish:</b> 	Creates the project and loads the files into Lingo.</li>
+            <li>
+                <b>Cancel:</b> 	Closes the wizard.</li>
+        </ul>
+        <p class="indent">
+            <b>Grid Controls:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>
+                <b>Rank:</b> This drop menu is enabled when enabling a TM.</li>
+            <li>
+                <b>Use:</b> Check-box control if checked the associated TM&#160;will be connected to the created project </li>
+            <li>
+                <b>Translation Memory: </b>Shows the TM name </li>
+            <li>
+                <b>Location:</b> Shows the path where the TM&#160;is stored or the SQL&#160;server where the server TM is located</li>
+            <li>
+                <b>Access:</b> Shows the Added TM access rights - This drop menu is enabled when enabling a TM. Available values are Read &amp;&#160;Write and Read Only. </li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <b>Test cases:</b>
+        </p>
+        <p>- Columns are sortable</p>
+        <p>- Connect to different TMs (local and server) finish creating the project and verify that they're connected to the project and that accepted segments are uploaded to all</p>
+        <p>- Pre-Translate vs No Pre-Translate</p>
+        <p>- Choosing different MT&#160;provider - Verify that it's being used for translation after the project is created by opening a topic and inspecting the suggestion pane</p>
+        <p>- Testing selecting MT provider(s) when credentials are saved and when they're not saved - Provider settings dialog should not appear or appear respectively.</p>
+        <p>- Test the TMs rank and Access rights after the project creation </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <h4>Start New Project Wizard-Select Termbases to use for this project...</h4>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--SelectTB.png" class="properties" style="width: 252px;height: 191px;">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] ">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p>
+            <b>Controls:</b>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <b>Add:</b>Click Add and from the drop-down select one of the following:<ul style="list-style-type: circle;"><li><b>Local:</b>Test this option if with local TB(s) default path (C:\Users\<i>URUSER</i>\Documents\Lingo Termbases). Test adding TB(s) from different directory.<img src="../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--AddExistingLocal.png" class="smallThumb" /><br /><p class="note">- After a TB file is (added) opened, it gets listed in the dialog with the Use check-box checked and Access set to Read &amp;&#160;write &lt;- Test adding a TB that already exists in the dialog <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--AlreadyExists.png" class="smallThumb" /><br />- Test adding TBs from a network drive.<br />- Run different dialog tests (from the snippet above)</p></li><li><b>Server:</b>Test this option server TB(s) on local and remote SQL&#160;servers.<img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--ExistingServerTM.png" class="smallThumb" /><br /><p class="note">- After a TB is added, it gets listed in the dialog with the Use check-box checked and Access set to Read &amp;&#160;write &lt;- Test adding a TB that already exists in the dialog <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--AlreadyExistsServer.png" class="smallThumb" /> (Currently broken)<br />- Test adding TBs from a remote SQL&#160;server <br />- Run different dialog tests (from the snippet above)</p><br /><br /></li></ul></li>
+            <li>
+                <b>Create:</b> Click Create and from the drop-down select one of the following:<ul style="list-style-type: circle;"><li><b>Local:</b>Test this option to create a local TB. Default location should be (C:\Users\<i>URUSER</i>\Documents\Lingo Termbases)<img src="../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--CreateLocalTB.png" class="smallThumb" /><br /><p class="note">- After a TB file is created, it should be listed in the dialog and a TB&#160;should be created in the chosen location with the Use check-box checked and Access set to Read &amp;&#160;write  &lt;- Test adding a TB that already exists in the dialog <img src="../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--CreateExistingLocal.png" class="smallThumb" /><br />- Test creating TBs with location on the network drive<br />- Run different dialog tests (from the snippet above)</p></li><li><b>Server:</b>Test this option to create a server TB on your local SQL instance and a remote SQL&#160;instance <img src="../../../../../Resources/Images/TestPlans/Lingo/TM/UI--NewServerTM.png" class="smallThumb" /><br /><p class="note">- After a server TB is added, it gets listed in the dialog with the Use check-box checked and Access set to Read &amp;&#160;write &lt;- Test adding a TB that already exists in the dialog <img src="../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--CreateExistingٍServer.png" class="smallThumb" /><br />- Test creating TBs on a remote SQL server<br />- Run different dialog tests (from the snippet above)<br /></p></li></ul></li>
+            <li>
+                <b>Remove:</b>Allows you to remove a particular TB from the grid with the following warning <img src="../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--RemoveTBWarning.png" class="smallThumb" /> Cancel should do nothing, OK should remove the TB. <br /></li>
+            <li>
+                <b>Import:</b>Allows you to import a TBX, XLS,&#160;XLSX or CSV file into a TB database that's listed on the grid <img src="../../../../../Resources/Images/TestPlans/Lingo/TermBase/UI--ImportTermbase.png" class="smallThumb" /><br /><p class="note">- Test different dialog options using the Snippet above<br />- Browse and select a TBX file and import it into a TB - Verify that the TBX file is imported after creating the project. <br />- Create an Excel file to import into a Termbase, save it as XLS&#160;and CSV and import each into a Termbase &gt;&#160;Verify that they import with no errors and TBs should be identical. </p></li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>
+                <b>Back:</b> 	Opens the previous page of the wizard.</li>
+            <li>
+                <b>Next:</b> This button should be grayed out</li>
+            <li>
+                <b>Finish:</b> 	Finish creating the project and opens it </li>
+            <li>
+                <b>Cancel:</b> 	Closes the wizard.</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="indent">
+            <b>Grid Controls:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>
+                <b>Rank:</b> This drop menu is enabled when enabling a TB.</li>
+            <li>
+                <b>Use:</b> Check-box control if checked the associated TB&#160;will be connected to the created project </li>
+            <li>
+                <b>Translation Memory: </b>Shows the TB name </li>
+            <li>
+                <b>Location:</b> Shows the path where the TB&#160;is stored or the SQL&#160;server where the server TB is located</li>
+            <li>
+                <b>Access:</b> Shows the Added TM access rights - This drop menu is enabled when enabling a TB. Available values are Read &amp;&#160;Write and Read Only. </li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <b>Test cases:</b>
+        </p>
+        <ul class="checkbox">
+            <li>Columns are sortable</li>
+            <li>Connect to different TBs (local and server) finish creating the project and verify that they're connected to the project and that accepted segments are uploaded to all</li>
+            <li>Test the TBs rank and Access rights after the project creation </li>
+        </ul>
+        <p>&#160;</p>
+        <h3>Open Project</h3>
+        <p>&#160;</p>
+        <p>
+            <b>Opening the Open Project Dialog:</b>
+        </p>
+        <ul class="checkbox">
+            <li>!File &gt;&#160;Open </li>
+            <li>Press <b>Ctrl + o</b> keyboard shortcut</li>
+            <li>Start page &gt; Open under Getting Started </li>
+            <li>Double-clicking the *.liprj, or *.liprjzip files in Windows Explorer</li>
+        </ul>
+        <p class="indent">These will invoke the standard Windows Open Files Dialog with the filter set for *.liprj. File filter dropdown should list both *.liprj and *.liprjzip <img src="../../../../../Resources/Images/TestPlans/Lingo/New &amp; Open Project/UI--OpenProject.png" class="smallThumb" /></p>
+        <p>&#160;</p>
+        <p>
+            <b>Test Cases:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>Make sure all the UIs and the texts are correctly written</li>
+            <li>Try opening the same project in two different instances of Lingo (through the Open Project UI and Double-clicking the liprj file) - Shouldn't let you open the project on the 2nd instance. <img src="../../../../../Resources/Images/TestPlans/Lingo/New &amp; Open Project/UI--ErrorOpeningProjectTwice.png" class="smallThumb" /></li>
+            <li>Open older versions of Lingo Projects - It was agreed that projects supported are from Lingo 7 to 10. The database design was changed and opening projects that were created in V7 should prompt you to install SQL&#160;compact and also will update the project database. Projects older then Lingo 7 should be opened in Lingo 7 1st then updated to 10. </li>
+            <li>Test opening projects<ul style="list-style-type: square;"><li>Through “Open” UI</li><li>Local</li><li>UNC</li><li>Mapped Network Drive</li><li>Double-clicking<ul style="list-style-type: square;"><li>Local</li><li>UNC</li><li>Mapped Network Drive</li></ul></li></ul></li>
+            <li>Test opening read-only projects<ul style="list-style-type: square;"><li>Through “Open” UI</li><li>Local</li><li>UNC</li><li>Mapped Network Drive</li><li>Double-clicking<ul style="list-style-type: square;"><li>Local</li><li>UNC</li><li>Mapped Network Drive</li></ul></li></ul></li>
+            <li>Test opening a project with characters (`,~, !, @, #, $, %, ^, &amp;, *, (, ), _, -, +, =, €) etc in its path and project name.</li>
+            <li>Test opening a project with International Characters in its path and file name (French, German and Japanese).</li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="620" MadCap:lastWidth="938">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Skin:&#160;</span>Select a skin to be used to display the output for the target.<ul style="list-style-type: circle;"><li><img src="../../../Images/TestPlans/Buttons/Button---Edit.png" alt="" title="" /> :&#160;Opens the currently selected Skin in the <span class="UI">Skin Editor</span>.</li></ul></li>
+            <li>
+                <span class="bold">Menu:</span>Select a default Menu skin to be used for menu proxies which do not have a Menu skin linked.<ul style="list-style-type: circle;"><li><img src="../../../Images/TestPlans/Buttons/Button---Edit.png" alt="" title="" /> :&#160;Opens the currently selected Skin in the <span class="UI">Menu Skin Editor</span>.</li></ul></li>
+            <li>
+                <span class="bold">Topic Toolbar:</span> Select a default Topic Toolbar skin to be used for Topic Toolbar proxies which do not have a Topic Toolbar skin linked.<ul style="list-style-type: circle;"><li><img src="../../../Images/TestPlans/Buttons/Button---Edit.png" alt="" title="" /> :&#160;Opens the currently selected Skin in the <span class="UI">Topic Toolbar Skin Editor</span>.</li></ul></li>
+            <li>
+                <span class="bold">Search Bar:</span> Select a default Search Bar skin to be used for Search Bar proxies which do not have a Search Barskin linked.<ul style="list-style-type: circle;"><li><img src="../../../Images/TestPlans/Buttons/Button---Edit.png" alt="" title="" /> :&#160;Opens the currently selected Skin in the <span class="UI">Search Bar Skin Editor</span>.</li></ul></li>
+            <li>
+                <span class="bold">Search Results:</span> Select a default Search Results skin to be used for Search Results proxies which do not have a Search Results skin linked.<ul style="list-style-type: circle;"><li><img src="../../../Images/TestPlans/Buttons/Button---Edit.png" alt="" title="" /> :&#160;Opens the currently selected Skin in the <span class="UI">Search Results Skin Editor</span>.</li></ul></li>
+            <li>
+                <span class="bold">Tablet Breakpoint :</span> The width at which the output switches from Web to Tablet medium and vice versa</li>
+            <li>
+                <span class="bold">Mobile Breakpoint :</span> The width at which the output switches from Tablet to Mobile medium and vice versa</li>
+            <li>
+                <span class="bold">Use device width media queries</span> Changes the responsive nature of the output to be based on the width of <strong class="bold">device</strong> being used to view the output (browser, tablet, or mobile phone), rather than simply the width of the browser window.</li>
+        </ul>
+        <p>&#160;</p>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul class="checkbox">
+                <li>Boundary test all file names (Numbers, Text, Various characters and symbols including international) for every skin type - Tripane, Top Navigation and Skin Component files.  Test creating file types with various characters and confirm they appear correctly in the Target Editor and builds correctly in the output</li>
+                <li>Edit buttons should be disabled when the related skin selection is set to <span class="UI">(default)</span> or<span class="UI"> (none)</span></li>
+                <li>Options for component default skins should only be visible if the component is supported for the skin type selected in the General section<ul><li>When a Tripane skin is selected, only Menu and Topic Toolbar skin component options should be visible</li><li>When a Top Navigation Skin or <span class="UI">(none)</span> is selected, all skin component options should be visible</li><li>When the general skin selection is at<span class="UI"> (default)</span>, the skin component options visible should be the ones supported for the skin that would be selected by default (first HTML5 skin alphabetically in the Skins folder)</li></ul></li>
+                <li>
+                    <p>Changes to the Tablet / Mobile Breakpoint in the Target editor should take precedence over tablet / mobile breakpoints in the Tripane skin. This is only true if the values in the target have ever been modified. If they are default (not written to the target file), then the Tripane skin settings will take effect</p>
+                </li>
+            </ul>
+            <p>&#160;</p>
+        </div>
+    </body>
+</html>

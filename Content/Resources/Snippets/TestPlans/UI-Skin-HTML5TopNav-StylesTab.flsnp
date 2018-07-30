@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <b>Global</b>
+                <ul>
+                    <li>Main Page</li>
+                </ul>
+            </li>
+            <li>
+                <b>Header</b>
+                <ul>
+                    <li>Header</li>
+                    <li>Logo</li>
+                    <li>Search Bar</li>
+                    <li>Search Input</li>
+                    <li>Search&#160;Filter</li>
+                    <li>Search Filter (selected)</li>
+                    <li>Search Filter Drop-down</li>
+                    <li>Search Filter Drop-down (hover)</li>
+                    <li>Search Submit Button</li>
+                </ul>
+            </li>
+            <li>
+                <b>Menu</b>
+                <ul>
+                    <li>Menu</li>
+                    <li>Menu Item</li>
+                    <li>Menu Item (hover)</li>
+                </ul>
+            </li>
+            <li>
+                <b>Search&#160;Results</b>
+                <ul>
+                    <li>Search Heading</li>
+                    <li>Search&#160;Results</li>
+                    <li>Search&#160;Result Abstract</li>
+                    <li>Search&#160;Result Link</li>
+                    <li>Search&#160;Result Link (active)</li>
+                    <li>Search&#160;Result Link (focus)</li>
+                    <li>Search&#160;Result Link (hover)</li>
+                    <li>Search&#160;Result Link (visited)</li>
+                    <li>Search&#160;Result Path</li>
+                    <li>Search Pagination</li>
+                    <li>Search Pagination Item</li>
+                    <li>Search Pagination Item (selected)</li>
+                    <li>Search Pagination Item (hover)</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

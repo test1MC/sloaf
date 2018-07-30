@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Typing Box</span>
+                <ul>
+                    <li>
+                        <span class="bold">Start Text:</span> text to display within the typing box as soon as the typing box appears in the movie.</li>
+                    <li>
+                        <span class="bold">Typed Text:</span> enter text here if you want the letters to appear as if they are being "typed" into the typing box.</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

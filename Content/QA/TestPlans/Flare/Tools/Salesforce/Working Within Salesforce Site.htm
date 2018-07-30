@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Working Within Salesforce Site</h1>
+        <p>(Information copied from Google Doc by Ramy)</p>
+        <p>ALL STEPS BELOW ARE FOR CLASSIC VIEW. SWITCH TO THAT!</p>
+        <p>(Click user name in upper right)</p>
+        <p>Knowledge: Centralized team’s knowledge to be leveraged by users </p>
+        <ul>
+            <li>
+                <p>Create different articles edit them create different versions archive and publish. </p>
+            </li>
+            <li>
+                <p>Attach articles to open or closed cases</p>
+            </li>
+            <li>
+                <p>Related list: shows the articles related to a certain case including a version number and if a version number becomes outdated because it’s been used, it’ll be indicated using this list. </p>
+            </li>
+        </ul>
+        <p class="bold">Admin setup:</p>
+        <ul>
+            <li>
+                <p>Different Article types: about the look and feel. Define the structure of how the article will look. (FAQ article, How To article)</p>
+            </li>
+            <li>
+                <p>Different Data categories: when articles are created we can put them in different data categories (more than one can be used). Used to classify and search for articles. Category groups &gt; categories&gt; subcategories within them. Also, with roles, certain users can be given rights to view certain categories. </p>
+            </li>
+        </ul>
+        <p class="bold">Steps to create a knowledge:</p>
+        <ul>
+            <li>
+                <p>Enable the knowledge option for user from: </p>
+            </li>
+            <li>
+                <p>Setup (top section) </p>
+            </li>
+            <li>
+                <p>Administer </p>
+            </li>
+            <li>
+                <p>Manage Users</p>
+            </li>
+            <li>
+                <p>Users </p>
+            </li>
+            <li>
+                <p>Edit User </p>
+            </li>
+            <li>
+                <p>Enable (Knowledge user) option.</p>
+            </li>
+            <li>
+                <p>Create article type: Build</p>
+            </li>
+            <li>
+                <p>Knowledge</p>
+            </li>
+            <li>
+                <p>Article Types </p>
+            </li>
+            <li>
+                <p>New article Type </p>
+            </li>
+            <li>
+                <p>Add in a new article field: </p>
+            </li>
+            <li>
+                <p>From the Knowledge Article Type, click the article type label </p>
+            </li>
+            <li>
+                <p>Click New in the Fields section </p>
+            </li>
+            <li>
+                <p>Text Area (rich) this type Allows users to enter formatted text, add images and links. Up to 131,072 characters on separate lines </p>
+            </li>
+            <li>
+                <p>Enter Field Label and Name (similar) &gt;Next&gt;Next &gt;Save</p>
+            </li>
+            <li>
+                <p>To enable the created Rich text field, add a page layout section:</p>
+            </li>
+            <li>
+                <p>Create a new page layout and see that the created rich text field is listed under the information section</p>
+            </li>
+            <li>
+                <p>Drag the section icon below the information section and call it my section</p>
+            </li>
+            <li>
+                <p>Drag the rich text field from the information section to “my section” &gt; Save</p>
+            </li>
+            <li>
+                <p>Knowledge settings: </p>
+            </li>
+            <li>
+                <p>Setup &gt; Customize&gt; Knowledge &gt; Settings &gt; Edit</p>
+            </li>
+            <li>
+                <p>Allow users to create and edit articles from the articles tab</p>
+            </li>
+            <li>
+                <p>Allow users to add external multimedia content to HTML in the standard editor</p>
+            </li>
+        </ul>
+        <p>
+            <span class="bold">Channels: </span>Channels are what is displayed to an audience. Articles go into these channels. </p>
+        <ul>
+            <li>
+                <p>Internal App (default)</p>
+            </li>
+            <li>
+                <p>Partner</p>
+            </li>
+            <li>
+                <p>Customer</p>
+            </li>
+            <li>
+                <p>Public Knowledge Base</p>
+            </li>
+        </ul>
+        <br />
+        <p class="bold">Articles in Salesforce Knowledge require a template for each channel.</p>
+        <ul>
+            <li>
+                <p>Tab template - displays each section as a tab (like browser tabs). Within each tab, fields are listed one after another. Tab is used by default when creating Articles.</p>
+            </li>
+            <li>
+                <p>Table of Contents template - displays sections on one page with &#160;hyperlinks to each section (like TOC as we know it). </p>
+            </li>
+            <li>
+                <p>Custom template - These use selected Visualforce pages to display sections. </p>
+            </li>
+        </ul>
+        <br />
+        <p>Steps to set templates for each channel: Go to Knowledge Article Types &gt; (select your article – to bring up details) &gt; Channel Displays Edit section &gt; select template per channel.</p>
+        <br />
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Salesforce/Channels.png" />
+        </p>
+        <br />
+        <p>
+            <span class="bold">Categories:</span> Salesforce Knowledge uses data categories to classify articles and make them easier to find (e.g. to classify articles by sales regions and products, create two category groups: Sales Regions and Products). These are user created. </p>
+        <p class="bold">Profile permissions needed for user to be able to publish to Salesforce. </p>
+        <p>Users are assigned to a profile on SF, which is like a user group in windows. You can set different access rights on that profile which will limit the permissions of users belonging to it. Besides the Knowledge user check-box we should have for knowledge users, theses are the profile permissions needed to be able to publish to SF:</p>
+        <ul>
+            <li>
+                <p>Under Administrative permissions: </p>
+            </li>
+            <ul>
+                <li>
+                    <p>API Enabled</p>
+                </li>
+                <li>
+                    <p>View Data Categories</p>
+                </li>
+                <li>
+                    <p>Modify All Data: needed for the ability of browsing data categories only from the destination file editor. </p>
+                </li>
+            </ul>
+            <li>
+                <p>Under General User permissions: </p>
+            </li>
+            <ul>
+                <li>
+                    <p>Manage Articles</p>
+                </li>
+                <li>
+                    <p>Allow view knowledge</p>
+                </li>
+            </ul>
+            <li>
+                <p>Under Article Type Permissions: every article type will be listed with its own access rights</p>
+            </li>
+            <ul>
+                <li>
+                    <p>Read</p>
+                </li>
+                <li>
+                    <p>Create</p>
+                </li>
+                <li>
+                    <p>Edit</p>
+                </li>
+                <li>
+                    <p>Delete (Needed when remove stale files and/or publish articles options are checked)</p>
+                </li>
+            </ul>
+        </ul>
+    </body>
+</html>

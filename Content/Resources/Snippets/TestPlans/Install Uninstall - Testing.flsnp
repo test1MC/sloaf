@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="5289" MadCap:lastWidth="1421" MadCap:ignoredWords="Silverlight">
+    <head>
+    </head>
+    <body>
+        <h2>Install/Uninstall - Testing Checklist</h2>
+        <h3>Installation</h3>
+        <ul style="list-style-type: square;">
+            <li>
+                <p>Compare registry before and after install</p>
+            </li>
+            <li>
+                <p>Compare installed file system with previous version - Any new or removed files should be accounted for</p>
+            </li>
+            <li>Microsoft .NET&#160;4.0 must be installed -Warning prompt during install if it is not found; User is directed to the Microsoft web site to download.<ul style="list-style-type: square;"><li>Verify this test on machines that do NOT&#160;have any other version of .NET</li></ul></li>
+            <span class="bold">Install Directory</span>
+            <ul style="list-style-type: square;">
+                <li>Default location<ul style="list-style-type: square;"><li>32 bit : C:\Program Files (x86)\MadCap Software\xx</li><li>64 bit&#160;: C:\Program Files\MadCap Software\xx</li></ul></li>
+                <li>Custom location (install and uninstall)<ul style="list-style-type: square;"><li>On computer<ul style="list-style-type: square;"><li>C:\ drive</li><li>Other drives</li></ul></li><li>On network drive?</li></ul></li>
+            </ul>
+            <li>Check for required disk space, Warn / error if not enough space<ul style="list-style-type: square;"><li>Verify after install, correct disk space was used</li></ul></li>
+            <li>Install Interruptions:<ul style="list-style-type: square;"><li><p>Cancel Button: Should roll back to good install</p></li><li><p>Force Stop: Should not get in a bad state - you should be able to uninstall or repair by running the .exe again.</p></li></ul></li>
+            <li>Installing with another version of product open<ul style="list-style-type: square;"><li>If an older major build version is running - you are allowed to install</li><li>If an older minor build version is running- you will be warned/error</li></ul></li>
+            <span class="bold">Security</span>
+            <ul style="list-style-type: square;">
+                <li>
+                    <li>Install with Firewall and UAC set to max</li>
+                    <li>
+                        <p>Install to a read-only folder</p>
+                        <p>Steps: Make a new folder on your C drive &gt; r-click  Properties &gt; Security tab &gt; Edit... &gt; Click on the Administrator (you) and click to Deny full control &gt; Ok.  Now point to this folder during the installation, it will say 'You have been denied permission to access this folder.'</p>
+                    </li>
+                    <li>Install to a folder you don’t have access to</li>
+                </li>
+            </ul>
+            <p>
+                <span class="bold">Side-by-side</span>
+            </p>
+            <ul style="list-style-type: square;">
+                <li>
+                    <p>Side-by-side with  previous major version&#160;(11.0.0.0 to 12.0.0.0) is allowed</p>
+                </li>
+                <li>
+                    <p>Running installer of a newer build with the same major number (12.1.x.x to 12.x.x.x)&#160;should uninstall older version and install current version</p>
+                </li>
+                <li>
+                    <p>Running installer when a newer build of the same major version number already is installed - should not allow installation to continue</p>
+                </li>
+                <li>
+                    <p>Running installer of the same build that already is installed - should prompt to repair or uninstall</p>
+                </li>
+                <li>32-bit and 64-bit of the same build is allowed<ul style="list-style-type: square;"><li><p>Verify we do not uninstall the wrong type when installing newer versions</p></li></ul></li>
+            </ul>
+            <span class="bold">Installed Files</span>
+            <ul style="list-style-type: square;">
+                <li MadCap:conditions="Product.Flare">Install "Itcc.dll" and "RegisterItcc.bat" - Madcap Software\MadCap Flare\Flare.app\Resources\Bin\</li>
+                <li>Verify README.TXT and REDISRTRB.TXT - \MadCap Software\<MadCap:conditionalText MadCap:conditions="Product.Flare">MadCap Flare V12\Flare.app\Resources\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Blaze">MadCap Blaze V3\Blaze.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Mimic">MadCap Mimic V7\Mimic.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Lingo">MadCap Lingo V7\Lingo.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Capture">MadCap Capture V6\Capture.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Analyzer">MadCap Analyzer V6\Analyzer.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Echo">MadCap Echo V2\Echo.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Feedback Server">MadCap Feedback Server V4\FeedbackServer.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Feedback Explorer">MadCap Feedback Explorer V4\FeedbackExplorer.app\</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.X-Edit">MadCap X-Edit V2\XEdit.app\</MadCap:conditionalText>Resources\ReadMe</li>
+                <li>Application DLLs have been incremented. (Verify with the QA&#160;lead what the version numbering should be)</li>
+                <li MadCap:conditions="Product.Flare">Default.js file has been incremented (c:\xxxx\MadCap Flare Vx\Flare.app\Resources\WebHelp\)</li>
+                <li>(MCVERSION is no longer installed by default (Post V12) We manually add it for Update testing only - <MadCap:xref href="#Upgrade">See Upgrade Testing - Post Flare 12</MadCap:xref>) <span style="text-decoration: line-through;">MCVERSION&#160;has been incremented. - ..\MadCap Software\</span><MadCap:conditionalText MadCap:conditions="Product.Flare"><span style="text-decoration: line-through;">MadCap Flare V12\Flare.app\</span></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Blaze"><span style="text-decoration: line-through;">MadCap Blaze V3\Blaze.app\</span></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Mimic"><span style="text-decoration: line-through;">MadCap Mimic V7\Mimic.app\</span></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Lingo"><span style="text-decoration: line-through;">MadCap Lingo V7\Lingo.app\</span></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Capture"><span style="text-decoration: line-through;">MadCap Capture V6\Capture.app\</span></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Analyzer"><span style="text-decoration: line-through;">MadCap Analyzer V6\Analyzer.app\</span></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Echo"><span style="text-decoration: line-through;">MadCap Echo V2\Echo.app\</span></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Feedback Server"><span style="text-decoration: line-through;">MadCap Feedback Server V4\FeedbackServer.app\</span></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Feedback Explorer"><span style="text-decoration: line-through;">MadCap Feedback Explorer V4\FeedbackExplorer.app\</span></MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.X-Edit"><span style="text-decoration: line-through;">MadCap X-Edit V2\XEdit.app\</span></MadCap:conditionalText><span style="text-decoration: line-through;">Version\Version.mcversion (open it in notepad)</span></li>
+            </ul>
+            <li>
+                <span class="bold">!Help | About</span>- Compare Version &amp; Date/Time for 64-bit and 32-bit installs. They should be  from the same day, similar time. Version number is now unique per build.&#160;(64 and 32 will be different as well)<ul style="list-style-type: square;"><li><span class="bold">Version number should match</span>:<ul style="list-style-type: square;"><li>Install .exe (Right Click |&#160;Properties |&#160;Details)</li><li>.exe file (Flare. exe, Lingo.exe, etc...)</li><li>.dll files</li></ul></li></ul></li>
+            <li MadCap:conditions="Product.Feedback Explorer">.NET&#160;charting prompts to install during install. This will be a separate install wizard, but canceling it will cancel the entire Feedback install.</li>
+            <li style="font-weight: normal;">Digital Signature of install should be:&#160;(Ask QA lead)</li>
+        </ul>
+        <h3>Command Line Install/Uninstall</h3>
+        <p>Open cmd to the directory where you SetupMadCapFlare.exe is located and test the following commands:</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <p>Install (default if no -uninstall or -repair)</p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <p>SetupMadCapFlare.exe -package</p>
+                    </li>
+                    <li>
+                        <p>SetupMadCapFlare.exe -update</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Silent install</p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <p>SetupMadCapFlare.exe -q</p>
+                    </li>
+                    <li>
+                        <p>SetupMadCapFlare.exe -quiet</p>
+                    </li>
+                    <li>
+                        <p>SetupMadCapFlare.exe -s</p>
+                    </li>
+                    <li>
+                        <p>SetupMadCapFlare.exe -silent</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Progress bar only install - meaning you should see the installation wizard UI but you won't have to click "Next", it will just begin installing.</p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <p>SetupMadCapFlare.exe -passive</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Repair (or install if not installed)</p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <p>SetupMadCapFlare.exe -repair</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p>Uninstall</p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <p>SetupMadCapFlare.exe -uninstall</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>Useful reference: http://windows-installer-xml-wix-toolset.687559.n2.nabble.com/Running-Burn-driven-installer-in-quiet-mode-command-line-parameters-td5913001.html</p>
+        <h3>Install&#160;Wizard/&#160;Title&#160;Bar/ Desktop Icon</h3>
+        <ul style="list-style-type: square;">
+            <li>Installation Wizard indicates the correct version number&#160;(Alpha/Beta if applicable) and icons are correct</li>
+            <li>EULA is correct and the correct address is in it (Pre-release EULA&#160;if applicable)</li>
+            <li>Program title bar indicates correct version number (Alpha/Beta if applicable) (Only Major version number Flare 12 onward)</li>
+            <li>Desktop icon is correct and indicates the correct version number (Only Major version number Flare 12 onward)</li>
+            <li>Remove Hard Expire (Change date for Beta)</li>
+            <li>Install Directory name/version is correct</li>
+            <li>Product splash Screen (And !Help&#160;|&#160;About)&#160;images has the correct Copyright year</li>
+        </ul>
+        <h3>Start Page</h3>
+        <ul style="list-style-type: square;">
+            <li>Links to the  Guides should work and open the correct PDF (Start Page and !Help | Guides)</li>
+            <li>All other links on the Start Page should be verified</li>
+        </ul>
+        <h3>!Help</h3>
+        <ul style="list-style-type: square;">
+            <li>!Help | Open Help - Opens latest help in the browser<ul style="list-style-type: square;"><li style="font-weight: normal;">If <span class="bold">Use Local Help</span> is selected in File |&#160;Options, you'll notice the url for the help is pointing to the installed help file</li></ul></li>
+            <li>!Help | Dynamic Help - Opens dynamic help pane</li>
+            <li>!Help | PDF&#160;Guides - Opens help topic pane to PDFs topic</li>
+            <li>!Help |&#160;Videos - Opens browser to http://www.madcapsoftware.com/videos/flare/</li>
+            <li>!Help |&#160;Help Community - Links to the Forums should be verified</li>
+            <li>!Help |&#160;Register Product - Opens the Register Program wizard (grayed out if the product is registered)</li>
+            <li>!Help |&#160;Check for Updates - Opens the Update window. If this is a dot release, the new install should be shown here with appropriate push text<ul style="list-style-type: square;"><li>See <MadCap:xref href="#Upgrade">See Upgrade Testing - Post Flare 12</MadCap:xref></li></ul></li>
+            <li>!Help |&#160;About - Version, date and 32-bit/64-bit identified in splash is correct</li>
+            <li>Search the Help - View the topic in the browser to utilize the searchbar. &#160;Or you can use this trick to open the main landing page of the help within the dynamic help pane:&#160;close all open panes, then click Dynamic Help.<ul style="list-style-type: square;"><li>&#160;Search for regular term and wildcard. Example: 'topic' and 'topi*'</li><li>Test the Search filters for both types of searches</li></ul></li>
+        </ul>
+        <h3>'Trialness'</h3>
+        <ul style="list-style-type: square;">
+            <li>The behavior of the product in trial mode: <MadCap:conditionalText MadCap:conditions="Product.Flare">Output Is Scrambled</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Lingo"> Content exported to Flare is scrambled</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Mimic">Output has Watermarks</MadCap:conditionalText></li>
+            <li>Reset the trial period for Alpha/Beta users</li>
+            <li>Reset the trial period for All users if this is a product update</li>
+        </ul>
+        <h3>Uninstall</h3>
+        <ul style="list-style-type: square;">
+            <li>Add/Remove programs icon is correct and the correct version number is displayed</li>
+            <li>Install directory and sub-directories are removed</li>
+            <li>No longer displays in the add/remove programs</li>
+            <li>Icons are removed (Desktop and Start Menu)</li>
+            <li>If product was activated, Uninstall should deactivate the key</li>
+            <li>Uninstall Interruptions:<ul style="list-style-type: square;"><li><p>Cancel Button: Should roll back to good install</p></li><li><p>Force Stop: Should not get in a bad state - you should be able to uninstall again after Force Stop, should be able to repair by running the exe again.</p></li></ul></li>
+        </ul>
+        <h3>Registration</h3>
+        <ul style="list-style-type: square;">
+            <li>Test the Registration process:<ul style="list-style-type: square;"><li>Phone&#160;: Do NOT&#160;call the number. Talk to Jay about getting the correct activation codes.</li><li>Internet</li><li>Make sure you register using a name and email with both a capital letter, "."&#160;(period), underscore, etc. and insure that all actions that check for a valid activation (such as command line compile) still work</li></ul></li>
+            <li>Test Evaluation key</li>
+            <li>Test Trial extender key</li>
+            <li>Use a single perpetual key  on three machines<ul style="list-style-type: square;"><li>You are allowed 1 domain 1 non-domain activation</li><li>Subsequent activations will result in an error from the server</li></ul></li>
+            <li>Use a floating key with 2 users on 3 machines<ul style="list-style-type: square;"><li>Third active session will result in an error from the server</li></ul></li>
+            <li>Use a 2 day subscription key<ul style="list-style-type: square;"><li>Will get a prompt on launch your subscription is about to expire</li><li>Have Marcus expire it and launch again.&#160;Should be told your subscription has expired.</li></ul></li>
+        </ul>
+        <h3>Misc</h3>
+        <ul style="list-style-type: square;">
+            <li MadCap:conditions="Product.Flare">"Test Styles" are removed from the formatting toolbar</li>
+            <li>Pane Layout has its version number increased for all products (ex <span class="bold">C:\Users\&lt;username&gt;\AppData\Roaming\MadCap Software\Flare\CatapultMdiEditor</span>)</li>
+            <li>All products now use SQLite. You should NOT be prompted to install&#160;SQL&#160;Compact anymore.<ul style="list-style-type: square;"><li>It is a .dll in the xxxx.app folder. (SQLite.Interop.dll version 1.0.89.0)</li></ul></li>
+            <li>!Debug Menu item is removed</li>
+            <li>Verify License keys from previous versions do not work (or other products...)</li>
+            <li>Verify we are on "Live" channel instead of "nightly". (Ask Marcus)</li>
+            <li>Verify Central pane points to Production and not Test or Dev server</li>
+        </ul>
+        <h3 MadCap:conditions="Product.Mimic">Third-Party Requirements Testing</h3>
+        <ul style="list-style-type: square;">
+            <li MadCap:conditions="Product.Mimic">Compile flash and silverlight on every OS during the testing below<ul style="list-style-type: square;"><li MadCap:conditions="Product.Mimic">Flash will require a JRE&#160;install (we warn in compile and provide a link)</li><li MadCap:conditions="Product.Mimic">Both outputs need a player installed to view (Most web pages will provide a mechanism to install a player on first view of the output)</li></ul></li>
+            <li MadCap:conditions="Product.Mimic">Compile a flash and silverlight movie that uses various .mp3 and .wav sound files, on every OS during the testing below<ul style="list-style-type: square;"><li MadCap:conditions="Product.Mimic">Silverlight will prompt for a Media Player install and patch, when outputting with .wav files (which we will prompt to install during the compile process)</li><li MadCap:conditions="Product.Mimic">Flash will prompt for a codec (Vista &amp;&#160;Win7 only) when outputting .wav files, as it needs to convert to .mp3. (We do not prompt to install, we just give a warning on compile)</li></ul></li>
+        </ul>
+        <h3 MadCap:conditions="Product.Lingo">SQL&#160;and Translation Memory</h3>
+        <ul style="list-style-type: square;">
+            <li MadCap:conditions="Product.Lingo">While doing install testing, also install a Translation Memory on each OS. </li>
+        </ul>
+        <p MadCap:conditions="Product.Lingo">Verify each of the following, at least once:</p>
+        <ul style="list-style-type: square;">
+            <li MadCap:conditions="Product.Lingo">Install to a local SQL&#160;2005 (Standard and Express)</li>
+            <li MadCap:conditions="Product.Lingo">Install to a remote SQL 2005(&#160;Standard and Express)</li>
+            <li MadCap:conditions="Product.Lingo">Install to a local SQL&#160;2008 (Standard and Express). You will need the following:<ul style="list-style-type: square;"><li MadCap:conditions="Product.Lingo">Download and install Windows installer 4.5</li><li>DL Windows Powershell if you don't already have SQL Server 2008</li></ul></li>
+            <li MadCap:conditions="Product.Lingo">Install to a remote SQL 2008 (Standard and Express)</li>
+            <li MadCap:conditions="Product.Lingo">At least once (above testing counts), test installing a TM&#160;on a machine that has only ever had SQL 2008. (SMO&#160;issue)</li>
+            <li MadCap:conditions="Product.Lingo">At least once (above testing counts), test installing a TM&#160;to a SQL&#160;2008 database on a machine that ALSO has SQL 2005</li>
+            <li MadCap:conditions="Product.Lingo">Upgrade a Lingo V1 database to the current version of Lingo (you will be prompted to upgrade the database)</li>
+        </ul>
+        <h3>Trial Mode / Registration</h3>
+        <h4>Clean Install (No previous version of <MadCap:conditionalText MadCap:conditions="Product.Flare">Flare</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Blaze">Blaze</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Mimic">Mimic</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Lingo">Lingo</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Capture">Capture</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Analyzer">Analyzer</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Echo">Echo</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Feedback Server">FeedbackServer</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Feedback Explorer">FeedbackExplorer</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.X-Edit">XEdit</MadCap:conditionalText>)</h4>
+        <p class="bold">Without Key</p>
+        <ul style="list-style-type: square;">
+            <li>30 Days - counts down to expiration</li>
+            <li>
+                <MadCap:conditionalText MadCap:conditions="Product.Flare">Scrambled output</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Lingo">Content exported to Flare is scrambled</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Mimic">Output has Watermarks</MadCap:conditionalText>(unless an 'evaluation' key is provided)</li>
+            <li MadCap:conditions="Product.Flare">Command line compile should issue warning regarding scrambled output if Flare is in Trial mode</li>
+            <li MadCap:conditions="Product.Mimic">No Command line compile (Unless an 'evaluation key is provided')</li>
+            <li>Once trial has expired, you cannot reinstall or turn the clocks back to restart the trial</li>
+            <li>Hard Expire (Alpha/Beta releases only; check with&#160;QA manager for hard expire date)</li>
+        </ul>
+        <hr />
+        <p class="bold">With Key</p>
+        <ul style="list-style-type: square;">
+            <li>Upon opening <MadCap:conditionalText MadCap:conditions="Product.Flare">Flare</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Blaze">Blaze</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Mimic">Mimic</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Lingo">Lingo</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Capture">Capture</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Analyzer">Analyzer</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Echo">Echo</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Feedback Server">FeedbackServer</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Feedback Explorer">FeedbackExplorer</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.X-Edit">XEdit</MadCap:conditionalText> with an 'evaluation' key, a dialog opens which displays the expiration of the key</li>
+            <li>Trial is good until the expiration of the key (or the Hard Expire if Alpha/Beta)</li>
+            <li>
+                <MadCap:conditionalText MadCap:conditions="Product.Flare">No Scrambled Output</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Lingo">Content exported to Flare is not scrambled</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Mimic">Output has Watermarks</MadCap:conditionalText>
+            </li>
+            <li MadCap:conditions="Product.Flare">Command line compile works</li>
+            <li MadCap:conditions="Product.Mimic">No Command line compile (Unless an 'evaluation key is provided')</li>
+            <li>Hard Expire still applies (Alpha/Beta releases only)</li>
+            <li>Using the same key on three (or more) active application instances will result in a nag <ul style="list-style-type: square;"><li>Register the key on two different machines</li><li>Use the same key on a third machine. </li></ul></li>
+        </ul>
+        <hr />
+        <p class="bold">With Expired Evaluation Key</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <MadCap:conditionalText MadCap:conditions="Product.Flare">Flare</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Blaze">Blaze</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Mimic">Mimic</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Lingo">Lingo</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Capture">Capture</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Analyzer">Analyzer</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Echo">Echo</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Feedback Server">FeedbackServer</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Feedback Explorer">FeedbackExplorer</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.X-Edit">XEdit</MadCap:conditionalText>should revert to Trial mode after the 'evaluation' key has expired</li>
+        </ul>
+        <h4>Side-By-Side install with a previous version</h4>
+        <ul style="list-style-type: square;">
+            <li>'Trialness' of new version should not affect previous versions</li>
+            <li>Hard Expire of new version should not affect previous versions (Alpha/Beta Release only)</li>
+            <li MadCap:conditions="Product.Flare">Command Line Compile should work for the previous version (if registered), not for the Trial or beta (unless the Trial or Beta is using an 'evaluation' key)</li>
+            <li MadCap:conditions="Product.Mimic">No Command line compile (Unless an 'evaluation key is provided')</li>
+        </ul>
+        <hr />
+        <p class="bold">Without Key</p>
+        <ul style="list-style-type: square;">
+            <li>30 Days - counts down to expiration</li>
+            <li>
+                <MadCap:conditionalText MadCap:conditions="Product.Flare">Scrambled output</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Lingo">Content exported to Flare is scrambled</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Mimic">Output has Watermarks</MadCap:conditionalText> (unless an 'evaluation' key is provided)</li>
+            <li MadCap:conditions="Product.Flare">Command line compile should issue warning regarding scrambled output if Flare is in Trial mode</li>
+            <li MadCap:conditions="Product.Mimic">No Command line compile (Unless an 'evaluation key is provided')</li>
+            <li>Once trial has expired, you cannot reinstall or turn the clocks back to restart the trial</li>
+            <li>Hard Expire (Alpha/Beta releases only; check with&#160;QA manager for hard expire date)</li>
+        </ul>
+        <hr>
+        </hr>
+        <p class="bold">With Key</p>
+        <ul style="list-style-type: square;">
+            <li>Upon opening <MadCap:conditionalText MadCap:conditions="Product.Flare">Flare</MadCap:conditionalText> with an 'evaluation' key, a dialog opens which displays the expiration of the key</li>
+            <li>Trial is good until the expiration of the key (or the Hard Expire if Alpha/Beta)</li>
+            <li>
+                <MadCap:conditionalText MadCap:conditions="Product.Flare">No Scrambled Output</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Lingo">Content exported to Flare is not scrambled</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Mimic">Output has Watermarks</MadCap:conditionalText>
+            </li>
+            <li MadCap:conditions="Product.Flare">Command line compile works (application must be registered)</li>
+            <li MadCap:conditions="Product.Mimic">No Command line compile (Unless an 'evaluation key is provided')</li>
+            <li>Hard Expire still applies (Alpha/Beta releases only)</li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>Using the same key on three (or more) active application instances will result in a nag <ul style="list-style-type: square;"><li>Register the key on two different machines</li><li>Use the same key on a third machine. </li></ul></li>
+        </ul>
+        <hr>
+        </hr>
+        <p class="bold">With Expired Evaluation Key</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <MadCap:conditionalText MadCap:conditions="Product.Flare">Flare</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Blaze">Blaze</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Mimic">Mimic</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Lingo">Lingo</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Capture">Capture</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Analyzer">Analyzer</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Echo">Echo</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Feedback Server">FeedbackServer</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Feedback Explorer">FeedbackExplorer</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.X-Edit">XEdit</MadCap:conditionalText>should revert to Trial mode after the 'evaluation' key has expired, but the expired evaluation key should not affect previous versions.</li>
+        </ul>
+        <h4>Over a previous Alpha/Beta of the same version</h4>
+        <ul style="list-style-type: square;">
+            <li>'Trialness' should be reset</li>
+            <li>Hard Expire should be reset&#160;(updated Alpha/Beta releases only)</li>
+            <li>Key should remain active if previously entered</li>
+        </ul>
+        <hr />
+        <p class="bold">Without Key</p>
+        <ul style="list-style-type: square;">
+            <li>30 Days - counts down to expiration</li>
+            <li>
+                <MadCap:conditionalText MadCap:conditions="Product.Flare">No Scrambled Output</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Lingo">Content exported to Flare is scrambled</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Mimic">Output has Watermarks</MadCap:conditionalText> (unless an 'evaluation' key is provided)</li>
+            <li MadCap:conditions="Product.Flare">Command line compile should issue warning regarding scrambled output if Flare is in Trial mode</li>
+            <li MadCap:conditions="Product.Mimic">No Command line compile (Unless an 'evaluation key is provided')</li>
+            <li>Once trial has expired, you cannot reinstall or turn the clocks back to restart the trial</li>
+            <li>Hard Expire (Alpha/Beta releases only; check with&#160;QA manager for hard expire date)</li>
+        </ul>
+        <hr>
+        </hr>
+        <p class="bold">With Key</p>
+        <ul style="list-style-type: square;">
+            <li>Upon opening <MadCap:conditionalText MadCap:conditions="Product.Flare">Flare</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Blaze">Blaze</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Mimic">Mimic</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Lingo">Lingo</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Capture">Capture</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Analyzer">Analyzer</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Echo">Echo</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Feedback Server">FeedbackServer</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Feedback Explorer">FeedbackExplorer</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.X-Edit">XEdit</MadCap:conditionalText> with an 'evaluation' key, a dialog opens which displays the expiration of the key</li>
+            <li>Trial is good until the expiration of the key (or the Hard Expire if Alpha/Beta)</li>
+            <li>
+                <MadCap:conditionalText MadCap:conditions="Product.Flare">No Scrambled Output</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Lingo">Content exported to Flare is not scrambled</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Mimic">Output has Watermarks</MadCap:conditionalText>
+            </li>
+            <li MadCap:conditions="Product.Flare">Command line compile works (application must be registered)</li>
+            <li MadCap:conditions="Product.Mimic">No Command line compile (Unless an 'evaluation key is provided')</li>
+            <li>Hard Expire still applies (Alpha/Beta releases only)</li>
+            <li>Using the same key on three (or more) active application instances will result in a nag <ul style="list-style-type: square;"><li>Register the key on two different machines</li><li>Use the same key on a third machine. </li></ul></li>
+        </ul>
+        <hr>
+        </hr>
+        <p class="bold">With Expired Evaluation Key</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <MadCap:conditionalText MadCap:conditions="Product.Flare">Flare</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Blaze">Blaze</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Mimic">Mimic</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Lingo">Lingo</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Capture">Capture</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Analyzer">Analyzer</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Echo">Echo</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Feedback Server">FeedbackServer</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Feedback Explorer">FeedbackExplorer</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.X-Edit">XEdit</MadCap:conditionalText>should revert to Trial mode after the 'evaluation' key has expired</li>
+            <li>Expired 'Evaluation' key should not affect other installations</li>
+        </ul>
+        <h4>Over a previous Release of the same version&#160;(Dot or Patch release)</h4>
+        <ul style="list-style-type: square;">
+            <li>'Trialness' should be reset</li>
+            <li>Hard Expire should be reset&#160;(updated Alpha/Beta releases only)</li>
+            <li>Key should remain active if previously entered</li>
+        </ul>
+        <hr>
+        </hr>
+        <p class="bold">Without Key</p>
+        <ul style="list-style-type: square;">
+            <li>30 Days - counts down to expiration</li>
+            <li>
+                <MadCap:conditionalText MadCap:conditions="Product.Flare">No Scrambled Output</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Lingo">Content exported to Flare is scrambled</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Mimic">Output has Watermarks</MadCap:conditionalText>(unless an 'evaluation' key is provided)</li>
+            <li MadCap:conditions="Product.Flare">Command line compile should issue warning regarding scrambled output if Flare is in Trial mode</li>
+            <li MadCap:conditions="Product.Mimic">No Command line compile (Unless an 'evaluation key is provided')</li>
+            <li>Once trial has expired, you cannot reinstall or turn the clocks back to restart the trial</li>
+            <li>Hard Expire (Alpha/Beta releases only; check with&#160;QA manager for hard expire date)</li>
+        </ul>
+        <p>&#160;</p>
+        <hr>
+        </hr>
+        <p class="bold">With Key</p>
+        <ul style="list-style-type: square;">
+            <li>Upon opening <MadCap:conditionalText MadCap:conditions="Product.Flare">Flare</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Blaze">Blaze</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Mimic">Mimic</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Lingo">Lingo</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Capture">Capture</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Analyzer">Analyzer</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Echo">Echo</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Feedback Server">FeedbackServer</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.Feedback Explorer">FeedbackExplorer</MadCap:conditionalText><MadCap:conditionalText MadCap:conditions="Product.X-Edit">XEdit</MadCap:conditionalText> with an 'evaluation' key, a dialog opens which displays the expiration of the key</li>
+            <li>Trial is good until the expiration of the key (or the Hard Expire if Alpha/Beta)</li>
+            <li>
+                <MadCap:conditionalText MadCap:conditions="Product.Flare">No Scrambled Output</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Lingo">Content exported to Flare is not scrambled</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Mimic">Output has Watermarks</MadCap:conditionalText>
+            </li>
+            <li MadCap:conditions="Product.Flare">Command line compile works (application must be registered)</li>
+            <li MadCap:conditions="Product.Mimic">No Command line compile (Unless an 'evaluation key is provided')</li>
+            <li>Hard Expire still applies (Alpha/Beta releases only)</li>
+            <li>Using the same key on three (or more) active application instances will result in a nag <ul style="list-style-type: square;"><li>Register the key on two different machines</li><li>Use the same key on a third machine. </li></ul></li>
+        </ul>
+        <hr>
+        </hr>
+        <p class="bold">With Expired Evaluation Key</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <MadCap:conditionalText MadCap:conditions="Product.Flare">Flare</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Blaze">Blaze</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Mimic">Mimic</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Lingo">Lingo</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Capture">Capture</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Analyzer">Analyzer</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Echo">Echo</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Feedback Server">FeedbackServer</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.Feedback Explorer">FeedbackExplorer</MadCap:conditionalText>
+                <MadCap:conditionalText MadCap:conditions="Product.X-Edit">XEdit</MadCap:conditionalText>should revert to Trial mode after the 'evaluation' key has expired</li>
+            <li>Expired 'Evaluation' key should not affect other installations</li>
+        </ul>
+        <h3 MadCap:conditions="Product.Flare">FOR&#160;7.X.X Upgrades ONLY</h3>
+        <p MadCap:conditions="Product.Flare">We went live with a bad (no sniff) Flare install for a day or two. We corrected the error and replaced the install with a new build. When we do ANY&#160;patching of the 7.X&#160;build we will need to do the upgrade testing for both of these installs</p>
+        <ul>
+            <li MadCap:conditions="Product.Flare">\\fs1\QA\MadCap Releases\Flare\Flare 7.x\Bad - No Sniffing</li>
+            <li>
+                <p MadCap:conditions="Product.Flare">\\fs1\QA\MadCap Releases\Flare\Flare 7.x</p>
+            </li>
+        </ul>
+        <h3>Web Stuff</h3>
+        <p>Not all of these will be available right away.&#160;Follow up on each item. </p>
+        <ul style="list-style-type: square;">
+            <li>Test email and links to the downloads pages - from Bill</li>
+            <li>Test the download page &amp;&#160;links for ALL downloads (test image links and text links)</li>
+            <li>Proof the Product Page</li>
+            <li>Forum is set up and linked to from the app</li>
+            <li>eCom - Test purchasing from the application and that the key gets passed back into the application and that you can register.</li>
+            <li>Ask about emailing Beta testers about the new/live release</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>
+            <a name="Upgrade">
+            </a>Upgrade Testing - Post Flare 12</h3>
+        <p>The below steps are used to test the Flare upgrade process post Flare 12.</p>
+        <ol>
+            <li>Close Flare. </li>
+            <li>Go to any pre Flare 12 installation folder (e.g. C:\Program Files (x86)\MadCap Software\MadCap Flare V11\Flare.app\Version)</li>
+            <li>Copy the Version.mcversion file to your desktop and open the file in Notepad.</li>
+            <li>Enter 11, 22, 33, and 44 for Major , Minor, Build, and Revision respectively. (e.g. Major="11" Minor="22" Build="33" Revision="44")</li>
+            <li>Save the file with the filename Flare.mcversion. </li>
+            <li>Copy Flare.mcversion to the same location as Flare.exe for the upgrade test.</li>
+            <li>Launch Flare. </li>
+            <li>You will be prompted to install updates.</li>
+        </ol>
+        <p>&#160;</p>
+    </body>
+</html>

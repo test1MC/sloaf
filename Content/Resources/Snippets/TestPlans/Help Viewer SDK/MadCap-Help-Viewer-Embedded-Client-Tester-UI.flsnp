@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="593" MadCap:lastWidth="1380">
+    <head>
+    </head>
+    <body>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Help System:</span> Path of DotNet Help output created with Flare. </li>
+            <li>
+                <span class="bold">Browse:</span> Click button to browse for the DotNet Help output created with Flare. </li>
+            <li>
+                <span class="bold">CSHID:</span> Enter the CSHID&#160;Value assigned to a particular topic.</li>
+            <li>
+                <b>Show Topic:</b> Click button to make CSH call to the topic via MadCap Help Viewer.</li>
+            <li>
+                <b>Load Topic:</b> Click button to load the topic into the Help Topic pane. </li>
+            <li>
+                <b>Open Help Viewer:</b> Opens the MadCap Help&#160;Viewer. </li>
+            <li>
+                <b>Test Dialog Help:</b> Click button to invoke DialogWithCSHID. Press F1 to invoke dynamic help.<ul><li><b>Hit F1 or click help button...:</b> press to invoke help<p><img src="../../../Images/TestPlans/Help Viewer SDK/HelpViewerEmbeddedClientTesterUI-DialogWithCSHID.png" style="mc-thumbnail: hover;" /></p></li></ul></li>
+            <li>
+                <b>Search String:</b> Enter the search string.</li>
+            <li>
+                <b>Search:</b> Click the button to perform the search for the text string within MadCap Help Viewer. </li>
+            <li>
+                <b>Embedded Search:</b> This will embed the search results within the tester. </li>
+            <p>
+                <img src="../../../Images/TestPlans/Help Viewer SDK/HelpViewerEmbeddedClientTesterUI-EmbeddedSearch.png" style="mc-thumbnail: hover;" />
+            </p>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

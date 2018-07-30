@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:fileTags="Product.Flare,Status.Flare V8 Needs Review,AuthorFileTagSet.Jessica" MadCap:lastBlockDepth="6" MadCap:lastHeight="1265" MadCap:lastWidth="1277">
+    <head>
+    </head>
+    <body>
+        <h2>Import DocToHelp - Baseline</h2>
+        <h3>Baseline</h3>
+        <p>
+            <b>96674</b>	Import Doc-to-Help option should be removed from the Project ribbon	</p>
+        <p>
+            <b>96683</b>	Need AccessDatabaseEngine2007.exe installed in order to import D2H into Flare V11	</p>
+        <p>
+            <b>96711</b>	TOC imports empty if no customization has been made to the TOC in D2H	</p>
+        <p>
+            <b>97847</b>	Groups and Keywords in Multi topics that were inserted via dragging from Topics Pane do not get inserted in imported Flare topic	</p>
+        <p>
+            <b>98900</b>	D2H import fails if index term is wrapped in a platform condition	</p>
+        <p>
+            <b>97425</b>	D2HML styles do not get converted in Rich Text Variables (converted to Snippets) for D2H import	</p>
+        <p>
+            <b>97374</b>	Context ID's assigned for headings are being lost	</p>
+        <p>
+            <b>97385</b>	D2H Import: Split topic links to bookmarks are broken upon import into Flare.	</p>
+        <p>
+            <b>97409</b>	Styles made in Word Source Documents are lost upon converting to HTML5 &gt; importing into Flare	</p>
+        <p>
+            <b>97598</b>	D2H import: When C1h tags are in headings of multi topics, file names import with the C1H tag in it causing broken TOC links	</p>
+        <p>
+            <b>97599</b>	Nonbreaking spaces in c1h link tags break links in D2H import	</p>
+        <p>
+            <b>97628</b>	Import D2H: If a heading in a multi topic is nested in a list, it does not get split on import, causing broken TOC links	</p>
+        <p>
+            <b>97579</b>	If you cancel during the D2H import process of multi topics, you are left with extra files in the project folder	</p>
+        <p>
+            <b>96862</b>	Links with option to show properties in text are being imported as is in Flare	</p>
+        <p>
+            <b>96874</b>	Nonbreaking spaces get lost upon import if they are nested within another tag	</p>
+        <p>
+            <b>96894</b>	D2H Link details for image maps are being lost when importing Doc to Help project into flare.	</p>
+        <p>
+            <b>96910</b>	Need to strip D2H tags from Glossary Terms with definition "See [name of topic]"	</p>
+        <p>
+            <b>97068</b>	Collapsible section (Toggler) wrapping more than one element is not being parsed when imported into flare.	</p>
+        <p>
+            <b>97108</b>	D2H Import: Group links (related topics links) are not imported into Flare.	</p>
+        <p>
+            <b>97109</b>	D2H Import: Concepts are not injected into each topic associated with a group.	</p>
+        <p>
+            <b>97216</b>	Keywords are not being added to topics that were dragged to be indexed by that keyword.	</p>
+        <p>
+            <b>98171</b>	D2H Import fails if colon : in target name (German Sample Project)	</p>
+        <p>
+            <b>97061</b>	D2H import: Collapsible section (Togglers) styling is not properly imported into Flare.	</p>
+        <p>
+            <b>97175</b>	D2H Import: Context IDs for CSH (Context Sensitive Help) are not converted correctly to Values.	</p>
+        <p>
+            <b>98403</b>	Span tags are breaking the expanding text conversion from D2H	</p>
+        <h3>
+            <a name="The">
+            </a>The Imported Project</h3>
+        <h4>Verifying a successful import</h4>
+        <p>After importing a DocToHelp project you should compare the Flare project to the original DocToHelp Project </p>
+        <ul>
+            <li>Compare the original project with the new one </li>
+            <li>Compare the original output with the new projects output</li>
+        </ul>
+        <h4>
+            <a name="DocToHel">
+            </a>DocToHelp Features and Flare Equivalents</h4>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Attributes/Conditions: </span>Doc-To-Help allows conditions on platforms (e.g., all Word targets). However, Flare does not support that feature; therefore conditions on platforms are not imported.</li>
+            <li> <span class="bold">Glossaries: </span>Glossary terms will need to use style &lt;p class="GlossaryHeading"&gt; followed by a definition in a p tag (or multiple p tags) in order to be converted. If their definition contains a link to another term, we keep the text of that link.
+</li>
+            <li>
+                <p>
+                    <span class="bold">Groups/Concepts: </span>Groups are similar to Flare's concepts, which can be used for a couple of things, including the creation of concept links (also called "See Also links" or "A-links"). When you import a Doc-To-Help project, groups are converted to concepts in a couple of different ways, depending on how they are created in Doc-To-Help:</p>
+                <ul>
+                    <li>
+                        <p>If you insert a group in Doc-To-Help by dragging the topic from the Topics pane to the Groups pane, Flare converts the group to a concept and adds it at the very top of the topic.</p>
+                    </li>
+                    <li>
+                        <p>If you insert a group in Doc-To-Help from the ribbon, you are adding it inline, as well as adding it to the Groups pane. Flare converts the group to a concept and adds it inline as well as at the very top of the topic. This means that when you have an A-link, that group might be listed twice in the output. Therefore, you may need to clean up your topics, removing the excess concepts.</p>
+                        <p>If you already have a group link in Doc-To-Help, it is imported as a concept link in Flare.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Keywords:</span> Keywords are similar to Flare's index keywords, which can be used for a couple of things, including the creation of keyword links (also called "K-links"). When you import a Doc-To-Help project, keywords are converted to index keywords in a couple of different ways, depending on how they are created in Doc-To-Help:<ul><li><p>If you insert a keyword in Doc-To-Help by dragging the topic from the Topics pane to the Index pane, Flare converts the keyword to an index keyword and adds it at the very top of the topic.</p></li><li><p>If you insert a keyword in Doc-To-Help from the ribbon, you are adding it inline, as well as adding it to the Index pane. Flare converts the keyword to an index keyword and adds it inline as well as at the very top of the topic. This means that when you have a K-link, that index keyword might be listed twice in the output. Therefore, you may need to clean up your topics, removing the excess index keywords.</p><p>If you already have an index link in Doc-To-Help, it is imported as a keyword link in Flare.</p></li></ul></li>
+            <li>
+                <span class="bold">Plain Text Variables:</span>&#160;Flare does not support conditioned multiple variable definitions. Those definitions are imported as multiple variable definitions.</li>
+            <li>
+                <span class="bold">Targets:</span> Flare does not import any target settings.</li>
+            <li>
+                <span class="bold">Skins:</span> Flare does not import any theme settings to skins.</li>
+            <li>
+                <span class="bold">TOCs:</span> If a TOC is not customized, it is not imported. An auto-generated TOC is not in the database when you import, so it is not considered customized. However, you can make a simple change in a TOC (e.g., move a TOC topic up and then down, not actually changing it). The TOC will then be considered customized and will import correctly.</li>
+            <li>
+                <span class="bold">Topic Contents Widgets/Mini-TOC&#160;Proxies:</span> Although topic contents widgets in Doc-To-Help are similar to Flare's mini-TOC proxies, they are not identical. Therefore, you may see some discrepancies after the import conversion.</li>
+        </ul>
+        <h4>Background on word styles:</h4>
+        <ul>
+            <li>If you author in Word using D2H, any new styles or modifications to styles are written to a template file (.DOT) which is stored in the User’s AppData folder.  If you convert (in D2H) your Word source files &gt; HTML5 source files, you won’t see the styles in the editor because editor styles are based on a separate folder of CSS files.  But when you build, D2H is smart enough to grab the information from the DOT files and convert them to CSS to maintain the right look in your output.  D2H stores these generated CSS files in the output subfolder LinksExt.  We will be asking users to save these generated CSS files and point to them during the Flare import.</li>
+            <li>
+                <p>The LinksExt folder might contain several stylesheets (separate ones for each topic) because each time a Word topic uses a style not already used in a previous topic, D2H creates a new stylesheet to account for the new style, and in the output will reference that (inline).</p>
+            </li>
+            <li>
+                <p>The Select CSS&#160;folder(s) for Word source documents... wizard page allows you to point to the LinksExt folder and all stylesheets will merge  into one CSS file.  D2H also generates their CSS files in ALL CAPS, so during the merge, those are changed to lowercase so that styles can be applied correctly.</p>
+            </li>
+        </ul>
+    </body>
+</html>

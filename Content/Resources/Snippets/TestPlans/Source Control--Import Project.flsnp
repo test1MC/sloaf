@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="990" MadCap:lastWidth="1466">
+    <head>
+    </head>
+    <body>
+        <h2>Import Wizard UI</h2>
+        <h4>Select Source Control Provider (First Screen- Slightly different for each provider)</h4>
+        <p style="font-weight: bold;color: #0000ff;">TFS</p>
+        <ul>
+            <li style="font-weight: normal;">
+                <b>Server</b>
+            </li>
+        </ul>
+        <ul class="checkbox">
+            <li style="font-weight: normal;">
+                <b>Text Field: </b> Manually enter a new server location- Test invalid URL (No http ot https)</li>
+            <li style="font-weight: normal;">
+                <b>Text Field Drop Down List:</b> Select from a list of previously used servers</li>
+            <li style="font-weight: normal;">
+                <img src="../../Images/BrowseButtonA.png" />Opens "Select Team Foundation Server Project Collection" dialog- If no collection associated to server, should get empty dialog box.</li>
+        </ul>
+        <ul>
+            <li style="font-weight: normal;">
+                <b>Team Project</b>
+            </li>
+        </ul>
+        <ul class="checkbox">
+            <li style="font-weight: normal;">
+                <img src="../../Images/BrowseButtonA.png" />Allows you to select a collection from the selected server</li>
+        </ul>
+        <p style="font-weight: bold;color: #0000ff;">Subversion</p>
+        <ul>
+            <li style="font-weight: bold;">Server</li>
+        </ul>
+        <ul class="checkbox">
+            <li style="font-weight: normal;">
+                <b>Text Field: </b> Manually enter a new server location</li>
+            <li style="font-weight: normal;">
+                <b>Text Field Drop Down List:</b> Select from a list of previously used servers</li>
+        </ul>
+        <p style="font-weight: bold;color: #0000ff;">Git</p>
+        <ul>
+            <li style="font-weight: bold;">Remote</li>
+        </ul>
+        <ul class="checkbox">
+            <li style="font-weight: normal;">
+                <b>Text Field: </b> Manually enter a new server location</li>
+            <li style="font-weight: normal;">
+                <b>Text Field Drop Down List:</b> Select from a list of previously used servers</li>
+        </ul>
+        <ul>
+            <li style="font-weight: normal;">
+                <b>Name:</b> Test with upper/lowercase characters, different character combinations </li>
+            <li style="font-weight: normal;">
+                <b>Email</b> Test proper and improperly formatted email address as well as leaving blank (Cannot be empty)</li>
+            <li style="font-weight: normal;">
+                <b>Save Per: </b> Verify no errors when using selection from Drop Down List</li>
+        </ul>
+        <ul class="checkbox">
+            <li style="font-weight: normal;">
+                <b>User:</b>
+            </li>
+            <li>
+                <b>Per Project</b>
+            </li>
+        </ul>
+        <p style="font-weight: bold;color: #0000ff;">Perforce</p>
+        <ul>
+            <li style="font-weight: normal;">
+                <b>Server</b>
+            </li>
+        </ul>
+        <ul class="checkbox">
+            <li style="font-weight: normal;">
+                <b>Text Field: </b> Manually enter a new server location- Test invalid URL (No http ot https)</li>
+            <li style="font-weight: normal;">
+                <b>Text Field Drop Down List:</b> Select from a list of previously used servers</li>
+        </ul>
+        <ul>
+            <li>
+                <b>User</b>
+            </li>
+        </ul>
+        <ul class="checkbox">
+            <li>
+                <b>Text Field: </b> Should show last user ID used and should be able to manually type in the field</li>
+            <li>
+                <img src="../../Images/BrowseButtonA.png" /> : Invokes Select User" dialog</li>
+        </ul>
+        <ul>
+            <li>
+                <b>Location</b>
+            </li>
+        </ul>
+        <ul class="checkbox">
+            <li>
+                <img src="../../Images/BrowseButtonB.png" />: Invokes server log in dialog (If not logged in), then available depots and streams selection window</li>
+        </ul>
+        <p>&#160;</p>
+        <p style="font-weight: bold;color: #0000ff;">Third Party Plug-in</p>
+        <ul>
+            <li style="font-weight: bold;">Provider</li>
+        </ul>
+        <ul class="checkbox">
+            <li style="font-weight: normal;">
+                <b>Drop Down List:</b> Displays a list of available third party provider plug - ins</li>
+            <li style="font-weight: normal;">
+                <img src="../../Images/AdvancedButton.png" />: Opens Advanced options dialog window.</li>
+        </ul>
+        <h4>Browse for the Flare project file(Second Screen- All Providers)</h4>
+        <ul>
+            <li>
+                <b>Project file:</b>
+            </li>
+        </ul>
+        <ul class="checkbox">
+            <li>
+                <img src="../../Images/BrowseButtonB.png" />: Invokes the "Browse Source Control Files" Dialog- Ok button should be disabled until .flprj file is selected (Note- Git will invoke a log in screen first, then "Browse Source control Files" dialog</li>
+        </ul>
+        <h4>Enter project name and project folder(Third Screen- All Providers)</h4>
+        <ul>
+            <li>
+                <b>Project Name</b> Name of imported project (Can be same or can create new- test both)</li>
+        </ul>
+        <ul class="checkbox">
+            <li>
+                <b>Text Field: </b> Should show import project name and the field can be edited.</li>
+            <li>
+                <b>Drop Down List:</b> Displays previously used project names</li>
+        </ul>
+        <ul>
+            <li>
+                <b>Project folder:</b> Path to the folder where the imported project will reside</li>
+        </ul>
+        <ul class="checkbox">
+            <li>
+                <b>Text Field: </b> Should show Should display last folder a project was imported to.</li>
+            <li>
+                <b>Drop Down List:</b> Displays previously used project folders</li>
+            <li>
+                <img src="../../Images/BrowseButtonA.png" />: Open "Browse For Folder" window- Test making new folder as well as importing to a network drive</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Text:</span>
+                <ul>
+                    <li>
+                        <span class="bold">Text Box:</span> Enter text for object.</li>
+                    <li>
+                        <span class="bold">Keyframe button:</span> Apply text keyframe to object. </li>
+                    <li>
+                        <span class="bold">Insert Variable:</span> Insert variable for object. </li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Padding:</span>
+                <ul>
+                    <li>
+                        <span class="bold">Left:</span> Add left padding. </li>
+                    <li>
+                        <span class="bold">Right:</span> Add right padding. </li>
+                    <li>
+                        <span class="bold">Top:</span> Add top padding.</li>
+                    <li>
+                        <span class="bold">Bottom:</span> Add bottom padding.</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

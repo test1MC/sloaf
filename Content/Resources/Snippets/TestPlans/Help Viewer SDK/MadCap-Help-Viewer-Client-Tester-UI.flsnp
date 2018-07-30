@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="173" MadCap:lastWidth="1327">
+    <head>
+    </head>
+    <body>
+        <p class="bold">UI&#160;Controls</p>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Help System:</span> Path of DotNet Help output created with Flare. </li>
+            <li>
+                <span class="bold">Browse:</span> Click the button to browse for the DotNet Help ouput created with Flare. </li>
+            <li>
+                <span class="bold">CSHID:</span> Enter the CSHID&#160;Value assigned to a particular topic.</li>
+            <li>
+                <b>Show Topic:</b> Click button to make CSH call to the topic via MadCap Help Viewer.</li>
+            <li>
+                <b>Search String:</b> Enter the search string.</li>
+            <li>
+                <b>Search:</b> Click the button to perform the search for the text string within MadCap Help Viewer. </li>
+        </ul>
+        <p>&#160;</p>
+    </body>
+</html>

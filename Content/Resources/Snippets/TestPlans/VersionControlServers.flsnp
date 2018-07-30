@@ -1,0 +1,693 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="11" MadCap:lastHeight="7242" MadCap:lastWidth="1365">
+    <head>
+    </head>
+    <body>
+        <h2>Server Details and Locations - Version 23</h2>
+        <div class="Responsive84">
+            <div>
+                <p>Last Updated - <MadCap:variable name="MyVariables.TimeSaved" manualValue="2018-01-08T12:22:50.4721540-08:00" /></p>
+                <h3>Version Control - Source Control Servers</h3>
+                <h4>GIT </h4>
+                <div class="indent20">
+                    <MadCap:dropDown class="info noPrint">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>How to Connect</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody>
+                            <p>With Git, you can just bind locally to test the Source Control functions. The Repository is stored locally in the ".git" folder that resides within the Flare Project folder.</p>
+                            <p>When you need to test/collaborate with others is when you can setup Remotes to Push/Pull/Synchronize</p>
+                            <ol>
+                                <li>No local installation needed. </li>
+                                <li>
+                                    <b style="text-decoration: underline; font-style: normal;">In any account below, just create a new "Project" (which is basically going to give you a dedicated Remote Repository) for each Flare project you bind.</b>
+                                </li>
+                                <li>Copy HTTP/HTTPS or SSH URL and use that for the Server URL to bind to.</li>
+                            </ol>
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                    <MadCap:dropDown class="info noPrint">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>
+                                <a name="GITSSH">
+                                </a>How to set up SSH Keys</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody>
+                            <ol>
+                                <li>Install Git components (Git from git-scm.com)</li>
+                                <li>Open a Command prompt</li>
+                                <li>Copy and paste in: ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</li>
+                                <li>Hit Enter</li>
+                                <li>Hit enter twice to save without a passphrase</li>
+                                <li>This will save the id_rsa and id_rsa.pub to this directory: C:\Users\user_name\.ssh</li>
+                                <li>Navigate to that directory and open the id_rsa.pub with Notepad and copy everything</li>
+                                <li>Open browser and sign into GitHub (Or GitLab)</li>
+                                <li>Go to Settings &gt; SSH key</li>
+                                <li>Add SSH Key</li>
+                                <li>Paste and save</li>
+                                <li>Now you can use the SSH&#160;Key that GitHub or GitLab provides you to use when binding and pushing to from Flare</li>
+                            </ol>
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                    <p class="TestCases">GitLab:</p>
+                    <ul>
+                        <li>
+                            <p>
+                                <a href="http://gitlabomnibus/" target="_blank">http://gitlabomnibus/</a>
+                            </p>
+                            <ul>
+                                <li>
+                                    <p>User1: root PW: R3m3mb3r!</p>
+                                </li>
+                                <li>User2: test1 PW: R3m3mb3r!</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="https://gitlab.com/" target="_blank">https://gitlab.com/</a>
+                            </p>
+                            <ul>
+                                <li>
+                                    <p>User: test1MC PW: R3m3mb3r!</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="TestCases">CloudForgeGit:</p>
+                    <ul>
+                        <li>
+                            <p>
+                                <a href="https://app.cloudforge.com/dashboard" target="_blank">https://app.cloudforge.com/dashboard</a>
+                            </p>
+                            <ul>
+                                <li>
+                                    <p>User: madcapsoftware\MadCap PW: R3m3mb3r!</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="TestCases">GitHub:</p>
+                    <ul>
+                        <li>
+                            <p>
+                                <a href="https://github.com/" target="_blank">https://github.com/</a>
+                            </p>
+                            <ul>
+                                <li>
+                                    <p>User: test1mc PW: R3m3mb3r!</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="TestCases">
+                        <a name="VisualStudio">
+                        </a>VisualStudio Online:</p>
+                    <ul>
+                        <li>
+                            <p>
+                                <a href="https://madcapqa.visualstudio.com/" target="_blank">https://madcapqa.visualstudio.com/</a>
+                            </p>
+                            <ul>
+                                <li>User: madcapqa@outlook.com PW: R3m3mb3r!</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://madcaptest.visualstudio.com/" target="_blank">https://madcaptest.visualstudio.com</a>
+                            <ul>
+                                <li>User:&#160;test1@madcapsoftware.com PW: R3m3mb3r!</li>
+                            </ul>
+                        </li>
+                        <li>Free accounts are limited to 5 users, so if you need more, <a href="https://login.live.com/login.srf?wa=wsignin1.0&amp;wtrealm=https%3a%2f%2faccesscontrol.windows.net%2f&amp;wreply=https%3a%2f%2ftfsprodch1acs01.accesscontrol.windows.net%2fv2%2fwsfederation&amp;wp=MBI_FED_SSL&amp;wctx=cHI9d3NmZWRlcmF0aW9uJnJtPWh0dHBzJTNhJTJmJTJmYXBwLnZzc3BzLnZpc3VhbHN0dWRpby5jb20lMmYmcnk9aHR0cHMlM2ElMmYlMmZhcHAudnNzcHMudmlzdWFsc3R1ZGlvLmNvbSUyZl9zaWduZWRpbiUzZnJlYWxtJTNkYXBwLnZzc3BzLnZpc3VhbHN0dWRpby5jb20lMjZwcm90b2NvbCUzZHdzZmVkZXJhdGlvbiUyNmNhY2hlX2tleSUzZDdNNzVPTzVTWjRFRVJBWklFSzQyS1pWSFBTTE5XNzQ0VEI0RkVUVEVYU1dJWTJSNTRTVEElMjUzRCUyNTNEJTI1M0QlMjUzRA2&amp;cbcxt=eyJodCI6MywiaGlkIjoiYTVjYTM1ZWItMTQ4ZS00Y2NkLWJiYjMtZDMxNTc2ZDc1OTU4IiwicXMiOnsicmVhbG0iOiJhcHAudnNzcHMudmlzdWFsc3R1ZGlvLmNvbSIsInJlcGx5X3RvIjoiaHR0cHM6Ly9hcHAudnNzcHMudmlzdWFsc3R1ZGlvLmNvbS9nby9wcm9maWxlP2FjY291bnQ9dHJ1ZSZta3Q9ZW4tdXMmd3QubWNfaWQ9b35tc2Z0fnZzY29tfmZyZWUtb2ZmZXJzfmRuODcyNzA3In0sInJyIjoiIiwidmgiOiIifQ2">Click here to sign up for free account</a> (you need a Live,Hotmail, or Outlook Email account).</li>
+                    </ul>
+                    <p class="TestCases">BitBucket</p>
+                    <ul>
+                        <li>
+                            <p>
+                                <a href="https://bitbucket.org/" target="_blank">https://bitbucket.org/</a>
+                            </p>
+                            <ul>
+                                <li>
+                                    <p>User: madcapqa@gmail.com PW: R3m3mb3r!</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="TestCases">Git Repo Hosted on TFS</p>
+                    <ul>
+                        <li>
+                            <a href="http://win2k8tfs15:8080/tfs/defaultcollection/GITSourceControl/_git/" target="_blank">http://win2k8tfs15:8080/tfs/defaultcollection/GITSourceControl/_git/</a>
+                            <ul>
+                                <li>User and password - Windows Credential</li>
+                                <li>Multiple new git repositories can be created on this TFS 2015 server</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="https://win2k12tfs17.madcapsoftware.com/tfs/DefaultCollection/_projects">https://win2k12tfs17.madcapsoftware.com/tfs/DefaultCollection/_projects</a>
+                            </p>
+                        </li>
+                        <li>
+                            <a href="http://win2k16tfs18:8080/tfs/DefaultCollection/DefaultProjectGIT">http://win2k16tfs18:8080/tfs/DefaultCollection/DefaultProjectGIT</a>
+                        </li>
+                        <li>Git repositories can also be created on <a href="#VisualStudio">Visual Studio Online</a> servers</li>
+                    </ul>
+                    <p class="TestCases">MadCap Central</p>
+                    <ul>
+                        <li>User:&#160;test1@madcapsoftware.com PW: Password1! (available on all servers)</li>
+                        <li>Production Server<i>(don't use for regular testing - this is the portal used by customers)</i><ul><li>Central Pane - https://api.madcapcentral.com</li><li>Browser - <a href="https://portal.madcapcentral.com/" target="_blank">https://portal.madcapcentral.com/</a></li></ul></li>
+                        <li>Test Server<ul><li>Central Pane - https://madcloudapitest.azurewebsites.net</li><li>Browser - <a href="https://madcloudportaltest.azurewebsites.net/" target="_blank">https://madcloudportaltest.azurewebsites.net/</a></li></ul></li>
+                        <li>QA Server<ul><li>Central Pane - https://madcloudapiqa.azurewebsites.net</li><li>Browser - <a href="https://madcloudportalqa.azurewebsites.net/" target="_blank">https://madcloudportalqa.azurewebsites.net/</a></li></ul></li>
+                        <li>Dev Server<ul><li>Central Pane - https://madcloudapidev.azurewebsites.net</li><li>Browser - <a href="https://madcloudportaldev.azurewebsites.net/" target="_blank">https://madcloudportaldev.azurewebsites.net</a></li></ul></li>
+                    </ul>
+                </div>
+                <h4>Microsoft Team Foundation Server</h4>
+                <div class="indent20">
+                    <MadCap:dropDown class="info noPrint">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>How to Connect</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody>
+                            <ol>
+                                <li>No local installation needed. Optional: Team Explorer or Visual Studio if you wish to view mappings and workspaces.</li>
+                                <li>In Flare, browse to the server URL</li>
+                                <li>Login is your Madcap user/pw</li>
+                                <li>On most servers, test1 is available as a user account for multi-user testing<ul><li>User: madcap\test1 PW: R3m3mb3r!</li></ul></li>
+                            </ol>
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                    <p class="TestCases">TFS 2008</p>
+                    <p class="note">No longer supported in Flare 2017 r3</p>
+                    <ul>
+                        <li>
+                            <a href="http://win2k3tfs08:8080/" target="_blank">http://win2k3tfs08:8080/</a>
+                        </li>
+                    </ul>
+                    <p class="TestCases">TFS 2010</p>
+                    <ul>
+                        <li>
+                            <a href="http://support:8080/tfs/" target="_blank">http://support:8080/tfs/</a>
+                        </li>
+                        <li>
+                            <a href="http://tfs10b:8080/tfs" target="_blank">http://tfs10b:8080/tfs</a>
+                            <ul>
+                                <li>This server is for permission testing. Use User1/2/4 for permission testing) <a href="#Permissions">Click here to see details.</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="TestCases">TFS 2012</p>
+                    <ul>
+                        <li>
+                            <a href="http://win2k8tfs12:8080/tfs/" target="_blank">http://win2k8tfs12:8080/tfs/</a>
+                        </li>
+                    </ul>
+                    <p class="TestCases">TFS 2015</p>
+                    <ul>
+                        <li>
+                            <a href="http://win2k8tfs15:8080/tfs" target="_blank">http://win2k8tfs15:8080/tfs</a>
+                        </li>
+                    </ul>
+                    <p class="TestCases">TFS 2017</p>
+                    <p class="note">TFS 2017 support was added to Flare 2017r3</p>
+                    <ul>
+                        <li>
+                            <a href="https://win2k12tfs17.madcapsoftware.com/tfs/" target="_blank">https://win2k12tfs17.madcapsoftware.com/tfs/</a>
+                        </li>
+                        <li>On 12/1/2017 - TLS 1.0 was disabled from the server - and Flare version 13.3.6547 and earlier do not support connecting to TFS servers where TLS 1.0 is disabled (see <a href="https://s3.madcapsoftware.com:4343/SourceCollection/SOURCE/_workitems/edit/136042" target="_blank">BUG 136042)</a></li>
+                    </ul>
+                    <p class="TestCases">TFS 2018</p>
+                    <ul>
+                        <li>
+                            <a href="http://win2k16tfs18:8080/tfs/DefaultCollection/DefaultProjectTFS" target="_blank">http://win2k16tfs18:8080/tfs/DefaultCollection/DefaultProjectTFS</a>
+                        </li>
+                    </ul>
+                    <p class="TestCases">Visual Studio Online</p>
+                    <p class="note">Visual Studio Online support was added in Flare 11</p>
+                    <ul>
+                        <li>
+                            <a href="https://madcap.visualstudio.com/DefaultCollection" target="_blank">https://madcapqa.visualstudio.com/DefaultCollection</a>
+                            <ul>
+                                <li>User1: madcapqa@outlook.com PW: R3m3mb3r!</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://madcaptest.visualstudio.com/" target="_blank">https://madcaptest.visualstudio.com</a>
+                            <ul>
+                                <li>This is a TFS online server without a Default Collection</li>
+                                <li>User1: test1@madcapsoftware.com PW: R3m3mb3r!</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <MadCap:dropDown class="info noPrint">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>For permission testing on <span class="bold">http:\\tfs10b:8080\tfs</span></MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody>
+                            <ul>
+                                <li>
+                                    <a name="Permissions">
+                                    </a>tfs10b\User1:<ul><li>Use Full web access Features –  Allow:checked, Deny:unchecked</li><li>View instance-level information – Allow:checked, Deny:unchecked</li><li>View instance-level permissions from application level</li><li>No edit-instance level permissions</li></ul></li>
+                                <li>tfs10b\User2 :<ul><li>Everything unchecked - no permissions</li></ul></li>
+                                <li>tfs10b\User4 :<ul><li>No edit-instance level permissions</li><li>Use Full web access Features –  Allow:checked, Deny:unchecked</li><li>View instance-level information – Allow:checked, Deny:unchecked</li><li>No edit-instance level permissions</li></ul></li>
+                            </ul>
+                            <p>&#160;</p>
+                            <p>
+                                <b>To test permissions</b>
+                                <MadCap:expanding>
+                                    <MadCap:expandingHead style="font-weight: bold; color: #000000;">bug 52461</MadCap:expandingHead>
+                                    <MadCap:expandingBody>fixed  error message that occurred for Flare 9.1.1 and earlier-"needs the following permission(s) to perform this action: Edit instance-level information"</MadCap:expandingBody>
+                                </MadCap:expanding>
+                            </p>
+                            <ol>
+                                <li>Go to !Project | Project Properties | Source Control tab and select "<b>Microsoft Team Foundation Server</b>"</li>
+                                <li>Click "<b>Browse</b>" next to the Server dropdown</li>
+                                <li>
+                                    <p>Click the green "<span style="color: #32cd32; font-weight: normal; font-size: 20pt;">+</span>" sign to add a server and enter "<i>tfs10b</i>". Click <b>OK</b>.</p>
+                                    <p>
+                                        <img src="../../Images/TestPlans/Flare/Source Control/TFS_permissions1.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 48px;" />
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>When prompted for credentials enter either user 4 or user 2.</p>
+                                    <p>
+                                        <img src="../../Images/TestPlans/Flare/Source Control/TFS_permissions2.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 48px;" />
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <b>tfs10b\user4 has view collection-level permissions</b> - and there should be no error and the "<i>DefaultCollection</i>" should be displayed under available Team Project Collections.  User 4 does not have edit instance-level information.</p>
+                                            <p>
+                                                <img src="../../Images/TestPlans/Flare/Source Control/TFS_permissions3.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 48px;" />
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <b>tfs10b\user2 has no view collection-level permissions</b> - and should provide message that "View collection-level information" is needed</p>
+                                            <p>
+                                                <img src="../../Images/TestPlans/Flare/Source Control/TFS_permissions4.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 48px;" />
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <p class="note">Note: The regular Windows login for the support:8080 server has edit instance-level permissions which should no longer be required to view the collections within Flare.</p>
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                </div>
+                <h4>Subversion</h4>
+                <div class="indent20">
+                    <MadCap:dropDown class="info noPrint">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>How to Connect</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody>
+                            <p class="note">Note: This applies only to Flare 7 and later, due to our own built in integration</p>
+                            <p>For HTTP  connection, no local install needed.</p>
+                            <ol>
+                                <li>In&#160;Flare, browse to server URL</li>
+                                <li>Login is your Madcap user/pw</li>
+                            </ol>
+                            <p>&#160;</p>
+                            <p>For HTTPS connection, no local install needed.</p>
+                            <ol>
+                                <li>In Flare, browse to https://appserver:8443/svn/SvnTest/</li>
+                                <li>Login has to be setup on the machine. Ask Jay for access. (test 1 / test1 is a generic user, feel free to use)</li>
+                            </ol>
+                            <p>&#160;</p>
+                            <p>For SVN&#160;protocol, no local install needed</p>
+                            <ol>
+                                <li>In Flare, browse to svn://support:3690/</li>
+                                <li>Login has to be setup on the machine. Ask Jay or Rick for access. (test1 / test1 is a generic user, feel free to use)</li>
+                            </ol>
+                            <p>&#160;</p>
+                            <p>For 6.1 and earlier, you need the PUSHOK plug-in. Steps for that to come later.</p>
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                    <p class="TestCases">Version 1.7.1 (using VisualSVN Server 2.5.1)</p>
+                    <ul>
+                        <li>Same Repo is accessed via any of the following URLs:<ul><li><a href="http://support:81/svn/SvnRepo" target="_blank">http://support:81/svn/SvnRepo</a></li><li><a href="http://support.madcap.corp:81/svn/svnrepo/" target="_blank">http://support.madcap.corp:81/svn/svnrepo/</a></li><li><a href="svn://support:3690/" target="_blank">svn://support:3690</a></li><li>User:&#160;test1 (must be lowercase) PW: R3m3mb3r!</li></ul></li>
+                    </ul>
+                    <p class="TestCases">Version 1.9</p>
+                    <ul>
+                        <li>
+                            <a href="https://appserver01.madcap.corp:8443/svn/repo1/" target="_blank">https://appserver01.madcap.corp:8443/svn/repo1/&#160;</a>
+                            <ul>
+                                <li>can also be accessed via - <a href="https://svn19:8443/svn/repo1/" target="_blank">https://svn19:8443/svn/repo1/</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://appserver01.madcap.corp:8443/svn/repo2/" target="_blank">https://appserver01.madcap.corp:8443/svn/repo2/&#160;</a>
+                            <ul>
+                                <li>can also be accessed via -<a href="https://svn19:8443/svn/repo2/" target="_blank">https://svn19:8443/svn/repo2/</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>User: Test1 PW:&#160;R3m3mb3r!</p>
+                        </li>
+                        <li class="old">
+                            <MadCap:dropDown class="old noPrint">
+                                <MadCap:dropDownHead>
+                                    <MadCap:dropDownHotspot>OLD</MadCap:dropDownHotspot>
+                                </MadCap:dropDownHead>
+                                <MadCap:dropDownBody class="old noPrint">
+                                    <ul class="old noPrint">
+                                        <li>
+                                            <p>http://support.madcap.corp:81/svn/svnrepo/ </p>
+                                        </li>
+                                        <li>
+                                            <p>https://appserver01.madcap.corp:8443/svn/SvnTest/</p>
+                                        </li>
+                                        <li>
+                                            <p>https://appserver01.madcap.corp:8443/svn/repo18/</p>
+                                        </li>
+                                        <li>SVN 1.9 REPO 1: http://svn19/svn/testrepo1</li>
+                                        <li>SVN 1.9 REPO 2: http://svn19/svn/testrepo2</li>
+                                    </ul>
+                                </MadCap:dropDownBody>
+                            </MadCap:dropDown>
+                        </li>
+                    </ul>
+                    <p class="TestCases">Version 1.8.5</p>
+                    <ul>
+                        <li>
+                            <p>
+                                <a href="http://svn18/svn/repo1" target="_blank">http://svn18/svn/repo1</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="http://svn18/svn/repo2" target="_blank">http://svn18/svn/repo2</a>
+                            </p>
+                        </li>
+                        <li>User 1: test1 PW: R3m3mb3r!</li>
+                        <li>User 2: test2 PW: R3m3mb3r!</li>
+                        <li class="old">
+                            <MadCap:dropDown class="old noPrint">
+                                <MadCap:dropDownHead>
+                                    <MadCap:dropDownHotspot>OLD</MadCap:dropDownHotspot>
+                                </MadCap:dropDownHead>
+                                <MadCap:dropDownBody>
+                                    <ul class="old noPrint">
+                                        <li>SVN 1.8.5 REPO 1: http://svn18/svn/testrepo1</li>
+                                        <li>SVN 1.8.5 REPO 2: http://svn18/svn/testrepo2</li>
+                                    </ul>
+                                </MadCap:dropDownBody>
+                            </MadCap:dropDown>
+                        </li>
+                    </ul>
+                    <p class="TestCases">Subversion Cloud</p>
+                    <ul>
+                        <li>
+                            <a href="https://madcapsoftware.svn.cloudforge.com/flaretest" target="_blank">https://madcapsoftware.svn.cloudforge.com/flaretest</a>
+                        </li>
+                        <li>User: madcapsoftware\MadCap PW: R3m3mb3r!</li>
+                    </ul>
+                </div>
+                <h4>Perforce</h4>
+                <div class="indent20">
+                    <MadCap:dropDown class="info noPrint">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>How to Connect</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody>
+                            <p>No Local install needed. In Flare:</p>
+                            <ol>
+                                <li>Type the server <i>cent64perforce:1666</i></li>
+                                <li>Browse and select user test1 or test2</li>
+                                <li>Click New for Steam to create new steam for your project - A login dialog should appear with the User already populated</li>
+                                <li>Enter R3m3mb3r! as the password and press OK</li>
+                                <li>Browse and select any depot available where your stream will be created</li>
+                            </ol>
+                            <p>&#160;</p>
+                            <p>
+                                <a name="SSLPerforce">
+                                </a>To test SSL&#160;enabled Perforce (added in Flare 10.2 for bug <a href="https://s3.madcapsoftware.com:4343/tfs/SourceCollection/SOURCE/QA Team/_workItems#_a=edit&amp;id=90427">90427</a>), you will have to install p4vinst64 Client (P4V+P4D).exe from <a href="file://fs1/Software/Perforce">\\fs1\Software\Perforce</a></p>
+                            <ol>
+                                <li>
+                                    <p>Open p4admin.exe</p>
+                                </li>
+                                <li>
+                                    <p>In the toolbar, click Connections &gt; !Open Connections</p>
+                                </li>
+                                <li>
+                                    <p>server: <i>ssl:cent64perforce:1667</i> user: you can use test1/R3m3mb3r! &gt; ok</p>
+                                </li>
+                                <li>
+                                    <p>You'll see the message below, Select "Trust this fingerprint" &gt; !Connect</p>
+                                    <p>
+                                        <img src="../../Images/TestPlans/Flare/Source Control/Source Control--SSLPerforceEstablishConnection.png" />
+                                        <br />
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Enter your password &gt; Ok&#160;&gt;&#160;Now you can follow the steps above using the SSL&#160;server</p>
+                                </li>
+                            </ol>
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                    <ul>
+                        <li>cent64perforce:1666 (no pw, newest version of P4/Helix)</li>
+                        <li>cent64perforce:1777 (older version of p4)</li>
+                        <li>ssl:cent64perforce:1888 (newest version of p4/helix with SSL ENABLED)- for details, <a href="#SSLPerforce">click here</a>.</li>
+                        <li>Admin account: root PW:&#160;R3m3mb3r!</li>
+                        <li>Super User privileges: lokamoto PW: R3m3mb3r!</li>
+                    </ul>
+                    <p class="note">Note: Perforce integration was added in Flare 10</p>
+                    <MadCap:dropDown class="info noPrint">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>Server Management - IMPORTANT to read when using server</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody>
+                            <p class="note">Note: Since we use the trial version of Perforce at MadCap, we are limited in the number of workspaces and projects on the server. As you test, you'll need to clear these out using P4V and P4Admin which are available from <a href="file://fs1/Software/Perforce">\\fs1\Software\Perforce</a></p>
+                            <ul>
+                                <li>Server only allows about 1000 files maximum in the repo</li>
+                                <li>Maximum of 20 users / 20 streams / 20 workspaces - if we exceed this, we will no longer be able to bind projects to the server</li>
+                                <li>Once limits are reached, P4V and P4Admin tools can be used to delete the previously entered files, workspaces, streams, and unused user accounts</li>
+                            </ul>
+                            <p class="bold">To delete workspaces:</p>
+                            <ol>
+                                <li>Open P4V and login as an administrator (ex:&#160;rbutros/R3m3mb3r!)</li>
+                                <li>!View |&#160;Workspaces</li>
+                                <li>If there is a filter applied, remove it &gt;&#160;You should now see a list of all workspaces created.</li>
+                                <li>R-click a workspace &gt; Delete workspace '[name]' &gt;&#160;Yes</li>
+                            </ol>
+                            <p class="bold">To delete projects</p>
+                            <ol>
+                                <li>Open P4Admin and login as an administrator (ex:&#160;rbutros/R3m3mb3r!)</li>
+                                <li>!View |&#160;Depots</li>
+                                <li>Under the stream "reob" R-click the project you want to delete&#160;&gt;&#160;!Obliterate....</li>
+                                <li>In the dialog,Obliterate all versions should be selected by default, click Obliterate</li>
+                                <li>You will be warned that this deletes your project from the server, Select "Proceed with obliterating files"&#160;&gt; Ok &gt;&#160;Ok</li>
+                            </ol>
+                            <p class="bold"> More Details</p>
+                            <p>Since P4 keeps an archive of what's being saved as it seems, it might be a good practice to delete depots and create new ones to start fresh since we upload the same project more than once. It's also a good practice to keep the time to depot was created so the month and year was mentioned in the depot name.</p>
+                            <p>CMD needs to be used to delete depots with archives. Here's how:</p>
+                            <p>cd C:\Program Files\Perforce</p>
+                            <p>p4 set P4PORT=cent64perforce:1666</p>
+                            <p>p4 set P4USER=root</p>
+                            <p>p4 depot -d -f testStream</p>
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                </div>
+                <h4>Microsoft Visual&#160;SourceSafe</h4>
+                <div class="indent20">
+                    <ul>
+                        <li>
+                            <b>VSS 2005</b> - \\appserver01\vss</li>
+                        <li>User Info<ul><li>User1: test1 PW: R3m3mb3r!</li><li>User2: readonly PW: R3m3mb3r!</li></ul></li>
+                    </ul>
+                    <MadCap:dropDown class="info noPrint">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>How to Connect- only works with Flare 32-bit</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody>
+                            <ol>
+                                <li>Install VSS from \\fs1\software\Microsoft\Visual Source Safe 2005\VSS2005\en_vss_2005</li>
+                                <li>In Flare, browse to \\appserver01\vss and select the srcsafe.ini</li>
+                                <li>If you have authentication errors ask Jay, Rob, or Lori to add you to each server. (Done via the VSS admin tool. No PW needed)</li>
+                            </ol>
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                    <MadCap:dropDown class="old noPrint">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>OLD</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody class="old noPrint">
+                            <p>\\winesap\VSS_QA\</p>
+                            <p>Single User check out</p>
+                            <p>\\winesap\VSS_QA_Multi\</p>
+                            <p>Multi-User check out</p>
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                </div>
+                <h3>Sharepoint Server location</h3>
+                <div class="indent20">
+                    <p class="TestCases">Sharepoint 2007</p>
+                    <ul>
+                        <li>
+                            <a href="http://win2k8share07/" target="_blank">http://win2k8share07/</a>
+                        </li>
+                    </ul>
+                    <p class="TestCases">Sharepoint 2010</p>
+                    <ul>
+                        <li>
+                            <a href="http://win2k8share10/" target="_blank">http://win2k8share10/</a>
+                        </li>
+                    </ul>
+                    <p class="TestCases">Sharepoint 2013</p>
+                    <ul>
+                        <li>
+                            <a href="http://win2k8share13/" target="_blank">http://win2k8share13/ </a>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="https://win2k8share13.madcap.corp/" target="_blank">https://win2k8share13.madcap.corp</a>
+                            </p>
+                            <ul>
+                                <li>12/13/2017 - TLS 1.0 is disabled for this link to the server- and Flare version 13.3.6547 and earlier do not support connecting to TFS servers where TLS 1.0 is disabled (see <a href="https://s3.madcapsoftware.com:4343/SourceCollection/SOURCE/_workitems/edit/136042" target="_blank">BUG 136042)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="TestCases">Sharepoint 2016</p>
+                    <ul>
+                        <li>
+                            <a href="http://win2k12share16/" target="_blank">http://win2k12share16/</a>
+                        </li>
+                        <li>TEST1 is a site collection administrator</li>
+                    </ul>
+                    <p class="TestCases">Sharepoint 365 (not yet supported in Flare)</p>
+                    <ul>
+                        <li>
+                            <a href="https://madcapsoftware.sharepoint.com/" target="_blank">https://madcapsoftware.sharepoint.com</a>
+                            <ul>
+                                <li>
+                                    <p>User: madcaptest@MadCapSoftware.onmicrosoft.com PW: Know77spectr@l!!</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="note">Use your domain credentials to access Sharepoint 2007/2010/2013/2016 with read/write privilege.</p>
+                    <ul>
+                        <li>User: madcap\test2 password: R3m3mb3r! -- <i>This is read-only account.</i></li>
+                        <li>User: madcap\qatest password: R3m3mb3r! -- <i>This account doesn't have access rights any of the servers.</i></li>
+                        <li>User: readonly@MadCapSoftware.onmicrosoft.com password: R3m3mb3r! --<i>This is read-only account for the Sharepoint 365 server</i></li>
+                    </ul>
+                    <p class="note">Claims Based Sharepoint Servers are not supported in Flare (see <a href="https://s3.madcapsoftware.com:4343/SourceCollection/SOURCE/_workitems/edit/51638" class="caption">BUG 51638</a> and <a href="https://s3.madcapsoftware.com:4343/SourceCollection/SOURCE/_workitems/edit/128810" class="caption">BUG 128810</a>)</p>
+                    <MadCap:dropDown class="old noPrint">
+                        <MadCap:dropDownHead>
+                            <MadCap:dropDownHotspot>OLD - Claims Based Sharepoint servers</MadCap:dropDownHotspot>
+                        </MadCap:dropDownHead>
+                        <MadCap:dropDownBody class="old noPrint">
+                            <p>Regular NTLM&#160;Sharepoint</p>
+                            <ul>
+                                <li>http://msclaims</li>
+                            </ul>
+                            <p>Claims based authentication</p>
+                            <ul>
+                                <li>http://msclaims:8081</li>
+                            </ul>
+                            <p>Sharepoint Central Administration</p>
+                            <ul>
+                                <li>http://msclaims:48533</li>
+                            </ul>
+                            <p>Users:</p>
+                            <ul>
+                                <li>claims1; claims2; claims3</li>
+                                <li>PW: R3m3mb3r!</li>
+                            </ul>
+                            <p>SQL&#160;User</p>
+                            <ul>
+                                <li>SA</li>
+                                <li>R3m3m3b3r!</li>
+                            </ul>
+                        </MadCap:dropDownBody>
+                    </MadCap:dropDown>
+                </div>
+                <h3>Servers for Publishing</h3>
+                <p class="note">NOTE: When using any of the publishing servers, please create a sub-folder with your name at the root.</p>
+                <h4>Default Port FTP</h4>
+                <ul>
+                    <li>
+                        <p>
+                            <span class="bold">To upload: </span>ftp://rnd.madcapsoftware.com</p>
+                        <ul>
+                            <li>Connection Mode: Active</li>
+                            <li>User: rndtest PW: Plut@rch*!</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="bold">To view: </span> http://rnd.madcapsoftware.com</li>
+                </ul>
+                <h4>Apache Tomcat</h4>
+                <ul>
+                    <li>
+                        <span class="bold">To upload: </span>ftp://test1@apachetomcat/ (open windows explorer and paste in the path)<ul><li>User: test1 PW: R3m3mb3r!</li></ul></li>
+                    <li>
+                        <span class="bold">To view: </span>http://apachetomcat/&lt;name&gt;/</li>
+                </ul>
+                <h4>Publishing to SFTP</h4>
+                <ul>
+                    <li>
+                        <span class="bold">To upload: </span>: win2k3test<ul><li>Port: 22</li><li>Connection Mode: Passive</li><li>User: test1 PW: R3m3mb3r!</li></ul></li>
+                    <li>
+                        <span class="bold">To view: </span>http://win2k3test/&lt;name&gt;/</li>
+                </ul>
+                <h4>Linux Box</h4>
+                <ul>
+                    <li>
+                        <span class="bold">To upload: </span>\\linuxbox\www\<ul><li>User: madcap PW: R3m3mb3r!</li></ul></li>
+                    <li>
+                        <span class="bold">To view: </span>http://linuxbox/&lt;name&gt;/</li>
+                </ul>
+                <h4>Custom Port FTP</h4>
+                <ul>
+                    <li>
+                        <p>
+                            <span class="bold">To upload: </span>appserver01.madcap.corp</p>
+                        <ul>
+                            <li>User: Test1 PW: R3m3mb3r!</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="bold">To view: </span>http://appserver01.madcap.corp/&lt;name&gt;/</li>
+                </ul>
+                <h4>Salesforce</h4>
+                <div class="indent20">
+                    <p>Test Account</p>
+                    <ul>
+                        <li>Email: sftest@madcapsoftware.com PW:&#160;R3m3mb3r!</li>
+                    </ul>
+                    <p>RnD Server Rules:</p>
+                    <ul>
+                        <li>Its for us to use and test against, just don’t upload massive projects yet.</li>
+                        <li>Also, we are all sharing this one user so don’t go making wholesale crazy changes to it.</li>
+                        <li>
+                            <a href="http://pm/Products/Utilities_Tools/Salesforce/Setting up SalesForce for testing.htm" target="_blank">Use a dev environment</a> for the real “what if” scenarios.</li>
+                    </ul>
+                </div>
+                <h4>Sharepoint</h4>
+                <div class="indent20">
+                    <p>Publishing to Sharepoint</p>
+                    <ul>
+                        <li>Connect to the Sharepoint server with Sharepoint Explorer</li>
+                        <li>Select "File System" destination type in the desintation file</li>
+                        <li>Enter in the URL&#160;to the Sharepoint destination (ex: http://win2k8share10/Shared Documents/&lt;user&gt;/) in the directory field</li>
+                    </ul>
+                </div>
+                <h3>Proxy Server</h3>
+                <div class="indent20">
+                    <p>Go to Control Panel &gt; Internet Options &gt; Connections &gt; LAN Settings &gt; Proxy Server</p>
+                    <ul>
+                        <li>address: linuxbox</li>
+                        <li>Port: 3128</li>
+                        <li>User: test1 PW: R3m3mb3r!</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="sticky">
+                    <MadCap:menuProxy mc-linked-toc="$topicHeadings" style="mc-toc-depth: 4;mc-context-sensitive: True;mc-include-parent: True;mc-include-siblings: True;mc-include-children: True;" data-mc-skin="/Project/Skins/SideMenuFixed.flskn" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="462" MadCap:lastWidth="1322">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Start</span>
+                <ul>
+                    <li>
+                        <span class="bold">X:</span>Enter Start X percentage.</li>
+                    <li>
+                        <span class="bold">Y:</span>Enter Start Y percentage.</li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Top</span>
+                <ul>
+                    <li>
+                        <span class="bold">X:</span>Enter Top X percentage.</li>
+                    <li>
+                        <span class="bold">Y:</span>Enter Top Y percentage.</li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Left</span>
+                <ul>
+                    <li>
+                        <span class="bold">X:</span>Enter Left X percentage.</li>
+                    <li>
+                        <span class="bold">Y:</span>Enter Left Y percentage.</li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Bottom</span>
+                <ul>
+                    <li>
+                        <span class="bold">X:</span>Enter Bottom X percentage.</li>
+                    <li>
+                        <span class="bold">Y:</span>Enter Bottom Y percentage.</li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Right</span>
+                <ul>
+                    <li>
+                        <span class="bold">X:</span>Enter Right X percentage.</li>
+                    <li>
+                        <span class="bold">Y:</span>Enter Right Y percentage.</li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Inner Top</span>
+                <ul>
+                    <li>
+                        <span class="bold">X:</span>Enter Inner Top X percentage.</li>
+                    <li>
+                        <span class="bold">Y:</span>Enter Inner Top Y percentage.</li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">End</span>
+                <ul>
+                    <li>
+                        <span class="bold">X:</span>Enter End X percentage.</li>
+                    <li>
+                        <span class="bold">Y:</span>Enter End Y percentage.</li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Thickness</span>
+                <ul>
+                    <li>
+                        <span class="bold">Start:</span> Enter pixel value for Start thickness.</li>
+                    <li>
+                        <span class="bold">Top:</span> Enter pixel value for Top thickness.</li>
+                    <li>
+                        <span class="bold">Left:</span> Enter pixel value for Left thickness.</li>
+                    <li>
+                        <span class="bold">Bottom:</span> Enter pixel value for Bottom thickness.</li>
+                    <li>
+                        <span class="bold">Right:</span> Enter pixel value for Right thickness.</li>
+                    <li>
+                        <span class="bold">Scale All:</span> Enter percentage value for scale.</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

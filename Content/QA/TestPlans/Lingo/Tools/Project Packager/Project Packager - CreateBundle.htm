@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2769" MadCap:lastWidth="1362" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Project Packager - UI  </h2>
+        <h3>Opening the UI</h3>
+        <p>There are different way to invoke the Create Bundle dialog:</p>
+        <ul class="checkbox">
+            <li>From the file list by pressing the Create Bundle button:<br /><img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/ProjectPackager---PrepareBundle.png" alt="" title="" /><br /><br /></li>
+            <li>Context menu from the file list<br /><br /><img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/ProjectPackager---PrepareBundle1.png" /></li>
+            <li>Context menu from the TOC&#160;View pane<br /><img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/ProjectPackager---PrepareBundle2.png" /><br /></li>
+            <li>From the Home Ribbon <br /><img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/ProjectPackager---PrepareBundle3.png" /></li>
+        </ul>
+        <ul style="list-style-type: square;">
+            <li>
+                <b>Tooltip</b>for all should be:&#160;Create a bundle to send to translators</li>
+            <li>When file(s) are selected in the file list or TOC&#160;View pane, clicking the create bundle button from all options above should add the selected files to the output files (Create bundle dialog below)</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>Create Bundle UI</h3>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/ProjectPackager---CreateBundle.png" />
+        </p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>
+            <b>Processing...</b> dialog:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/ProjectPackager---Processing.png" style="mc-thumbnail: hover;mc-thumbnail-max-width: 150px;" />
+        </p>
+        <p>&#160;</p>
+        <p>
+            <b>Test Cases</b>:</p>
+        <ul>
+            <li>Clicking "Cancel" should stop bundle creation and close dialog with no changes</li>
+            <li>In the event of an error, the "Cancel" button should change to "Close" and the "Save Log" button should be enabled</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/ProjectPackager---ProcessingError.png" style="mc-thumbnail: hover;mc-thumbnail-max-width: 150px;" />
+        </p>
+        <p>&#160;</p>
+        <ul>
+            <li>Clicking the "Save Log" button should save the errors and make the log accessible via the project properties</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <b>Statistics for the new bundle</b> dialog:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Project Packager/ProjectPackager---StatisticsForBundle.png" alt="" title="" />
+        </p>
+        <p>&#160;</p>
+        <p>
+            <b>Test Cases</b>:</p>
+        <ul class="checkbox">
+            <li>Title is correct</li>
+            <li>Spelling and Grammar are correct</li>
+            <li>No duplicate accelerators</li>
+            <li>All accelerators function</li>
+        </ul>
+        <ul class="checkbox">
+            <li>Clicking the icon in the upper left corner displays options:<ul><li>Restore, Min., are disabled</li><li>Move, Size, Max., Close – All work</li></ul></li>
+        </ul>
+        <ul class="checkbox">
+            <li>Close and &lt;Enter&gt; close dialog with changes</li>
+            <li>Dialog is resizable and redraws correctly</li>
+            <li>Right-clicking anywhere “Reset Persistent Data”</li>
+            <li>Dialog remembers setting and sizes from previous session</li>
+            <li>Dialog opens correctly on a dual monitor system</li>
+            <li>Dialog should show word and segment count (Make sure to use a smaller project and test that the counts match with the ones from the project)</li>
+            <li>Clicking "Close" should close the dialog and show the newly created ZIP file on disk:</li>
+            <li>Compare the bundle statistics to the file statistics created by compute statistics.</li>
+            <li> Open the ZIP file and make sure all the files are there</li>
+        </ul>
+    </body>
+</html>

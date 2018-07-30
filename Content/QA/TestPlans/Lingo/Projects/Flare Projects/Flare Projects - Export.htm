@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="2696" MadCap:lastWidth="1329" MadCap:fileTags="Status.Lingo V3,AuthorFileTagSet.Cristian,Product.Lingo">
+    <head>
+    </head>
+    <body>
+        <h2>Flare Projects - Export            </h2>
+        <h3>Opening the UI</h3>
+        <p>To Export any translated content:&#160;</p>
+        <p>!File &gt; Export <img src="../../../../../Resources/Images/TestPlans/Lingo/Exporting/UI--FileExport.png" class="smallThumb" style="width: 131px;height: 145px;" /></p>
+        <p class="note">Tooltip should say Export to Flare - Export translated files back to Flare. </p>
+        <h3>UI&#160;Test Cases:</h3>
+        <h4>Export Finished Translation dialog:</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Exporting/UI--ExportFinishedTranslation.png" class="properties" alt="" title="">
+            </img>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Exporting/UI--ExportFinishedTranslationMulti.png" class="properties" />
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] ">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <hr>
+        </hr>
+        <h4>UI&#160;Controls</h4>
+        <ul style="list-style-type: square;">
+            <li>
+                <span class="bold">Project to Export:</span> Displays the name and path of the current Lingo project - <i>Test path with special characters verify path is rendered correctly.</i> </li>
+            <li>
+                <span class="bold">Destination Filename:</span> Lists the current Flare project name. - <i>Test Entering a different name with spacial characters verify that the exported project is using the given name</i><br /><p class="note"><b>Note:</b> Exporting with no FileName would return this error: <img src="../../../../../Resources/Images/TestPlans/Lingo/Exporting/UI--ExportNoFileName.png" class="smallThumb" /></p></li>
+            <li>
+                <span class="bold">Destination Folder:</span> This field should be blank by default. - <i>Test Exporting to Mapped network drive, Network location and UNC</i></li>
+            <li>
+                <span class="bold">Browse:</span> Opens the Browse For Folder dialog, which lets you select a different folder to store the project files.</li>
+            <li>
+                <span class="bold">Export:</span> Click this button to export the project.</li>
+            <li>
+                <b>Cancel: </b>Cancels out the export dialog - <i>Test that it's being canceled when pressing Esc key on the keyboard. </i></li>
+            <li>
+                <b>Make a zip file after export: </b>Checking this option would create a zipped copy of the exported project. </li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Overwrite existing project dialog: </h4>
+        <p>If there's a project with the same name in the exporting folder the prompt below should appear. Clicking OK would overwrite the changed files, Cancel should cancel the export. Test deleted files via a diff and export to overwrite </p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Exporting/UI-SelectedExportExists.png" />
+        </p>
+        <p>&#160;</p>
+        <h4>Trial Mode
+		</h4>
+        <p>When Lingo is used in Trial Mode, it will prompt you with the following dialog window:</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Exporting/UI-TrialMode.png" alt="" title="">
+            </img>
+        </p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>Clicking “OK” or the X or Esc on the keyboard should finish the export process.</li>
+            <li>Open the exported translated content - <i>Verify that it's scrambled. </i></li>
+            <li>When Lingo is activated, the Trial mode dialog should not appear. </li>
+        </ul>
+        <p>&#160;</p>
+        <h4>'Exporting...' progress dialog:</h4>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Exporting/UI-ExportingProgress.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] ">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <b>Open Exported Project: </b>Opens up the exported Project/ file or folder depending on the translated content. </li>
+            <li>
+                <b>Save Log:&#160;</b>Save the log if there were errors importing the file(s) /project to be translated <img src="../../../../../Resources/Images/TestPlans/Lingo/Exporting/UI--LogFileSaved.png" class="smallThumb" /> - Verify that Save log button is grayed out after the log is saved.<br /><p class="note">Log folder should be created in the project folder with the saved mclog file in it. </p></li>
+            <li>
+                <b>Close:</b> Closes the Exporting dialog. </li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Successful export dialog:</h4>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/Exporting/UI--SuccesfulFlareExportDialog.png" class="properties">
+            </img>
+        </p>
+        <div style="margin-left: 180pt;">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] ">
+            </MadCap:snippetBlock>
+        </div>
+        <p class="note">
+            <b>Note:</b>&#160;If Flare is not installed on the computer, you should get the following message:<img src="../../../../../Resources/Images/Flare not Installed.png" class="smallThumb" /></p>
+        <p>&#160;</p>
+        <p>
+            <b>Test Cases:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>Export to Flare and test to see it exports correctly. In Flare click view|Index Explorer and make sure the index words that you translated are translated.</li>
+            <li>Do the same for the TOC, Topics, Images and all file types that exist in Flare.</li>
+            <li>Build output and make sure it looks good in output as well and is still translated.</li>
+        </ul>
+    </body>
+</html>

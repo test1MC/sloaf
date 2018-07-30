@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html MadCap:lastBlockDepth="8" MadCap:lastHeight="329" MadCap:lastWidth="964" xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <p class="bold">UI Controls</p>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Comments:</span>
+                <ul class="checkbox">
+                    <li>
+                        <span class="bold">Display topic comments at the end of each topic:</span> Select this option to display topic comments at the end of each topic. This option applies to both Pulse and Feedback.</li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Pulse:</span>
+                <ul class="checkbox">
+                    <li>
+                        <span class="bold">Display community search results: </span>Enable this option to allow Pulse user comments to be included in search results.<ul class="checkbox"><li><span class="bold">Number of community search results: </span>Set the maximum number of community search results.</li></ul></li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Feedback:</span>
+                <ul class="checkbox">
+                    <li>
+                        <span class="bold">Display notification options to users:</span> Select this option if you want users to be able choose email notification options in the output.</li>
+                    <li>
+                        <span class="bold">Feedback user Profile Items:</span> Select which items you want to appear in the Feedback User Profile.
+			<ul style="list-style-type: square;"><li><span class="bold">Available: </span>Displays a list of all available fields which can be added to the Feedback User Registration dialog.</li><li><span class="bold">Selected: </span>Displays a list of fields set to appear in the Feedback User Registration dialog.</li><li><span class="bold"><img src="../../Images/TestPlans/Buttons/Button---MoveUp.png" /> : </span>Moves the selected field in the "Selected" list up in the sequence</li><li><span class="bold"><img src="../../Images/TestPlans/Buttons/Button---MoveDown.png" /> : </span>Moves the selected field in the "Selected" list down in the sequence</li><li><span class="bold"><img src="../../Images/TestPlans/Flare/Topic Toolbar/TopicToolbarProxy---Remove.png" class="bold" />:</span> Removes the selected field from the list</li><li><span class="bold"><img src="../../Images/TestPlans/Flare/Skins/SkinEditor--ResetToDefaultItemsButton.png" />:</span> Reset to default items</li></ul></li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

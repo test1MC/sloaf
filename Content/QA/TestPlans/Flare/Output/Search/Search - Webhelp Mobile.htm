@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="3182" MadCap:lastWidth="1085" MadCap:conditionTagExpression="include[search_support.Mobile] ">
+    <head>
+    </head>
+    <body>
+        <h1>Search UI and Options- WebHelp Mobile Help</h1>
+        <h2>Enabling Search and how it works in the output</h2>
+        <ol>
+            <li>
+                <p>Search is always enabled in the output. Hiding it does not remove search features in the output.</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Search/search enabled - mobile skin editor.png" alt="" title="" />
+                </p>
+            </li>
+            <li>Associate the skin with search enabled with the target that is going to be generated.<ul><li><p>Options in HTML Target that relate to search</p><p class="TestCases">Performance Tab</p><p class="TestCases"><img src="../../../../../Resources/Images/TestPlans/Flare/Search/webhelp_target_performance.png" /></p></li></ul></li>
+            <li>
+                <p>How search looks in the output</p>
+                <ul>
+                    <li>
+                        <p>Topic Titleis shown and results are ranked but number is not shown. </p>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Search/mobile_search_output.png" />
+                        </p>
+                    </li>
+                    <li>
+                        <p>When topic is opened from the search results, searched term is highlighted</p>
+                        <p>
+                            <img src="../../../../../Resources/Images/TestPlans/Flare/Search/mobile_search_highlight.png" />
+                        </p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p class="note">Search Filter Sets are not supported for WebHelp Mobile output</p>
+        <p class="note">WebHelp Mobile has two types of outputs after build - the basic and advanced versions of the output. The basic version of the output does not support search but the advanced version supports search</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Search - Default logic.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Search - Test Cases.flsnp" />
+        <h3>Known bugs</h3>
+        <p>
+            <a href="https://s3.madcapsoftware.com:4343/tfs/SourceCollection/SOURCE/_workitems/edit/100505" class="caption">Bug 100505:</a>WebHelp Mobile search results do not rank by relevance</p>
+    </body>
+</html>

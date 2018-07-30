@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Master Frames</span>
+                <ul>
+                    <li>
+                        <span class="bold">Top Layer:</span>
+                        <ul>
+                            <li>
+                                <span class="bold">(No Top Layer Master Frame):</span> No top layer master frame applied. </li>
+                            <li>
+                                <span class="bold">Navigation:</span> (This is the default Master Frame)</li>
+                            <li>(available Master Frames will appear listed)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="bold">Bottom Layer:</span>
+                        <ul>
+                            <li>
+                                <span class="bold">(No Bottom Layer Master Frame):</span> No bottom layer master frame applied. </li>
+                            <li>
+                                <span class="bold">Navigation:</span> (This is the default Master Frame)</li>
+                            <li>(available Master Frames will appear listed)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="9" MadCap:lastHeight="8558" MadCap:lastWidth="1060" MadCap:conditionTagExpression="include[search_support.CHM] ">
+    <head>
+    </head>
+    <body>
+        <h1>Search UI and Options- HTML Help - CHM</h1>
+        <h2>Enabling Search and how it works in the output</h2>
+        <ol>
+            <li>
+                <p>Enable the search feature in the skin by using the skin editor</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Search/search enabled - skin editor.png" alt="" title="" />
+                </p>
+            </li>
+            <li>
+                <p>Basic search in the output</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Search/SearchOptions_chm_basic.png" />
+                </p>
+            </li>
+            <li>
+                <p>Advanced Search options are enabled in the Standard Skin Editor for CHM output</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Search/SearchOptions_chm.png" />
+                </p>
+            </li>
+            <li>
+                <p>Advanced Search enabled in the output</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Search/SearchOptions_chm_advanced.png" />
+                </p>
+            </li>
+            <li>Associate the skin with search enabled with the target that is going to be generated.</li>
+            <li>
+                <p>Search in the output includes Title, Location, Rank, and results are highlighted</p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Flare/Search/chm_near_results.png" />
+                </p>
+                <p class="note">If searching any term in the CHM output gives a “No Topics Found” message, then the itcc.dll needs to be registered</p>
+                <ol start="1">
+                    <li>
+                        <p>In Windows Explorer, open the computer's System32 directory.&#160;The path is C:\Windows\System32.</p>
+                    </li>
+                    <li>
+                        <p>Right-click the application file named cmd.exe and select Run as administrator from the context menu.</p>
+                    </li>
+                    <li>
+                        <p>Type cd to change directories and press the SPACEBAR.&#160;Then type the path to the Flare \bin directory such as below (replace the version number accordingly) </p>
+                        <p>cd C:\Program Files (x86)\MadCap Software\MadCap Flare&#160;V11\Flare.app\Resources\Bin</p>
+                    </li>
+                    <li>Press Enter.</li>
+                    <li>
+                        <p>At the command prompt, type: registeritcc.bat. Then press Enter. This runs the batch file. If the registration is successful, a message tells you so.</p>
+                    </li>
+                    <li>Click OK to acknowledge the message.</li>
+                    <li>Close the command prompt.</li>
+                </ol>
+                <p>After registering the DLL, build your Microsoft HTML Help output again. Then retry your search in the output.</p>
+            </li>
+        </ol>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Search - Default logic.flsnp" />
+        <p class="note">Option to make a topic not searchable in the Topic Properties is not supported for CHM output</p>
+        <p class="note">Search Filter Sets are not supported for CHM output</p>
+        <p class="note">Search terms are highlighted by default for CHM output and the styling cannot be changed</p>
+        <p class="note">There is no option to include / exclude stop words - they are included by default</p>
+        <p class="note">Keywords / Index terms are always excluded from search</p>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Search - CHM logical Tests.flsnp" />
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Search - Test Cases.flsnp" />
+    </body>
+</html>

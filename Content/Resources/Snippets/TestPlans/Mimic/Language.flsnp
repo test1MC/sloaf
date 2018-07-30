@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="78" MadCap:lastWidth="912">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Name</span>
+                <ul>
+                    <li>Languages supported by the spell checker are displayed in bold. </li>
+                    <li>Select language for an object. (list of supported languages appear here)</li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Hide Languages with no spell check support:</span> Show/ Hide languages with no spell check support.</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="4240" MadCap:lastWidth="1085" MadCap:fileTags="Status.Flare V7 Needs Review,Product.Flare" MadCap:conditionTagExpression="include[SourceControl.SVN] exclude[SourceControl.DetailedTesting or SourceControl.TFS or SourceControl.VSS] ">
+    <head>
+        <link href="../../../../../../Resources/TableStyles/Columns.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../../Resources/TableStyles/Columns.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../../Resources/TableStyles/Columns.css" rel="stylesheet" MadCap:stylesheetType="table" />
+        <link href="../../../../../../Resources/TableStyles/Columns.css" rel="stylesheet" MadCap:stylesheetType="table" />
+    </head>
+    <body>
+        <h1>GIT - SSH Protocol - Testing Matrix </h1>
+        <h2>Authentication Testing</h2>
+        <h3>Overview</h3>
+        <ol style="list-style-type: upper-alpha;">
+            <li>Generate public/private key pair: <MadCap:xref href="../Source Control - Servers.htm#GITSSH">See GIT SSH SETUP</MadCap:xref></li>
+            <li>Add public key to GIT remote repository (Usually found in user profile settings for the remote host you are using)</li>
+        </ol>
+        <h3>Detailed Steps</h3>
+        <p style="font-weight: bold;">Certification Specification Dialog</p>
+        <p style="font-weight: normal;">By Default, this dialog will look in <i>c:/users/youusername/.ssh</i> for both the public and private keys. Standard naming conventions are displayed in the dialog below.<br /></p>
+        <p>
+            <img src="../../../../../../Resources/Images/TestPlans/Flare/Source Control/Source Control--GITSSH--Cert.png" />
+        </p>
+        <p>&#160;</p>
+        <h5>Test Cases</h5>
+        <ul class="checkbox">
+            <li>Verify .ssh folder in location other than default</li>
+            <li>Save certificate information:<ul><li>Unchecked- Flare should launch certification specification window every time when project launched from a new instance of Flare</li><li>Checked- Flare should not launch certification specification window when project launched from a new instance of Flare</li></ul></li>
+        </ul>
+        <h2>Functionality Testing</h2>
+        <p class="note">Before proceeding with the following tests, Open and view GIT repo to follow changes</p>
+        <MadCap:snippetBlock src="../../../../../../Resources/Snippets/TestPlans/SourceControlSVN.flsnp" />
+    </body>
+</html>

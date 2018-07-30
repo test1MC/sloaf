@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="21" MadCap:lastHeight="4895" MadCap:lastWidth="1188">
+    <head>
+    </head>
+    <body>
+        <h1>Source Control - Import Lingo projects from Source Control</h1>
+        <p>To import a Lingo project from Source control, got to:&#160;</p>
+        <ul class="checkbox">
+            <li>!File &gt;&#160;Import Project <img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--ImportFromSCFile.png" class="smallThumb" /> <i>Verify that the option has a tooltip and it's correct. </i></li>
+            <li>!View &gt;&#160;Source Control Explorer &gt;&#160;Import Project<img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--ImportProjectSCExp.png" class="smallThumb" />. <i>Verify that the option has a tooltip and it's correct. </i></li>
+        </ul>
+        <h4>
+            <a name="Select">
+            </a>Select Source Control Provider dialog</h4>
+        <div>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--ImportFromSC.png" class="properties" />
+            <div class="SnippetIndent">
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " />
+            </div>
+        </div>
+        <p>
+            <b>Controls: </b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>
+                <b>Providers drop menu:&#160;</b>Non editable drop down control enables you to select SC provider to import Lingo project From. Fields and description should match the selected provider:<ul><li><MadCap:toggler targets="TFS" style="font-weight: bold;">TFS</MadCap:toggler></li><li><MadCap:toggler targets="SVN" style="font-weight: bold;">SVN</MadCap:toggler></li><li><MadCap:toggler targets="GIT" style="font-weight: bold;">Git</MadCap:toggler></li><li><MadCap:toggler targets="P4" style="font-weight: bold;">P4V</MadCap:toggler><ul style="list-style-type: circle;"><li MadCap:targetName="TFS"><b>Microsoft Team Foundation Server: </b>Selecting this provider should show the description and fields shown below:<div><img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--ImportFromSCTFS.png" class="properties" /><div class="SnippetIndent"><MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " /></div></div><ul><li><b>Server:</b> Editable drop down control where you can either enter the full server name or click the browse button to select a TFS server. Clicking browse would show the <MadCap:toggler targets="SelectTFSProjectCol">Select Team Foundation Server Project Collection</MadCap:toggler> dialog
+										<div MadCap:targetName="SelectTFSProjectCol"><img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI-BrowseTFSserver.png" class="properties" /><div class="SnippetIndent"><MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " /></div><p><b>Controls:</b></p><ul style="list-style-type: circle;"><li><b>Green plus button:</b>&#160;Invokes the <MadCap:toggler targets="addTFSServer2;AddTFSServer1">Add Team Foundation Server dialog</MadCap:toggler><div MadCap:targetName="addTFSServer2"><img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--AddTeamFoundationServer.png" class="properties" /><div class="SnippetIndent"><MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " /></div></div></li><div MadCap:targetName="AddTFSServer1"><ul><li><b>Name or URL of Team Foundation Server:</b>&#160;Server machine name hosting the TFS service. - Test with invalid servers 
+														<img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--InvalidTFSServer.png" class="smallThumb" /></li><li><b>Path: </b>Default value is set to <i>tfs</i><p class="note"><b>Note:</b> Entering invalid connection details should add the TFS server to the server list 
+														<img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--InvalidTFSPath.png" class="smallThumb" /><img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--InvalidTFSServer2.png" class="smallThumb" /></p></li><li><b>Port number: </b>Default value is set to <i>8080</i><p class="note"><b>Note:</b> Entering an invalid port would return this exception 
+												<img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--InvalidTFSPort.png" class="smallThumb" /></p></li><li><b>Protocol: </b>HTTP or HTTPS radial button control. Verify that selecting HTTPS would deselect http and reflect the update in the preview.</li></ul></div><li><b>Red X button:</b> Removes an added TFS server from the Select Team Foundation Server Project Collection dialog/ Server list section - 
+													<i>This button should be grayed out when there's no server selected from the Server list section. </i><br /><img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--RemoveTFSServer.png" class="smallThumb" />Choosing OK should remove the server, Cancel should not do anything. 
+												</li><li><b>Team Project Collections: </b>Lists the Team projects available on the selected TFS server. - 
+									<i>Test that selecting different servers updates the list of available TFS team projects for that server</i></li><li><b>Preview:&#160;</b>Lists the Selected TFS&#160;path including selected server and team project collection. <i>This field should not be modifiable. </i></li><li><b>Cancel:</b> Cancels out the Select TFS project collection dialog</li><li><b>OK:</b> Inserts the selected TFS project collection into the Server field <img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--AddedServerField.png" class="smallThumb" /></li></ul></div></li><li><b>Team Project: </b>You can enter the path by typing it. Also, you can click the browse button to invoke the Browse Source Control Folders dialog  <img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--SelectTFSproject.png" class="smallThumb" /> - 
+							<i>Clicking OK should populate the selected Team project in the Team project field. </i>.</li></ul></li><li MadCap:targetName="SVN"><b>Subversion: </b>Choosing subversion should show only one field to provide the server URL and the description as shown here <img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--ImportFromSVN.png" class="smallThumb" /><ul><li><b>Server:</b>  Editable drop down control where you can provide the SVN repository path here. Providing an invalid path should give this error when clicking Next.<img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--InvalidSVNServerPath.png" class="smallThumb" /></li></ul></li><li MadCap:targetName="GIT"><b>GIT:</b> Choosing GIT&#160;should show the git related fields and description <img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--ImportFromGIT.png" class="smallThumb" />. <ul><li><b>Remote:&#160;</b> Editable drop down control where you can enter the remote repository URL. <br /><p class="note"><b>Note:</b><br />Test entering a blank and invalid remote URL. For remote you should get<img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--GitBlankRemote.png" class="smallThumb" style="font-style: italic;" /><br /> For invalid remote, you should get these two errors When clicking Next then browse. <img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--InvalidGitServer1.png" class="smallThumb" /> <img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--InvalidGitServer2.png" class="smallThumb" /> </p></li><li><b>Name:&#160;</b>Provide user name used for importing project /file(s) from git - <i>Test leaving this field empty and press OK. It should give this error</i> <img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--GitEmptyName.png" class="smallThumb" /></li><li><b>Email: </b>Provide an email address- <i>Leaving this field empty would return an error </i><img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--emptyEmailBind.png" class="smallThumb" /></li><li><b>Save per:</b> Drop down control specifies saving per user or project.<ul style="list-style-type: circle;"><li> <b>User</b> Saves the files in your local folder. Select this option if you are working with other tools (e.g., Tortoise) or if you want to use the same user identity across multiple projects.</li><li><b>Project</b> Saves the files locally to your project. Select this option if you want to use different identities for each project.</li></ul></li></ul></li><li MadCap:targetName="P4"><b>Perforce:</b> Choosing Perforce should show the Perforce related fields and description<img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--ImportFromP4.png" class="smallThumb" /><ul><li><b>Server:</b> Editable drop down control where you can provide the perforce server URL:Port. Providing an incorrect server should provide this message after trying to browse for location<img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--IncorrectP4Servero.png" class="smallThumb" /></li><li><b>User: </b> Field where you can enter perforce username manually or click the browse button to select it from this dialog <img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI-SelectUserP4.png" class="smallThumb" /><br /><p class="note">- Providing an incorrect server information would result in the empty Select User being empty <img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI-SelectUserp4IncorrectServer.png" class="smallThumb" /></p></li><li><b>Location:&#160;</b> This field can't be modified. Click the Browse button to show <MadCap:toggler targets="BrowseDepotsStreams">Browse Depots and Streams</MadCap:toggler> <div MadCap:targetName="BrowseDepotsStreams"><img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI-BrowseDepotsandStreams.png" class="properties" /><div class="SnippetIndent"><MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " /></div><p class="note"><b>Notes:</b> Local depots will be listed even if they did not include any project files. </p></div></li></ul></li></ul></li></ul></li>
+            <li>
+                <b>Back: </b>Should be grayed out here. </li>
+            <li>
+                <b>Next:</b> should move to the <a href="#Browse">Browse for lingo project dialog</a></li>
+            <li>
+                <b>Cancel:</b> Cancels the import project from source control wizard</li>
+            <li>
+                <b>Finish:</b>&#160;Should be grayed out here</li>
+        </ul>
+        <h4>
+            <a name="Browse">
+            </a>Browse for the Lingo project dialog</h4>
+        <div>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--BrowseForLingoProject.png" class="properties" />
+            <div class="SnippetIndent">
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " />
+            </div>
+            <ul style="list-style-type: square;">
+                <li>
+                    <b>Project: </b>Non editable field with a Browse button to browse for Lingo projects (liprj) only. Clicking the Browse button should invoke the <MadCap:toggler targets="BrowseForLingoProject">Browse Source Control Files dialog</MadCap:toggler>. <img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--BrowseSourceControlFilesLiprj.png" class="smallThumb" /><div MadCap:targetName="BrowseForLingoProject"><p><b>Test Cases:&#160;</b></p><ul class="checkbox"><li>This dialog should list only liprj files and their parent folders</li><li>Should list projects stored in subfolders (e.g. local perforce depot when sub-level depots) </li><li>Test invoking this dialog when importing from all 4 providers.&#160;You might be prompted for credentials. <i>Verify that you're able to browse to the liprj file </i></li><li>OK button should be grayed out until a liprj file is selected</li><li>Cancel should cancel out of this dialog back to the Browse for lingo project dialog</li><li>Verify that the dialog is listing all the folders it's supposed to show by comparing to flare or the source control explorer related to the used provider. </li></ul></div><p>After Selecting a liprj project from the Browse Source Control Fil dialog and click OK, the Lingo project path should be populated in the project field: <img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--ProjectFieldPopulated.png" class="smallThumb" /> .</p></li>
+                <li>
+                    <b>Back:</b> Should go back to the <a href="#Select">Select SC&#160;provider</a> - Test that Moving back then next will keep the chosen project path. </li>
+                <li>
+                    <b>Next:</b> Should take you to the <a href="#Enter">Enter project name and project folder</a> <![CDATA[ ]]></li>
+                <li>
+                    <b>Finish: </b>Finish creating the project without customizing the project's local copy name or path - <i>Test importing the same project twice without customizing the local copy name and path make sure that we show proper errors if it tries to use the same name. </i></li>
+                <li>
+                    <b>Cancel:</b> Cancels out of the Import project from Source Control wizard. </li>
+            </ul>
+        </div>
+        <h4>
+            <a name="Enter">
+            </a>Enter project name and project folder...</h4>
+        <div>
+            <img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--EnterProjectName&amp;fOLDER.png" class="properties" />
+            <div class="SnippetIndent">
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" MadCap:conditionTagExpression="exclude[Default.UITestsEditors] " />
+            </div>
+            <p>
+                <b>Controls: </b>
+            </p>
+            <ul style="list-style-type: square;">
+                <li>
+                    <b>Project name:</b> Editable drop down. This field should be populated with the imported project name. </li>
+                <li>
+                    <b>Project folder:</b> Editable drop down. This field should be populated with the default Lingo projects path. The default is "c:\Users\<i>URUSER</i>\Documents\My&#160;Translated&#160;Projects". You can also browse for the Project folder path by clicking the browse button <img src="../../../../../Resources/Images/TestPlans/Lingo/SourceControl/UI--BrowseProjectFolder.png" class="smallThumb" /></li>
+                <li>
+                    <b>Back:</b> Goes back to the <a href="#Browse">Browse for the lingo project dialog</a>. Test that going back to the select project name /folder dialog would still remember the provided name, path when clicking back and next.</li>
+                <li>
+                    <b>Next:</b> Should be grayed out here. </li>
+                <li>
+                    <b>Finish:</b> Finishes importing and opens the project</li>
+                <li>
+                    <b>Cancel:</b> Cancels out of the import project from Source Control wizard. </li>
+            </ul>
+            <p>&#160;</p>
+        </div>
+    </body>
+</html>

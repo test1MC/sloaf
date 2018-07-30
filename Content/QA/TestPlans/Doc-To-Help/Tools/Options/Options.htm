@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="3025" MadCap:lastWidth="1186">
+    <head>
+    </head>
+    <body>
+        <h1>Options</h1>
+        <p class="bold">Testing Notes:</p>
+        <p>This will cover the backstage design area too. A&#160;nything with the note "Testing covered in [cross reference]" is covered in another testing card, so not part of this module's FFT. You are just verifying that the button opens the correct UI in that case.</p>
+        <p>&#160;</p>
+        <p>The backstage design looks much different depending on what version of Word you're using.&#160;Check basic functionality in all supported versions.</p>
+        <ul>
+            <li>Word 2010</li>
+            <li>Word 2013</li>
+            <li>Word 2016</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Checklist:</p>
+        <ul class="checkbox">
+            <li>
+                <MadCap:snippetBlock src="../../../../../Resources/Images/TestPlans/DocToHelp/ToDo TestPlan.flsnp" />
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Documentation:</p>
+        <h2>Open/Create</h2>
+        <p class="bold" style="font-weight: normal;">
+            <img src="../../../../../Resources/Images/TestPlans/DocToHelp/Tools/Options/backstage--OpenCreate.png" class="propertiesNoFloat" />
+        </p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <span class="bold">Open Project: </span>Opens dialog to browse for .d2h file to open</li>
+            <li>
+                <span class="bold">New Project: </span> Launches New Project Wizard. New project will open in a new Word isntance</li>
+            <li>
+                <span class="bold">Open Sample Project: </span>Opens dialog to C:\...\Documents\My Doc-To-Help Projects\Samples so you can browse for .d2h file. &#160;The default document will then open from that project.</li>
+            <li>
+                <span class="bold">Recent Projects:&#160;</span>Displays recent projects you have opened<ul style="list-style-type: square;"><li><span class="bold">Pin / Unipin:</span>&#160;Allows you to pin projects for easy access.&#160;They will show in the order you have pinned them.</li></ul></li>
+        </ul>
+        <hr class="HRclear" />
+        <h2>Help</h2>
+        <p class="bold" style="font-weight: normal;">
+            <img src="../../../../../Resources/Images/TestPlans/DocToHelp/Tools/Options/backstage--Help.png" class="propertiesNoFloat" />
+        </p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <span class="bold">Documentation: </span>Launches the .chm file currently? Expected to launch online help in default browser.</li>
+            <li>
+                <span class="bold">Home Page: </span> Opens in default browser: http://www.doctohelp.com/</li>
+            <li>
+                <span class="bold">Community: </span>Opens in default browser: http://www.madcapsoftware.com/community/</li>
+            <li>
+                <span class="bold">PDF&#160;Guides: </span>Opens in default browser: http://help.madcapsoftware.com/d2h4/Content/PDF_Guides/PDF_Guides.htm</li>
+            <li>
+                <span class="bold">Videos: </span>Opens in default browser: http://www.doctohelp.com/videos/doc-to-help/</li>
+            <li>
+                <span class="bold">Report a Bug: </span>Opens in default browser: https://www.madcapsoftware.com/feedback/bugs.aspx?</li>
+            <li>
+                <span class="bold">Check for Updates: </span>Checks for an update (we need a way to test this?)</li>
+            <li>
+                <span class="bold">Deactivate: </span>Deactivates the product</li>
+        </ul>
+        <hr class="HRclear" />
+        <h2>Common&#160;Tasks</h2>
+        <p class="bold" style="font-weight: normal;">
+            <img src="../../../../../Resources/Images/TestPlans/DocToHelp/Tools/Options/backstage--CommonTasks.png" class="propertiesNoFloat" />
+        </p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <span class="bold">Options: </span>Opens Options dialog<ul style="list-style-type: square;"><li>General<br />Prompts<ul style="list-style-type: square;"><li><span class="bold">Confirm editing properties of multiple topics</span> If you select more than one topic in the Topics window, and then click the Properties button in the Topics ribbon, Doc-To-Help will remind you that you have selected more than one topic and will be editing the properties for all of them.</li><li><p><span class="bold">Confirm adding documents outside source document folders</span> If adding a document to your project using drag-and-drop, Doc-To-Help will inform you if the document is not stored in the correct folder. You should always copy documents to the correct folder before adding them so that the links don't break and the project is self-contained.</p></li><li><p><span class="bold">Confirm using Windows System colors</span> If you change the System background color for any JavaHelp or NetHelp target (Help Targets dialog&gt;Color&gt;System tab), Doc-To-Help will inform you that system colors are specific to Windows and explain how this will be handled for the target.</p></li><li><p><span class="bold">Prompt installing Microsoft Help Viewer target after build</span> If you built a Microsoft Help Viewer target, Doc-To-Help will ask if you would like to install the target. If yes, it will open the Help Library Manager so you can add the project to the Microsoft Help Viewer and look at it.</p></li><li><p><span class="bold">Prompt viewing help target after build</span> After every build or rebuild, Doc-To-Help will ask if you would like to view the target.</p></li><li><p style="text-decoration: line-through;">Confirm making a copy of a document with Save As If saving the currently open XML document under another name using File&gt;Save As, Doc-To-Help will explain that the document will be stored in the same folder as the original document, but will not be automatically added to the project.</p></li><li><p><span class="bold">Display Progress Panel in all open Word documents during build</span> If this option is selected and 1) you start building a new target while the Doc-To-Help Build panel is closed OR 2) you start building a new target and close the Doc-To-Help Build panel, the Doc-To-Help Progress panel opens automatically. This panel displays build status messages and build progress percentages. See Doc-To-Help Progress Panel.</p></li><li><p><span class="bold">Prompt if Word add-in is disabled on startup</span> If this option is selected, Doc-To-Help will alert you if the Word add-in has been disabled when you start Doc-To-Help. If the add-in is disabled, you will not be able to use the Doc-To-Help ribbon. You will be able to re-enable the add-in from the prompt (you can also re-enable the add-in manually from the Word Options dialog).</p></li></ul></li><li>Files<ul style="list-style-type: square;"><li><p><span class="bold">Default location for Doc-To-Help projects:</span>&#160;Change the default location for Doc-To-Help projects.</p></li><li><p><span class="bold">User-defined themes location:</span> Change the default location for Doc-To-Help custom themes.</p></li></ul></li><li>Team<ul style="list-style-type: square;"><li><p>Highlight new project items: Change the default "new project" colors for your team projects.</p></li><li><p>Checkout:</p><ul style="list-style-type: square;"><li>Unchanged</li><li>Check out</li><li>Check in</li></ul></li><li><p>Compare and merge: Set Compare and Merge options.</p></li><li><p>Team Explorer:&#160;Choose your version of Microsoft Visual Studio Team Explorer. Note: You must log into Doc-To-Help as an administrator to change your version of Microsoft Visual Studio Team Explorer if using Windows 7 and later. To log in as an administrator, right-click on any Doc-To-Help shortcut (from the Start menu or on your desktop) and choose Run as administrator from the menu. Doc-To-Help will open.</p></li></ul></li><li>SharePoint<ul style="list-style-type: square;"><li><p><span class="bold">Default when opening shared Word documents: </span>Change the defaults for opening shared Word documents (open local copy, open document on server, or prompt to open document on server).</p></li><li><p><span class="bold">Check out Word documents when editing local copy:</span> When selected, Word documents will be checked out of the SharePoint Library automatically when you open them in Doc-To-Help.</p></li><li><p><span class="bold">Synchronize Word documents with SharePoint Library:</span> Change the defaults for synchronizing Word documents with the SharePoint library (when document is opened, saved, or closed).</p></li><li><p><span class="bold">Synchronize all shared documents with Library:</span>&#160;Change the defaults for synchronizing all shared documents with the SharePoint library (when project is opened or closed, or when target is built).</p></li><li style="text-decoration: line-through;">Translation: Change the default when opening documents for translation (open local copy, open document on server, or prompt to open local copy).</li></ul></li><li>Updates<ul style="list-style-type: square;"><li><p><span class="bold">Check for latest Doc-To-Help version: </span>Select whether or not you want to check for updates when Doc-To-Help is opened. If you want to check for updates automatically, and a new version of Doc-To-Help is available, the Doc-To-Help Update dialog will open. The update number and new feature list will be displayed. Click Download to download the update.</p></li></ul></li><li>Viewers<ul style="list-style-type: square;"><li><p><span class="bold">Location of the Eclipse executable:</span> Specify the location of the Eclipse executable file (eclipse.exe) on your machine. Doc-To-Help requires this information to view Eclipse Help.</p></li><li><p><span class="bold">EPUB reader executable:&#160;</span>Specify the location of the EPUB reader executable on your machine. Doc-To-Help requires this information to view EPUBs.</p></li><li><p><span class="bold">Use the following version of Microsoft Help Viewer: </span>Specify the version of the Microsoft Help Viewer to use when viewing Microsoft Help Viewer targets. Options available depend on your Visual Studio installation.</p></li></ul></li></ul></li>
+            <li>
+                <span class="bold">Build Scheduler: </span> Opens build scheduler, Testing covered in <MadCap:xref href="../../Project/Build/Build.htm">See Build</MadCap:xref></li>
+            <li>
+                <span class="bold">Save As: </span>Opens Save Project As dialog</li>
+            <li>
+                <span class="bold">Compact:</span>&#160;Testing covered in <MadCap:xref href="../Compact Project/Compact Project.htm">See Compact Project</MadCap:xref></li>
+            <li>
+                <span class="bold">Import Settings:</span>Testing covered in<MadCap:xref href="../Import Export Project Settings/Import Export Project Settings.htm"> See Import Export Project Settings</MadCap:xref></li>
+            <li>
+                <span class="bold">Export Settings:</span>Testing covered in <MadCap:xref href="../Import Export Project Settings/Import Export Project Settings.htm">See Import Export Project Settings</MadCap:xref></li>
+            <li>
+                <span class="bold">Convert Doc to DocX:</span>Testing covered in <MadCap:xref href="../Convert Doc to DocX/Convert Doc to DocX.htm">See Convert Doc to DocX</MadCap:xref></li>
+        </ul>
+        <hr class="HRclear" />
+        <h2>Report</h2>
+        <p class="bold" style="font-weight: normal;">
+            <img src="../../../../../Resources/Images/TestPlans/DocToHelp/Tools/Options/backstage--Report.png" class="propertiesNoFloat" />
+        </p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <span class="bold">[Report Name]: </span>Generates that report. Testing covered in <MadCap:xref href="../../General/Reports/Reports.htm">See Reports</MadCap:xref></li>
+        </ul>
+        <hr class="HRclear" />
+        <h2>Team&#160;Authoring</h2>
+        <p class="bold" style="font-weight: normal;">
+            <img src="../../../../../Resources/Images/TestPlans/DocToHelp/Tools/Options/backstage--TeamAuthoring.png" class="propertiesNoFloat" />
+        </p>
+        <p>&#160;</p>
+        <p>Note:&#160;Testing covered in <MadCap:xref href="../../Source Control/SC Repository/SC Repository.htm">See SC Repository</MadCap:xref></p>
+        <p class="bold">UI&#160;Controls</p>
+        <ul style="list-style-type: square;">
+            <li>
+                <span class="bold">Connect to Team Project: </span>Launches Team Authoring Connection Wizard</li>
+            <li>
+                <span class="bold">Share Project for Team&#160;Authoring: </span> Team Authoring Setup&#160;Wizard</li>
+            <li>
+                <span class="bold">Disconnect Project from Team Authoring: </span>Disconnects current project from Team&#160;Authoring</li>
+            <li>
+                <span class="bold">Web&#160;Repository Settings: </span>Opens Web Repository Settings<br /><img src="../../../../../Resources/Images/TestPlans/DocToHelp/Tools/Options/backstage--TeamAuthoring--WebRepositorySettings.png" class="propertiesNoFloat" /><br />QA note:&#160;I changed the path and now the project repository cannot be found.&#160;&#160;Maybe this should not be edited.</li>
+            <li>
+                <span class="bold">Get Latest Version of the Project: </span>Gets latest version</li>
+        </ul>
+        <hr class="HRclear" />
+    </body>
+</html>

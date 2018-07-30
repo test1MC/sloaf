@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Cursor:</span> <ul><li><span class="bold">Arrow:</span> </li><li><span class="bold">Cross:</span> </li><li><span class="bold">IBeam:</span> </li><li><span class="bold">No:</span> </li><li><span class="bold">SizeAll:</span> </li><li><span class="bold">SizeNESW:</span> </li><li><span class="bold">SizeNS:</span> </li><li><span class="bold">SizeNWSE:</span> </li><li><span class="bold">SizeWE:</span> </li><li><span class="bold">UpArrow:</span> </li><li><span class="bold">WaitCursor:</span> </li><li><span class="bold">Help:</span> </li><li><span class="bold">HSplit:</span> </li><li><span class="bold">VSplit:</span> </li><li><span class="bold">NoMove2D:</span> </li><li><span class="bold">NoMoveHoriz:</span> </li><li><span class="bold">NoMoveVert:</span> </li><li><span class="bold">PanEast:</span> </li><li><span class="bold">PanNE:</span> </li><li><span class="bold">PanNorth:</span> </li><li><span class="bold">PanNW:</span> </li><li><span class="bold">PanSE:</span> </li><li><span class="bold">PanSouth:</span> </li><li><span class="bold">PanSW:</span> </li><li><span class="bold">PanWest:</span></li><li><span class="bold">Hand:</span> </li></ul></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Name</span>
+                <ul>
+                    <li>
+                        <span class="bold">Name:</span> You can label the frame. </li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Background</span>
+                <ul>
+                    <li>
+                        <span class="bold">Type:</span>
+                        <ul>
+                            <li>
+                                <span class="bold">(default):</span>
+                            </li>
+                            <li>
+                                <span class="bold">Solid:</span> Applies a solid color background to the frame. </li>
+                            <li>
+                                <span class="bold">Top to Bottom:</span> Applies a Top to Bottom gradient color background to the frame. </li>
+                            <li>
+                                <span class="bold">Bottom to Top:</span> Applies a Bottom to top gradient color background to the frame. </li>
+                            <li>
+                                <span class="bold">Top Left to Bottom Right:</span> Applies a Top Left to Bottom Right gradient color background to the frame. </li>
+                            <li>
+                                <span class="bold">Left to Right:</span> Applies a Left to Right gradient color background to the frame. </li>
+                            <li>
+                                <span class="bold">Right to Left:</span> Applies a Right to Left gradient color background to the frame. </li>
+                            <li>
+                                <span class="bold">Bottom Left to Top Right:</span> Applies a Bottom Left to Top Right gradient color background to the frame. </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="bold">Color:</span>
+                        <ul>
+                            <li>Click to open Color Picker.</li>
+                            <li>
+                                <span class="bold">More Colors:</span> Opens Color Picker.</li>
+                            <li>
+                                <span class="bold">Pick Screen Color:</span> Opens color dropper selection.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <span class="bold">Use same background as previous frame:</span>
+                    </li>
+                    <li>
+                        <span class="bold">Image File:</span>
+                        <ul>
+                            <li>
+                                <span class="bold">Clear:</span> Clears out image file.</li>
+                            <li>
+                                <span class="bold">Image File:</span> Triggers file explorer/ browser. </li>
+                            <li>
+                                <span class="bold">Screen Capture:</span> Triggers recording/capture frame. </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Border:</span> Add a border around a frame. <ul><li><span class="bold">Type:</span><ul><li><span class="bold">(default):</span> Default setting is used. </li><li><span class="bold">None:</span> No border applied. </li><li><span class="bold">Solid:</span> Apply a solid border. </li><li><span class="bold">Double:</span> Apply a double-lined border. </li><li><span class="bold">Dashed:</span> Apply a dashed border. </li><li><span class="bold">Dotted:</span> Apply a dotted border. </li><li><span class="bold">Groove:</span> Applies a 3D grooved border. </li><li><span class="bold">Ridge:</span>  Applies a 3D ridged border. </li><li><span class="bold">Inset:</span>  Applies a 3D inset border. </li><li><span class="bold">Outset:</span>  Applies a 3D outset border. </li></ul></li><li><span class="bold">Color:</span><ul><li>Click to open Color Picker.</li><li><span class="bold">More Colors:</span> Opens Color Picker.</li><li><span class="bold">Pick Screen Color:</span> Opens color dropper selection.</li></ul></li><li><span class="bold">Movie Properties:</span> Triggers Movie Properties dialog. </li></ul></li>
+        </ul>
+    </body>
+</html>

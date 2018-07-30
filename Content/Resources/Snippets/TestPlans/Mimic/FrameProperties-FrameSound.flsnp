@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Frame Sound</span>
+                <ul>
+                    <li>
+                        <span class="bold">Sound File</span>
+                        <ul>
+                            <li>
+                                <span class="bold">Enable Audio:</span> Enable/disable audio for selected frame. </li>
+                            <li>
+                                <span class="bold">Sound File:</span>
+                                <ul>
+                                    <li>
+                                        <span class="bold">Clear:</span> Clear selected Audio file. </li>
+                                    <li>
+                                        <span class="bold">Edit:</span> Triggers audio editor dialog for supported audio file types. </li>
+                                    <li>
+                                        <span class="bold">Pick Built-In Sound...:</span> Triggers Pick&#160;System Sound dialog. </li>
+                                    <li>
+                                        <span class="bold">Pick From Movie Sound Library...:</span> Triggers Manage Movie Sound Library dialog. </li>
+                                    <li>
+                                        <span class="bold">Import Into Sound Library...:</span> Triggers file explorer. </li>
+                                    <li>
+                                        <span class="bold">Record a New Audio Clip...:</span> Triggers record dialog. </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Loop Sound:</span> Loops selected audio file during frame duration. </li>
+            <li>
+                <span class="bold">Stop Sound of Previous Frame:</span> Stops sound of previous frame when this frame is reached in the timeline.</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="3435" MadCap:lastWidth="1453" MadCap:fileTags="Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h2>Integration Capture - UI</h2>
+        <h4>Insert Screen Capture</h4>
+        <p>!Insert|Screen Capture</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Capture/Insert--Screen Capture.png" />
+        </p>
+        <p>&#160;</p>
+        <p style="font-weight: bold;">Screen Capture dialog</p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Capture/Insert--Screen Capture_Dialog.png" />
+        </p>
+        <p>&#160;</p>
+        <div class="clearleft">
+            <p style="font-weight: bold;">UI&#160;Controls</p>
+            <ul class="checkbox">
+                <li>
+                    <img src="../../../../../Resources/Images/Dialog--HelpButton.png" /> <b>Help</b> Opens "Screen Capture Dialog" Dynamic Help</li>
+                <li>
+                    <img src="../../../../../Resources/Images/Dialog--CancelButton.png" /> <b>Close</b> Closes Dialog box and does not save changes</li>
+                <li>
+                    <b>File name</b> File name for captured item. Default is Capture + incremented number</li>
+                <li>
+                    <b>Folder</b> Folder to save Capture image in. Default should be <b>Resources/Images</b></li>
+                <li>
+                    <b>Profile or format window</b> Display available profiles and formats and allows for them to be selected</li>
+                <li>
+                    <b>Capture UI Element button</b>Creates a movable capture selection box for capturing UI Elements</li>
+                <li>
+                    <b>Capture Application</b> Opens "the "Select Window" dialog</li>
+                <li>
+                    <b>Capture Region</b> Opens a re-sizable selection box</li>
+                <li>
+                    <b>Show Magnifier</b> When Checked, should open the magnifier window when a capture is being performed</li>
+                <li>
+                    <b>Launch MadCap Capture editor</b> When Checked, should open MadCap Capture application after a capture has been completed</li>
+                <li>
+                    <b>Cancel</b> Closes the dialogue/does not perform a capture</li>
+            </ul>
+            <h5>Test Cases</h5>
+            <p>
+                <b>File name</b>
+            </p>
+            <ul class="checkbox">
+                <li>Verify that the file name number increments</li>
+                <li>Verify that file name can be entered manually and that Flare remembers the new naming convention (Close/reopen project, issue new capture. Should remember last entry)</li>
+                <li>Verify drop down list displays previously used file names and these file names can be selected</li>
+            </ul>
+            <p>
+                <b>Folder</b>
+            </p>
+            <ul class="checkbox">
+                <li>Verify that the default is "Resources/Images</li>
+                <li>Verify that any folder residing under the content folder can be selected from the drop down list (Make sure to test with sub folders as well)</li>
+                <li>Verify that the last folder selected is remembered when project is closed/reopened</li>
+            </ul>
+        </div>
+        <p>
+            <b>Profile or format window</b>
+        </p>
+        <ul class="checkbox">
+            <li>Verify that the default formats are available: BMP, GIF, JPEG, PNG, TIFF</li>
+            <li>Verify that all Capture profiles are listed and selectable- (Create two profiles in Capture, save them to different locations.)</li>
+            <li>Verify that the last folder selected is remembered when project is closed/reopened</li>
+        </ul>
+        <p>
+            <b>Capture UI Element button</b>
+        </p>
+        <ul class="checkbox">
+            <li>Verify that the UI selector is launched  (Drag pointer to different UI sections and see that the border moves and surrounds the UI it is pointed at)</li>
+            <li>Verify capture UI Element using all profiles and formats</li>
+        </ul>
+        <p>
+            <b>Capture Application</b>
+        </p>
+        <ul class="checkbox">
+            <li>Verify that the "Select Window"&#160;dialog is launched and that all open applications are listed and selectable- <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Capture/Capture Application Button--Select Window dialog.png" style="mc-thumbnail: hover;mc-thumbnail-max-width: 100px;" /></li>
+            <li>Verify Capture application using all profiles and formats</li>
+        </ul>
+        <p>&#160;</p>
+        <p>
+            <b>Capture Region</b>
+        </p>
+        <p>&#160;</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capturing Region.png" class="leftThumb" style="mc-thumbnail: hover;" />
+        </p>
+        <div class="SnippetIndentShort">
+            <p>&#160;</p>
+            <ul class="checkbox">
+                <li>The capture region box will have 8 resize points located around it</li>
+                <li>Each point can be used to resize the capture region<ul><li>Middle boxes can be used to resize either left/right or up/down</li><li>Corner boxes can be used to resize the entire capture region</li></ul></li>
+                <li>The region box will also have a cross-hair in center<ul><li>Clicking and dragging this box will move the capture region accordingly</li></ul></li>
+                <li>Verify resizing the capture region box will still result in an accurate capture</li>
+                <li>Three buttons will be displayed in the lower right corner</li>
+                <li>Verify capture region using all profiles and formats</li>
+            </ul>
+            <p>&#160;</p>
+        </div>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capturing Region_dropdown.png" class="leftPopup" style="mc-thumbnail: hover;" />
+        </p>
+        <div class="SnippetIndent">
+            <ul class="checkbox">
+                <li>
+                    <span class="bold">Capture Button:</span> Click to capture what lies within the boundaries of the region</li>
+                <li>
+                    <span class="bold">Width and Height:</span> Values listed change when resized using resize points. Also can manually enter values to adjust the capturing region</li>
+                <li>
+                    <span class="bold">Pick a Screenshot Size (Dropdown)</span>: Brings up the options context menu</li>
+                <li>
+                    <span class="bold">Close Button/Cancel</span>:&#160;Will cancel the operation and return the user to Capture</li>
+            </ul>
+        </div>
+        <h4>Right-Click an image Context Menu</h4>
+        <p> <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Capture/Image---Context.png" /></p>
+        <p>&#160;</p>
+        <p>
+            <b>Relevant UI&#160;Controls:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>
+                <b>Edit with MadCap Capture:</b>Launches MadCap Capture with the selected image for editing.</li>
+        </ul>
+        <h4>Right-Click an image in the Content Explorer Menu</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Capture/Image--Edit--ContentExplorer.png" />
+        </p>
+        <p>&#160;</p>
+        <p>
+            <b>Relevant UI&#160;Controls:</b>
+        </p>
+        <ul style="list-style-type: square;">
+            <li>
+                <b>Edit with MadCap Capture:</b>Launches MadCap Capture with the selected image for editing.</li>
+            <li>
+                <b>Regenerate Captured Image</b> Regenerates Captured Image. <b>Test</b>- Insert a screen capture done with a trial version of capture. After it has been inserted into Flare, Register Capture, then invoke this selection. Should remove the embedded watermark from the trial version</li>
+        </ul>
+        <h4>Image Viewer</h4>
+        <p>To open the Image Viewer double- click an image in the Content Explorer</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Capture/ImageViewer.png" style="width: 582px;height: 570px;mc-thumbnail: popup;" />
+        </p>
+        <p>&#160;</p>
+        <p>The local toolbar will contain one button ("Edit this file with MadCap Capture") if it has not been created or saved in Capture or two buttons, with the second being "Regenerate Captured image".</p>
+        <ul>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Capture/ImageViewer--OpenWithCapture Button.png" />
+                <b>Edit this file with MadCap Capture:</b> Will open the file in MadCap capture.</li>
+            <li>
+                <img src="../../../../../Resources/Images/TestPlans/Flare/Integration Capture/ImageViewer--RegenerateCapturedImage Button.png" />
+                <b>Regenerate Captured image: </b> Used to update image to its Capture state. (<b>Test:</b> Edit Captured image in another program such as MS Paint, save, the click this button. The image should revert back to its Capture state and remove the changes made outside Capture. <b>Test2:</b> Also another way to get rid of trial watermarks once Flare and/or Capture are activated)</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>Conditions and Variables</h3>
+        <p>Like Mimic, conditions and variables from a Flare project linked to the image will be available for use in Capture. However, in Capture, the project is already linked to the image, so all variables and conditions will be available in Capture when editing an image that is in a Flare project in Capture.</p>
+        <p>&#160;</p>
+        <h3>Other Areas of Integration</h3>
+        <p>
+            <MadCap:xref href="../../../Capture/Outputs/Integration/Integration - Testing.htm">See Integration - Testing  for details on UI&#160;involved for the Capture side of integration</MadCap:xref>
+        </p>
+    </body>
+</html>

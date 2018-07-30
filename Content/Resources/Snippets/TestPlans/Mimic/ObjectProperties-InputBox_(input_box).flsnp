@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Input Box</span>
+            </li>
+            <li>
+                <span class="bold">Start Text:</span> the text to display within the typing box as soon as the typing box appears in the movie.</li>
+            <li>
+                <span class="bold">Attempts Allowed:</span> Set number of attempts.<ul><li><span class="bold">Infinite Attempts:</span> Enable/ disable infinite attempts.</li></ul></li>
+            <li>
+                <span class="bold">Correct Entries:</span>
+                <ul>
+                    <li>
+                        <span class="bold">New Entry:</span> click to show New Entry field. </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

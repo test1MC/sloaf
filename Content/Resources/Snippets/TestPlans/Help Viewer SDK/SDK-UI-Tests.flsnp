@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="309" MadCap:lastWidth="1260">
+    <head>
+    </head>
+    <body>
+        <ul class="checkbox">
+            <li>Dialog title is correct</li>
+            <li>Spelling and grammar are correct</li>
+            <li>No duplicate accelerators</li>
+            <li>All accelerators function</li>
+            <li>Tab order is correct (forward and reverse orders)</li>
+            <li>Keyboard can navigate and change settings</li>
+            <li>Dialog is easy to use and understand</li>
+            <li>The “default” active button should make sense</li>
+            <li>Default options are displayed in the screenshot</li>
+            <li>Red ‘X’ and <span class="KeyboardShortcut">ALT</span>+<span class="KeyboardShortcut">F4</span> close the dialog</li>
+            <li MadCap:conditions="">Dialog is resizable and redraws correctly</li>
+            <li MadCap:conditions="">Dialog opens correctly on a dual monitor system</li>
+            <li MadCap:conditions="">Clicking the icon in the upper left corner displays options:<ul style="list-style-type: circle;"><li MadCap:conditions="">Restore, Move, Size, Min., Max., Close – All work</li><li MadCap:conditions="">Restore, Min., Max are disabled</li></ul></li>
+        </ul>
+    </body>
+</html>

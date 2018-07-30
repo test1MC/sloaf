@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Shape</span>
+                <ul>
+                    <li>
+                        <span class="bold">Position:</span> Adjust position of the object. <ul><li><span class="bold">Keyframe button:</span> Adds position keyframe for object. </li></ul></li>
+                    <li>
+                        <span class="bold">Size:</span> Adjust size of the object. </li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Rotation</span>
+                <ul>
+                    <li>
+                        <span class="bold">Rotation:</span> Set rotation of object in degress. <ul><li><span class="bold">Keyframe button:</span> Apply rotation keyframe for object. </li></ul></li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

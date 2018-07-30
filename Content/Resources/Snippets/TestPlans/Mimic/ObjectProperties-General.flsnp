@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">General</span>
+            </li>
+            <li>
+                <span class="bold">Name</span>
+                <ul>
+                    <li>
+                        <span class="bold">Label:</span> Enter a label. </li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Time Span</span>
+                <ul>
+                    <li>
+                        <span class="bold">Time Span:</span> Enable/ Disable timespan. </li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Start:</span> Set start time. </li>
+            <li>
+                <span class="bold">Duration:</span> Set duration. </li>
+        </ul>
+    </body>
+</html>

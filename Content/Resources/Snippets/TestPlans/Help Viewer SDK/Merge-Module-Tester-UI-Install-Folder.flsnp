@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="585" MadCap:lastWidth="1260">
+    <head>
+    </head>
+    <body>
+        <ul class="checkbox">
+            <li>Dialog title is correct</li>
+            <li>Spelling and grammar are correct</li>
+            <li>No duplicate accelerators</li>
+            <li>All accelerators function</li>
+            <li>Tab order is correct (forward and reverse orders)</li>
+            <li>Keyboard can navigate and change settings</li>
+            <li>Dialog is easy to use and understand</li>
+            <li>Boundary test all controls</li>
+            <li>The “default” active button should make sense</li>
+            <li>Default options are displayed in the screenshot</li>
+            <li>
+                <span class="MenuItem">!File | Close</span> or clicking “X” in tab closes the dialog</li>
+            <li>Browse button allows you to browse for an install folder.<p><img src="../../../Images/TestPlans/Help Viewer SDK/MergeModuleTesterBrowseFolder.png" style="mc-thumbnail: hover;" /></p></li>
+            <li>Disk Cost... button allows you to see available and required disk space<p><img src="../../../Images/TestPlans/Help Viewer SDK/MergeModuleTesterDiskSpace.png" style="mc-thumbnail: hover;" /></p></li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head>
+    </head>
+    <body>
+        <h1>Overview and QA Setup</h1>
+        <h2>Using TFS bugbase with Doc-To-Help</h2>
+        <p>Select the <span class="bold">Doc-To-Help</span> project from the Visual Studio Team Foundation Server menu, or click the link: https://s3.madcapsoftware.com:4343/tfs/DocToHelpCollection/DocToHelp/_workitems</p>
+        <h3>Queries</h3>
+        <ul>
+            <li>
+                <span class="bold">!Work &gt;&#160;Queries &gt;&#160;Assigned to Me </span>to view your pending QA&#160;bugs.<ul><li><span class="bold">Shared Queries &gt;&#160;QA</span>&#160;&#160;has some frequently used queries.</li></ul></li>
+        </ul>
+        <p class="note">
+            <span class="bold">Note:&#160;</span>Sometimes the devs will ask questions or put comments in their Pending&#160;Dev bugs and not set it back to Pending QA.&#160;So if you're expecting a response on something, take a look at the Pending&#160;Dev bugs too.</p>
+        <h3>Writing Bugs</h3>
+        <p>Required fields are highlighted yellow. (Project Files is only required if your bug references a specific project)</p>
+        <p>
+            <img src="../../../../Resources/Images/TestPlans/DocToHelp/TFSSampleBug.png" class="propertiesNoFloat" />
+        </p>
+        <ul>
+            <li>Dev Owner:&#160;Andrey and Sergey have been the developers from day 1, you can assign your bug to either of them.&#160;I&#160;tend to assign everything to Sergey and he will reassign if necessary.&#160;&#160;If you're testing a certain feature and know which dev is on that, then assign to that dev. &#160;Oleg is a new addition to the team so you will see his name on some bugs too.</li>
+            <li>You'll need to save the bug first before you can change the state to Pending Dev.</li>
+            <li>Select the bug area that best fits.&#160;These are the choices:<ul><li><p>Authoring Improvement</p></li><li><p>Build <span class="italic">(build panel or just building in general, not specific to a target type)</span></p></li><li>Conditions <span class="italic">(or attributes)</span></li><li>Documentation</li><li><p>Documents <span class="italic">(documents panel or something specific to your word source document file)</span></p></li><li>File List</li><li>Framework / MDI</li><li><p>Glossary</p></li><li><p>Index and Groups</p></li><li><p>Output: Eclipse</p></li><li><p>Output: EPUB</p></li><li><p>Output: General</p></li><li><p>Output: Help 2.0</p></li><li><p>Output: HTML Help</p></li><li><p>Output: Java Help</p></li><li><p>Output: Manual</p></li><li><p>Output: MS Help Viewer</p></li><li><p>Output: NetHelp</p></li><li>Performance <span class="italic">(lagging application or build times)</span></li><li>Registration / Activation <span class="italic">(licensing or wizard, these bugs will all have Dev owner = Marcus)</span></li><li><p>Related Topics</p></li><li><p>Source Control</p></li><li><p>Table of Contents</p></li><li><p>Templates <span class="italic">(source or target templates - aka, related to the files located here: C:\Users\[username]\AppData\Roaming\Microsoft\Templates )</span></p></li><li><p>Theme</p></li><li>Toolbars / Menus</li><li>UI&#160;Cleanup <span class="italic">(typos, changes to design)</span></li><li><p>Uncategorized <span class="italic">(in case nothing else works)</span></p></li><li><p>Variables</p></li></ul><p>This is a completely subjective - there are several correct selections for any given bug, so don't think too hard about it. &#160;This is only used by&#160;QA&#160;and is easy to reassign after the fact.</p></li>
+        </ul>
+        <h4>Adding a test project to your bug</h4>
+        <p>Bug Project Files works differently in D2H&#160;bugbase than it does for Flare because the attached files are stored in a different place which our devs have access to. Click Project Files &gt;&#160;Green plus-sign icon to add attachment.&#160;&#160;You can then browse for a zip file or an image, text file, etc.</p>
+        <ul>
+            <li>If your bug steps are simple enough that a test file is not needed, then don't add one.</li>
+            <li>If your bug is more complicated or project specific, condense your project as much as you can. Then you want to make zip file with the essential project documents/files.&#160;&#160;This includes:&#160;.d2h file, Documents folder and contents, Media folder and contents (when relevant). You don't need to include any output files (they are in a folder named after your target, ex:&#160;NetHelp), you don't need to include the Temp folder, you probably don't need to include the CSSFiles folder unless you're dealing with any html-source files.</li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Pending Dev?&#160;Previous Version?&#160;Next Version?</h4>
+        <p>Our developers are on a different contract than our local MadCap dev team, so decisions on what gets fixed for a given release are different than they are for Flare. &#160;Particularly if you find a bug that has existed in previous versions, they are not contractually obligated to fix it.&#160;&#160;If it is something that is now much more important than previously, definitely bring it to Vince's attention. But the general rule is that we will not assign developers bugs which are not new to this release.</p>
+        <p>&#160;</p>
+        <p> If it's new to this version, for example and feature suggestion to enhance current functionality, but after discussion with QA/Vince it's decided not to go in to this version, mark it Next Version so that we remember to add it to our backlog for future releases.</p>
+        <h3>Builds</h3>
+        <ul>
+            <li>
+                <span class="bold">!Build &gt;&#160;XAML definitions &gt;&#160;d2hsetup</span> lists the builds in the current branch. To start a new build, you can open the most recent build details&#160;&gt;&#160;Queue new build... (default settings are good, as shown below &gt;&#160;OK.<br /><img src="../../../../Resources/Images/TestPlans/DocToHelp/TFSQueueBuild.png" class="propertiesNoFloat" /></li>
+        </ul>
+        <p class="note">
+            <span class="bold">Note:</span>&#160;DocToHelp codebase has not been migrated to Git yet.&#160;&#160;We plan to do this after the next release (v5) so that branches can be made based off of a stable release branch.</p>
+        <ul>
+            <li style="font-weight: normal;">Builds will be saved at:&#160;\\BUILD3\BuildBackups\DocToHelp in a folder named for the build number.&#160;This is the build number you'll use when writing and verifying bugs for the fields&#160;<span class="bold">Found in Build</span> and <span class="bold">Resolved in Build</span>. &#160;This is something we don't do in other MadCap products.</li>
+            <li style="font-weight: normal;">Builds complete in anywhere from 5 minutes to 60 minutes. &#160;If your build is queued for longer than that, open an <a href="https://itops.madcapsoftware.com/index.php">IT&#160;ticket</a> (sample below).&#160;This happens a couple times a month and it's usually a quickly resolved by IT (I think the server goes offline). &#160;Occasionally the build fails from an exception meaning there is an issue on the developers side - In this case, let Marcus know (or D2H&#160;development team).<br /><img src="../../../../Resources/Images/TestPlans/DocToHelp/ITOPSticket.png" class="propertiesNoFloat" /></li>
+        </ul>
+        <h4>Nightly&#160;Builds?</h4>
+        <p>We don't have nightly builds set up for DocToHelp so you'll have to kick a build each time you need one.&#160;This is a deliberate choice (for now) since we are so careful about noting the <span class="bold">Found in Build</span> and <span class="bold">Resolved in Build</span> numbers in our bugs, having fewer builds makes this process more simple.&#160;&#160;Also since our QA team only spends part of the year on Doc-To-Help, we go months without a new build.&#160;&#160;While QA&#160;is actively testing, we should use builds that are up to date with recent changes. When you come in for the day, check TFS if there were any checkins since the last build.</p>
+        <ul>
+            <li>!Code &#160;&gt;&#160;!History</li>
+            <li>If you see any changesets since the last "Made build v.#" comment, then kick off a build so you have the latest. &#160;See image below for example, the last build was made on May 5th (build 1413) and there are changesets checked in since then from Saturday - Monday, so you should start a build so you can test with the latest code.<br /><img src="../../../../Resources/Images/TestPlans/DocToHelp/TFSCodeHistory.png" class="propertiesNoFloat" /></li>
+        </ul>
+        <h2>Clean&#160;System, Fresh Testing Environment</h2>
+        <p>Doc-To-Help leaves a lot of files on your system, even after you uninstall, so you'll want to clean these up periodically in order to test in a clean environment.</p>
+        <p>At some point during testing you will want to test that files upgrade correctly from each version - in this case, get your system clean and then install v3 &gt;&#160;v4&#160;&gt;&#160;v5 (and other upgrade paths) to see that behavior is acceptable.</p>
+        <h3>
+            <a name="System">
+            </a>System Files</h3>
+        <p>Delete these files after uninstalling DocToHelp in order to get into a clean state.</p>
+        <ul>
+            <li>After installation the following files are created: (Before v5, these files were only created after the initial launch of Doc-To-Help)<ul><li>&#160;Template files<ul><li>C:\Users\ebrown\AppData\Roaming\Microsoft\Templates</li><li>C:\Users\ebrown\AppData\Roaming\Microsoft\Word\STARTUP</li></ul></li><li>My Doc-To-Help&#160;Projects&#160;folder, C:\Users\ebrown\Documents\My Doc-To-Help Projects<ul><li>Contains a Samples folder with sample projects <ul><li>These also live here: C:\Program Files (x86)\MadCap Software\DocToHelp\Samples so you can copy these over again if you want fresh ones</li></ul></li><li>Contains a Doc-To-Help\Themes folder with your output themes.</li></ul></li><li>App Data files (hidden folder)<ul><li>Version<ul><li><p>C:\Users\ebrown\AppData\Local\MadCap_Software\DocToHelp.exe_StrongName_b1axaotzcjt5jddyz3rglyds5nycophu</p><ul><li>You'll see a folder for each build you've installed</li></ul></li><li><p>C:\Users\ebrown\AppData\Local\Microsoft_Corporation\D2H.WordAddIn.vsto_vstolo_Path_xpmbqjmqsaiz4g0wptqvzclqgadn3hm5</p><ul><li>This stores settings like location and size of panels that open.</li></ul></li></ul></li><li><p>C:\Users\ebrown\AppData\Roaming\MadCap Software\DocToHelp</p></li></ul></li><li>ProgramData files (hidden folder)<ul><li>mcdat file<ul><li><p>C:\ProgramData\MadCap Software\DocToHelp</p></li></ul></li></ul></li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <h2>QA&#160;Tips and Tricks</h2>
+        <h3> Funky state - Add-in</h3>
+        <p>&#160;</p>
+        <p> Doc-To-Help Ribbon is in Basic Mode for a document in my project.</p>
+        <ul>
+            <li>Remember, this mode is used when the document is not included in any Doc-To-Help project, the add-in is disabled, or the add-in cannot find the Doc-To-Help project associated with the document. This mode is also used for final output.</li>
+            <li>If the add-in cannot find the Doc-To-Help project associated with the document, use Find Project to browse for the .d2h project file this document is associated with and the ribbon will then change to Full Mode.</li>
+        </ul>
+        <p>Other tips:</p>
+        <ul>
+            <li>You can restart the add-in in the Task Manager:<ol><li>Open Task Manager</li><li>Click Services tab, find D2HWCFService</li><li>R-click this service &gt; Restart.</li><li>Relaunch Doc-To-Help</li></ol></li>
+        </ul>
+        <p>&#160;</p>
+        <p>Doc-To-Help Ribbon is missing</p>
+        <p>To determine what to do next, In Word, Navigate to File | Options dialog &gt; Add-Ins and find the Doc-To-Help for Word add-in.</p>
+        <ul>
+            <li>If Doc-To-Help for Word add-in is listed as inactive<ul><li>Try closing your Word documents and restarting the Doc-To-Help application – the add-in will reload when you relaunch.</li><li>Or you can manually activate the add-in by following these steps:<ol><li>Manage COM Add-ins &gt; Go…</li><li>Select the checkbox next to the Doc-To-Help for Word &gt; Ok</li></ol></li></ul></li>
+            <li>If Doc-To-Help for Word add-in is disabled<ol><li>In the Manage box, click Disabled Items, and then click Go.</li><li>Select the VSTO Add-in and click Enable.</li><li>Click Close.</li></ol></li>
+            <li>Doc-To-Help for Word add-in not listed<ul><li>Try either of these steps:<ul><li>Reinstall or repair Doc-To-Help using the setup file.</li><li>Double-click the Word add-in, which is located at c:\Program Files (x86)\MadCap Software\DocToHelp\D2H.WordAddIn.vsto. This will reinstall the add-in.</li></ul></li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <p>D2H crashing?</p>
+        <p>Things to try</p>
+        <ul>
+            <li>Restart computer</li>
+            <li>Does your computer have several versions of Word installed?</li>
+            <li>Does this happen for new projects only or existing documents?</li>
+            <li>What is the status of the Add-In in File | Options &gt; Add-Ins?</li>
+            <li>Is the Add-In service running in Task Manager &gt; Services (D2HWCFService) ?</li>
+            <li>Do you have other COM Add-Ins running? Try stopping those in case they are interfering with Doc-To-Help for Word.</li>
+            <li>Is there a D2H.WordAddIn listed in Add/Remove Programs? If so, uninstall it &gt; Now open Word add-ins and remove it from list if it’s still there &gt; Go to D2H installation folder and double click to install D2H.WordAddIn.vsto  to reinstall the add-in.</li>
+        </ul>
+        <p>This will remove your Word customizations (sorry) but can fix other issues</p>
+        <ul>
+            <li>https://support.microsoft.com/en-us/kb/822005 --I got into a weird state where the Word Add-In was disabled. An older build wasn't stable so Word disabled my D2H&#160;add-in. Running this quick fix from&#160;Microsoft reset this!</li>
+        </ul>
+        <p>&#160;</p>
+        <h5>"Bugs"&#160;you may run into</h5>
+        <p>Bug 98337:You will have two Doc-To-Help ribbons if you do not update to v4 source templates</p>
+    </body>
+</html>

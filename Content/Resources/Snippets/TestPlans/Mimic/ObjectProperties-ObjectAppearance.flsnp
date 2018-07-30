@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="350" MadCap:lastWidth="1440">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Opacity</span>
+            </li>
+            <li>
+                <span class="bold">Opacity:</span> slide to adjust opacity for object. <ul><li><span class="bold">Keyframe button:</span> Set opacity keyframe for obj</li></ul></li>
+            <li>
+                <span class="bold">Background</span>
+                <ul>
+                    <li>
+                        <span class="bold">Type:</span>
+                        <ul>
+                            <li>
+                                <span class="bold">(default)</span>
+                            </li>
+                            <li>
+                                <span class="bold">Solid:</span> Applies a solid color background to the object. </li>
+                            <li>
+                                <span class="bold">Top to Bottom:</span> Applies a Top to Bottom gradient color background to the object. </li>
+                            <li>
+                                <span class="bold">Bottom to Top:</span> Applies a Bottom to top gradient color background to the object.</li>
+                            <li>
+                                <span class="bold">Top Left to Bottom Right:</span> Applies a Top Left to Bottom Right gradient color background to the object. </li>
+                            <li>
+                                <span class="bold">Left to Right:</span> Applies a Left to Right gradient color background to the object. </li>
+                            <li>
+                                <span class="bold">Right to Left:</span> Applies a Right to Left gradient color background to the object. </li>
+                            <li>
+                                <span class="bold">Bottom Left to Top Right:</span> Applies a Bottom Left to Top Right gradient color background to the object. </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="bold">Gradient:</span>
+                        <ul>
+                            <li>
+                                <span class="bold">Color picker:</span> Click to open Color Picker.</li>
+                            <li>
+                                <span class="bold">More Colors:</span> Opens Color Picker.</li>
+                            <li>
+                                <span class="bold">Pick&#160;Screen Color:</span> Opens color dropper selection.</li>
+                            <li>
+                                <span class="bold">Keyframe:</span> Apply background color keyframe. </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Line</span>
+                <ul>
+                    <li>
+                        <span class="bold">Color:</span> Apply color to object.</li>
+                    <li>
+                        <span class="bold">Width:</span> Apply width setting to object.</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

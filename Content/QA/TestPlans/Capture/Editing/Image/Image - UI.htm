@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="13" MadCap:lastHeight="11609" MadCap:lastWidth="1375" MadCap:fileTags="Status.Not Updated,AuthorFileTagSet.Jay,Product.Capture">
+    <head>
+        <title>
+        </title>
+    </head>
+    <body>
+        <h2>Image - UI  </h2>
+        <h3>Opening the UI</h3>
+        <p>!File |&#160;Open</p>
+        <p>!File |&#160;New From Profile</p>
+        <p>Or the various capturing options</p>
+        <h3>UI </h3>
+        <p>
+            <img src="../../../../../Resources/Images/Capture-Image.png" class="leftPopup" />
+        </p>
+        <h3>Canvas</h3>
+        <p>Manually resizing with canvas handles covered in Crop Test Plan</p>
+        <h3>Local Toolbar</h3>
+        <p>Covered in Object Test Plans and </p>
+        <h3>File Properties</h3>
+        <h4>General</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Properties/Capture-ImageGeneral.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <ul>
+            <li>Name:</li>
+            <li>Location:<ul><li>Open Folder</li></ul></li>
+            <li>Read Only</li>
+            <li>Size:</li>
+            <li>Created:</li>
+            <li>Modified:</li>
+        </ul>
+        <h4>Image Effects</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture_ProfileEditor-ImageEffects.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h5>UI&#160;controls</h5>
+        <ul>
+            <li>
+                <span class="bold">Background Scale:</span> Sets the scale of the image</li>
+            <li>
+                <span class="bold">Scale Background To:</span> Set values for:<ul><li><span class="bold">Pixels Wide</span></li><li><span class="bold">Pixels Tall</span></li></ul></li>
+            <li>
+                <span class="bold">Blur Factor: </span> This value controls the intensity of the blur-inside effect</li>
+            <li>
+                <span class="bold">Shade Factor: </span> This value controls the intensity of the shade effect</li>
+        </ul>
+        <h4>Appearance tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Properties/Rectangle/Appearance Tab.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <h5>UI&#160;controls</h5>
+        <ul>
+            <li>
+                <span class="bold">Background Section: </span> Controls the look of the background<ul><li><span class="bold">(default): </span> Will set the background back to the default state</li><li><span class="bold">(as is): </span> Will leave the background as it currently is. (Useful for multiple selections)</li><li><span class="bold">Solid: </span>&#160;Will set the chosen color as the only color for the background</li><li><span class="bold">Top to Bottom: </span> Will set a top to bottom gradient, based on the two colors chosen</li><li><span class="bold">Bottom to Top: </span> Will set a bottom to top gradient, based on the two colors chosen</li><li><span class="bold">Left to Right: </span> Will set a left to right gradient, based on the two colors chosen</li><li><span class="bold">Right to Left: </span>Will set a right to left gradient, based on the two colors chosen</li><li><span class="bold">Top Left to Bottom Right: </span> Will set a top left to bottom right gradient, based on the two colors chosen</li><li><span class="bold">Bottom Left to Top Right: </span>Will set a bottom left to top right gradient, based on the two colors chosen</li></ul></li>
+            <li>
+                <span class="bold">Fill Start:</span> Controls the primary color <ul><li><span class="bold">(default):</span> Is no color</li><li><span class="bold">(as is):</span></li><li><span class="bold">(transparent):</span> Select this if you want one of the gradient colors to be transparent</li><li><span class="bold">More Colors:</span> Launches the Color Picker Dialog</li><li><span class="bold">Pick Screen Color:</span> Launches the “screen color picker” and allows the user to pick a color currently viewable anywhere on the screen</li><li><span class="bold">Color Grid:</span> Displays 132 colors from the Windows color control – Should always display the same available colors. </li></ul></li>
+            <li>
+                <span class="bold">Fill End:</span> Controls a secondary color (used for gradient styling)</li>
+            <li>
+                <span class="bold">Border Section: </span> Controls the look of the border<ul><li><span class="bold">Color: </span>&#160;Sets a color for the border</li><li><span class="bold">Width: </span>&#160;Sets the thickness, in pixels, for the border</li></ul></li>
+            <li>
+                <span class="bold">Padding Section: </span> Controls the padding. (The space around the text)<ul><li><span class="bold">Left: </span> Sets the padding on the left side of the object</li><li><span class="bold">Right: </span> Sets the padding on the right side of the object</li><li><span class="bold">Top: </span> Sets the padding on the top side of the object</li><li><span class="bold">Bottom: </span> Sets the padding on the bottom side of the object</li><li><span class="bold">Copy Down: </span>&#160;Will copy the value in the <span class="bold">Left</span> field down to all the other fields</li></ul></li>
+            <li>
+                <span class="bold">Canvas Size Section:</span>
+                <ul>
+                    <li>
+                        <span class="bold">Minimum Width:</span> Sets minimum width to an image if capture is smaller</li>
+                    <li>
+                        <span class="bold">Minimum Height:</span> Sets minimum height to an image if capture is smaller</li>
+                    <li>
+                        <span class="bold">Canvas Auto-Adjust to Include Objects:</span> Toggle off if you want to only manually resize the canvas edges</li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Preview Section: </span> Will display a preview of the object<ul><li>This area will update on the fly as properties are selected</li></ul></li>
+        </ul>
+        <h4>Edge Effects</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture_ProfileEditor-EdgeEffects.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <h5>UI&#160;controls</h5>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Mimic/Edge Effects Tab.flsnp" />
+        <h4>Shadow tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Properties/Capture-ImageShadow.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h5>UI&#160;controls</h5>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Mimic/Shadow Tab.flsnp">
+        </MadCap:snippetBlock>
+        <h4>Format</h4>
+        <p>
+            <p>
+                <img src="../../../../../Resources/Images/TestPlans/Capture/Properties/Capture-ImageFormat.png" class="properties" />
+            </p>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <ul>
+            <li>
+                <span class="bold">Medium:</span> Web is Default. Can select Print or even a custom (Must <span class="bold">Enable Format</span> if selected)</li>
+            <li>
+                <span class="bold">Format:</span> you can save it using one of the following file formats: BMP, HDP, JPG, JPEG, GIF, PNG, TIF, TIFF, WDP, XPS.</li>
+            <li>
+                <span class="bold">JPEG&#160;Quality:</span> controls the quality of JPEG if that is the format selected</li>
+            <li>
+                <span class="bold">Color Depth:</span> When you capture an image, you can specify the color depth (i.e., how many colors to use when displaying the image). "Highcolor" images use 16-bit color depth. "Truecolor" images use 24-bit or 32-bit color depth.<ul><li><span class="bold">Gray&#160;Scale:</span> changes format to gray scale</li></ul></li>
+            <li>
+                <span class="bold">Print DPI:</span>determines how many pixels are used to display an image in a given linear inch.<ul><li><span class="bold">Lock DPI</span></li></ul></li>
+            <li>
+                <span class="bold">Print Size:</span> Define values for Width and Height for print</li>
+            <li>
+                <span class="bold">Scale:</span> Set value for scale of image</li>
+            <li>
+                <span class="bold">Screen Size:</span> Define values for Width and Height for size on screen</li>
+        </ul>
+        <h4>Profile</h4>
+        <p>
+            <p>
+                <p>
+                    <img src="../../../../../Resources/Images/TestPlans/Capture/Properties/Capture-ImageProfileTab.png" class="properties" />
+                </p>
+            </p>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <ul>
+            <li>
+                <span class="bold">Copy to Current Profile:</span> Copy settings to current profile used for image</li>
+            <li>
+                <span class="bold">Copy to New Profile:</span> Copy settings to a new profile</li>
+        </ul>
+        <h4>Language tab</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Mimic/Properties/Rectangle/Language Tab.png" class="properties">
+            </img>
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h5>UI&#160;controls</h5>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Mimic/Language Tab.flsnp" />
+        <h4>Variables</h4>
+        <p>
+            <MadCap:xref href="../../Tools/Variables/Variables - UI.htm">See Variables - UI  </MadCap:xref>
+        </p>
+        <h4>Condition Tags and Conditional Text</h4>
+        <p>
+            <MadCap:xref href="../../Tools/Conditions/Conditions - UI.htm">See Conditions - UI  </MadCap:xref>
+        </p>
+        <p>&#160;</p>
+        <h4>Project</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Properties/Capture-ImageProject.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h5>UI&#160;controls</h5>
+        <ul>
+            <li>
+                <span class="bold">Screen&#160;Tip: </span> Applies screen tip to image</li>
+            <li>
+                <span class="bold">Alternate Text: </span> Applies alternate text to image</li>
+        </ul>
+        <ul>
+            <li>
+                <span class="bold">Linked Project: </span>Manually link an image to a Flare project</li>
+        </ul>
+        <h3>Objects</h3>
+        <p>Covered in individual test plans</p>
+        <h3>Grid</h3>
+        <p>!View Ribbon</p>
+        <p>!Status toolbar (bottom of Image Editor)</p>
+        <h4>UI Controls</h4>
+        <p>
+            <span class="bold">Snap to Grid:</span> Allows objects to snap to the grid</p>
+        <p>
+            <span class="bold">Show Grid:</span> Shows the grid in the editor</p>
+        <p>
+            <span class="bold">Edit Grid:</span> Opens the Grid Options Dialog</p>
+        <h4>Grid Options</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Properties/Capture-GridOptions.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <p>&#160;</p>
+        <h5 style="font-weight: normal;">UI&#160;Controls:</h5>
+        <p>
+            <span class="bold">Snap to Grid:</span> Allows objects to snap to the grid</p>
+        <p>
+            <span class="bold">Show Grid:</span> Shows the grid in the editor</p>
+        <p>
+            <span class="bold">Size:</span> Alters the spacing between the grid points</p>
+        <h3>Status Toolbar</h3>
+        <p>At the bottom of the Image Editor:</p>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Properties/Capture-ImageStatus.png" />
+        </p>
+        <ul>
+            <li>
+                <span class="bold">Image Scale:</span> Select a % for scale</li>
+            <li>
+                <span class="bold">[-]:</span>Zoom out</li>
+            <li>
+                <span class="bold">[100]:</span> revert back to 100% scale</li>
+            <li>
+                <span class="bold">[+]:</span> Zoom in</li>
+            <li>
+                <span class="bold">(left to right arrow button):</span>Scale to fit Width</li>
+            <li>
+                <span class="bold">(up, down arrow button):</span> Scale to fit Height</li>
+            <li>
+                <span class="bold">Anchors button:</span>Toggle Anchors on/off</li>
+            <li>
+                <span class="bold">Conditions button:</span>Show condition indicators</li>
+            <li>
+                <span class="bold">Preview Conditions:</span> Show Preview of how conditions are applied</li>
+            <li>
+                <span class="bold">Grid:</span> <ul><li><span class="bold">Snap to Grid:</span> Allows objects to snap to the grid</li><li><span class="bold">Show Grid:</span> Shows the grid in the editor</li><li><span class="bold">Edit Grid:</span> Opens the Grid Options Dialog</li></ul></li>
+            <li>
+                <span class="bold">Apply Profile:</span>Apply a new Profile</li>
+            <li>
+                <span class="bold">Detach Profile:</span>Detach the profile</li>
+            <li>
+                <span class="bold">Image Profile:</span>Shows current Image or if there is a warning regarding image profile detached or out of date</li>
+            <li>
+                <span class="bold">PPI:</span> Shows the set DPI/PPI</li>
+        </ul>
+        <p>&#160;</p>
+        <h3>Image Properties</h3>
+        <ul class="checkbox">
+            <li>First Insert an image, either in a new profile or an existing project</li>
+            <li>Right-Click and select "Properties"</li>
+        </ul>
+        <h3>Image Properties UI</h3>
+        <h4>Image</h4>
+        <p>
+            <img src="../../../../../Resources/Images/Cap7_Image_Properties-Image-Tab.PNG" alt="" style="width: 319px;height: 220px;float: left;left: 10px;top: 8838px;" MadCap:mediastyle="@media print { position: absolute;z-index: 0; }" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Mimic/Image Tab.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <h4>Edge Effects</h4>
+        <p>
+            <img src="../../../../../Resources/Images/Cap7_Image_Properties-Edge_Effects-Tab.PNG" alt="" style="width: 291px;height: 198px;float: left;left: 10px;top: 9131px;" MadCap:mediastyle="@media print { position: absolute;z-index: 0; }" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <h5>UI Controls</h5>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Mimic/Edge Effects Tab.flsnp" />
+        <h4>Rectangle</h4>
+        <p>
+            <img src="../../../../../Resources/Images/Cap7_Image_Properties-Rectangle-Tab.PNG" alt="" style="width: 292px;height: 201px;float: left;left: 10px;top: 9413px;" MadCap:mediastyle="@media print { position: absolute;z-index: 0; }" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Capture/RectangleTab.flsnp" />
+        </div>
+        <p style="text-align: right;">&#160;</p>
+        <h4>Shadow</h4>
+        <p>
+            <img src="../../../../../Resources/Images/Cap7_Image_Properties-Shadow-Tab.PNG" alt="" style="width: 293px;height: 200px;float: left;left: 10px;top: 10310px;" MadCap:mediastyle="@media print { position: absolute;z-index: 0; }" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <h5>UI Controls</h5>
+        <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Mimic/Shadow Tab.flsnp">
+        </MadCap:snippetBlock>
+        <h4>Conditions</h4>
+        <p>
+            <img src="../../../../../Resources/Images/Cap7_Image_Properties-Conditions-Tab.PNG" alt="" style="width: 299px;height: 207px;float: left;left: 10px;top: 11301px;" MadCap:mediastyle="@media print { position: absolute;z-index: 0; }" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/Mimic/Condition Tab.flsnp" />
+        </div>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+        <p>&#160;</p>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="5461" MadCap:lastWidth="1327">
+    <body>
+        <div class="TestCases">
+            <p class="TestCases">CHM Search Tests - Use Test Project at <a href="file://fs1/QA/Test Projects/Test Plan Projects/Search">\\fs1\QA\Test Projects\Test Plan Projects\Search</a></p>
+            <ul class="checkbox">
+                <li>Apple AND Fruit - returns 6 results<p><img src="../../Images/TestPlans/Flare/Search/chm_and_results.png" /></p></li>
+                <li>
+                    <p>Banana or Yellow - returns 8 results</p>
+                    <p>
+                        <img src="../../Images/TestPlans/Flare/Search/chm_or_results.png" />
+                    </p>
+                </li>
+                <li>
+                    <p>Fruit not Orange - returns 4 results </p>
+                    <p>
+                        <img src="../../Images/TestPlans/Flare/Search/chm_not_results.png" />
+                    </p>
+                </li>
+                <li>
+                    <p>Glossary Near Popup - returns 1 result</p>
+                    <p>
+                        <img src="../../Images/TestPlans/Flare/Search/chm_near_results.png" />
+                    </p>
+                </li>
+                <li>
+                    <p>Glossary Popup - returns 2 results</p>
+                    <p>
+                        <img src="../../Images/TestPlans/Flare/Search/chm_multiterm_results.png" />
+                    </p>
+                </li>
+                <li>"Glossary popup" - should return "No topics found"</li>
+                <li>
+                    <p>"glossary terms" - returns 3 results</p>
+                    <p>
+                        <img src="../../Images/TestPlans/Flare/Search/chm_phrase_results.png" />
+                    </p>
+                </li>
+                <li>
+                    <p>"Yellow is a color" - returns 4 results - phrase includes stop words</p>
+                    <p>
+                        <img src="../../Images/TestPlans/Flare/Search/chm_phrase_results2.png" />
+                    </p>
+                </li>
+                <li>
+                    <p>Using results from above test case - select option to "search previous results" and search for "small" - then click on "List Topics" - should change to 1 result</p>
+                    <p>
+                        <img src="../../Images/TestPlans/Flare/Search/chm_previous_results.png" />
+                    </p>
+                </li>
+                <li>
+                    <p>Uncheck all options from the bottom - deselect "Search previous results", "Match similar words" and "search titles only" - and search for "small" - 14 results</p>
+                    <p>
+                        <img src="../../Images/TestPlans/Flare/Search/chm_exact_search.png" />
+                    </p>
+                </li>
+                <li>
+                    <p>Search for glossary and select "Search Titles only" - 3 results</p>
+                    <p>
+                        <img src="../../Images/TestPlans/Flare/Search/chm_title_only_results.png" />
+                    </p>
+                </li>
+                <li>
+                    <p>(apples and flare) or logic - returns 2 results</p>
+                    <p>
+                        <img src="../../Images/TestPlans/Flare/Search/chm_complex_results1.png" />
+                    </p>
+                </li>
+                <li>
+                    <p>(apples and flare) and  logic - returns 1 result</p>
+                    <p>
+                        <img src="../../Images/TestPlans/Flare/Search/chm_complex_results2.png" />
+                    </p>
+                </li>
+                <li>
+                    <p>(apples and flare) not  logic</p>
+                    <p>
+                        <img src="../../Images/TestPlans/Flare/Search/chm_complex_results3.png" />
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

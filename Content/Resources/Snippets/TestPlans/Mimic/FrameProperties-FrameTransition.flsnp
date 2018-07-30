@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Time Span</span>
+                <ul>
+                    <li>
+                        <span class="bold">Frame Duration:</span> Adjust frame duration in seconds. </li>
+                    <li>Pause movie at end of frame.</li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Transition</span>
+                <ul>
+                    <li>
+                        <span class="bold">Effect</span>
+                        <ul>
+                            <li>
+                                <span class="bold">(default)</span> Default setting is used. </li>
+                            <li>
+                                <span class="bold">None:</span> No setting is used. </li>
+                            <li>
+                                <span class="bold">Fade:</span> Fade effect is used. </li>
+                            <li>
+                                <span class="bold">Slide:</span> Slide effect is used. </li>
+                            <li>
+                                <span class="bold">Push:</span> Push effect is used. </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Duration:</span> Adjust frame effect duration in seconds. </li>
+            <li>
+                <span class="bold">Direction:</span> Adjust direction of frame effect direction in seconds. <ul><li><span class="bold">Left to Right:</span> Frame effect goes from Left to Right.</li><li><span class="bold">Right to Left:</span> Frame effect goes from Right to Left.</li><li><span class="bold">Top to Bottom:</span> Frame effect goes from Top to Bottom.</li><li><span class="bold">Bottom to Top:</span> Frame effect goes from Bottom to Top.</li></ul></li>
+        </ul>
+    </body>
+</html>

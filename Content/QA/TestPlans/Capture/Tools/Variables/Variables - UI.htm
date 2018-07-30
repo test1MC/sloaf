@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="2025" MadCap:lastWidth="1127" MadCap:fileTags="Status.Not Updated,AuthorFileTagSet.Jay,Product.Capture">
+    <head>
+        <title>
+        </title>
+    </head>
+    <body>
+        <h2>Variables - UI  </h2>
+        <h3>Opening the UI</h3>
+        <p>Click Variables icon when in edit mode on an object</p>
+        <p>&#160;</p>
+        <h3>UI </h3>
+        <h4>Inserting in Objects</h4>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture- InsertVariables.png" />
+        </p>
+        <p>File: Shows variables defined in image's File Properties</p>
+        <p>System: Shows System variables</p>
+        <p>Project Variables: Shows Project variables</p>
+        <p>&#160;</p>
+        <h4>File Properties <u>Test in Profile and Image's File Properties</u></h4>
+        <h5>Variables tab</h5>
+        <p>
+            <img src="../../../../../Resources/Images/TestPlans/Capture/Capture-VariablesFileProp.png" class="properties" />
+        </p>
+        <div class="SnippetIndent">
+            <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/UI-Tests.flsnp">
+            </MadCap:snippetBlock>
+        </div>
+        <h5>UI&#160;controls</h5>
+        <ul style="list-style-type: square;">
+            <li>
+                <p>
+                    <span class="bold">Variables:&#160;</span>Displays a list of all Variables</p>
+                <p class="bold">Columns:</p>
+                <ul style="list-style-type: square;">
+                    <li>
+                        <span class="bold">Name:&#160;</span>Displays the name of all Variables</li>
+                    <li>
+                        <span class="bold">Definition:&#160;</span>By default, displays the definition of the variable.  Double-clicking the Definition here lets you edit the variable definition specifically for this target.</li>
+                    <li>
+                        <span class="bold">Comment:&#160;</span>Displays the comments</li>
+                </ul>
+                <MadCap:snippetBlock src="../../../../../Resources/Snippets/TestPlans/GridView-Tests.flsnp" />
+            </li>
+        </ul>
+        <div class="TestCases">
+            <p class="TestCases">Test Cases</p>
+            <ul style="list-style-type: square;">
+                <li>Create some condition tag sets and variable sets in Flare and make sure they appear in Capture</li>
+                <li>Put a Capture image into Flare and change some of the variables in a target and output. Verify that the variable definitions in the image is updated to the target ones.</li>
+            </ul>
+        </div>
+        <h3>How to access variables in Capture:</h3>
+        <ul style="list-style-type: square;">
+            <li>In any Text Edit mode or Rich Text Editor, there will be a standard Variables icon which brings up the Variables dialog.<ul style="list-style-type: square;"><li>Both accessible in Object Properties </li><li>Text Edit mode:<ul style="list-style-type: square;"><li>Also automatically comes up when inserting a new Text Rectangle</li><li>or hitting F2 on objects</li></ul></li></ul></li>
+        </ul>
+        <h3>How to link your Capture Image to a Flare Project:</h3>
+        <h4>Edit with Capture from image in Flare</h4>
+        <ul style="list-style-type: square;">
+            <li>They automatically links and provides the image with Flare variables </li>
+        </ul>
+        <p>&#160;</p>
+        <h4>Stand Alone Image</h4>
+        <p>In Capture:</p>
+        <ul style="list-style-type: square;">
+            <li>Open the movie</li>
+            <li>!File Properties.</li>
+            <li>Select the Project tab.</li>
+            <li>Click the Browse button.</li>
+            <li>In the dialog that opens, select and double-click the Flare project to which you want to link.</li>
+        </ul>
+        <p class="note">Using Shared Variable and Conditions only works one way. They must all be created within Flare to use them in Capture. Variables and Condition Tags created in Capture are not shared with your Flare Project, however they will output correctly.</p>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="6" MadCap:lastHeight="1114" MadCap:lastWidth="2257" MadCap:fileTags="AuthorFileTagSet.Matthew,Status.Flare V7 Needs Review,Product.Flare">
+    <head>
+    </head>
+    <body>
+        <h1>Equations</h1>
+        <p class="bold">Bug Base Product Area: </p>
+        <ul>
+            <li>Equations</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Description:</p>
+        <p>Flare supports Mathematical Markup Language (MathML), which is a way to describe mathematical notations in XML. Recommended by the Word Wide Web Consortium (W3C), MathML in Flare allows you to embed virtually any kind of mathematical equation in the XML Editor.</p>
+        <p>&#160;</p>
+        <p>Sample MathML&#160;code:</p>
+        <div style="background-color: #d3d3d3;">
+            <p>&lt;math&gt;</p>
+            <p style="text-indent: 0.5in;">&lt;mrow&gt;</p>
+            <p style="text-indent: 1in;">&lt;apply&gt;</p>
+            <p style="text-indent: 1.5in;">&lt;power /&gt;</p>
+            <p style="text-indent: 1in;">&lt;apply&gt;</p>
+            <p style="text-indent: 1.5in;">&lt;plus /&gt;</p>
+            <p style="text-indent: 1.5in;">&lt;ci&gt;a&lt;/ci&gt;</p>
+            <p style="text-indent: 1.5in;">&lt;ci&gt;b&lt;/ci&gt;</p>
+            <p style="text-indent: 1in;">&lt;/apply&gt;</p>
+            <p style="text-indent: 1.5in;">&lt;cn&gt;2&lt;/cn&gt;</p>
+            <p style="text-indent: 1in;">&lt;/apply&gt;</p>
+            <p style="text-indent: 0.5in;">&lt;/mrow&gt;</p>
+            <p>&lt;/math&gt;</p>
+        </div>
+        <p>&#160;</p>
+        <p>MathML code can contain unicode characters. &#160;The usecase for our customers is that in Flare 11 and below, the design science equation editor userd unicode characters in their source view. &#160;So if a user wants to author their equations using a previous version of Flare, they can copy&#160;&amp;&#160;paste the source code directly from the old equation editor into the new one.&#160;&#160;In this sample, the unicode character is &amp;mldr;</p>
+        <div style="background-color: #d3d3d3;">
+            <p>&lt;math&gt;</p>
+            <p style="text-indent: 0.5in;">&lt;mrow&gt;</p>
+            <p style="text-indent: 1in;">&lt;mi&gt;a&lt;/mi&gt;</p>
+            <p style="text-indent: 1in;">&lt;mo&gt;&amp;mldr;&lt;/mo&gt;</p>
+            <p style="text-indent: 1in;">&lt;mi&gt;b&lt;/mi&gt;</p>
+            <p style="text-indent: 0.5in;">&lt;/mrow&gt;</p>
+            <p>&lt;/math&gt;</p>
+        </div>
+        <p>&#160;</p>
+        <p>Flare also supports LaTeX control sequences starting in&#160;Flare 12.</p>
+        <p>&#160;</p>
+        <p>Sample LaTeX:</p>
+        <div style="background-color: #d3d3d3;">
+            <p>\left(\frac{\sqrt x}{y^3}\right)</p>
+        </div>
+        <p>Note:&#160;LaTeX equations containing unicode are not supported at this time:&#160;Bug 117071:Unicode latex equations are not supported</p>
+        <p>&#160;</p>
+        <p>Our equation editor can also handle equations copied from MS&#160;Word.&#160;See this bug for more:Bug 113937:Equations copied and pasted from MS Word do not get rendered in Flare 12 equation editor.&#160;&#160;Here's a sample:</p>
+        <div style="background-color: #d3d3d3;">
+            <p>&lt;mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math"&gt;&lt;mml:mrow&gt;&lt;mml:mrow&gt;&lt;mml:munder&gt;&lt;mml:mrow&gt;&lt;mml:mi mathvariant="normal"&gt;max&lt;/mml:mi&gt;&lt;/mml:mrow&gt;&lt;mml:mrow&gt;&lt;mml:mn&gt;0&lt;/mml:mn&gt;&lt;mml:mo&gt;≤&lt;/mml:mo&gt;&lt;mml:mi&gt;x&lt;/mml:mi&gt;&lt;mml:mo&gt;≤&lt;/mml:mo&gt;&lt;mml:mn&gt;1&lt;/mml:mn&gt;&lt;/mml:mrow&gt;&lt;/mml:munder&gt;&lt;/mml:mrow&gt;&lt;mml:mo&gt;⁡&lt;/mml:mo&gt;&lt;mml:mrow&gt;&lt;mml:mi&gt;x&lt;/mml:mi&gt;&lt;mml:msup&gt;&lt;mml:mrow&gt;&lt;mml:mi&gt;e&lt;/mml:mi&gt;&lt;/mml:mrow&gt;&lt;mml:mrow&gt;&lt;mml:mo&gt;-&lt;/mml:mo&gt;&lt;mml:msup&gt;&lt;mml:mrow&gt;&lt;mml:mi&gt;x&lt;/mml:mi&gt;&lt;/mml:mrow&gt;&lt;mml:mrow&gt;&lt;mml:mn&gt;2&lt;/mml:mn&gt;&lt;/mml:mrow&gt;&lt;/mml:msup&gt;&lt;/mml:mrow&gt;&lt;/mml:msup&gt;&lt;/mml:mrow&gt;&lt;/mml:mrow&gt;&lt;/mml:math&gt;</p>
+        </div>
+        <p>&#160;</p>
+        <p class="bold">Test Plans:</p>
+        <ul>
+            <li>
+                <MadCap:xref href="Equations - UI.htm" class="TitleOnly">
+                    <a href="Equations - UI.htm" title="Equations - UI" alt="Equations - UI">Equations - UI</a><![CDATA[   ]]></MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Equations - Editing.htm" class="TitleOnly">
+                    <a href="Equations - Editing.htm" title="Equations - Editing" alt="Equations - Editing">Equations - Editing</a>
+                </MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Equations - Styles.htm" class="TitleOnly">
+                    <a href="Equations - Styles.htm" title="Equations - Styles" alt="Equations - Styles">Equations - Styles</a>
+                </MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Equations - Output.htm" class="TitleOnly">
+                    <a href="Equations - Output.htm" title="Equations - Output" alt="Equations - Output">Equations - Output</a>
+                </MadCap:xref>
+            </li>
+            <li>
+                <MadCap:xref href="Equations - Baseline.htm" class="TitleOnly">
+                    <a href="Equations - Baseline.htm" title="Equations - Baseline" alt="Equations - Baseline">Equations - Baseline</a>
+                </MadCap:xref>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Dependencies:</p>
+        <ul>
+            <li>Java is required (32 or 64-bit)</li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Testing Resources (Copy all files to local Machine before importing):</p>
+        <ul>
+            <li>
+                <p>\\fs1\QA\Test Projects\Test Plan Projects\Equations
+                </p>
+            </li>
+            <li>
+                <p>\\fs1\QA\Test Projects\Test Plan Projects\Equations\All_Equation_Types</p>
+            </li>
+            <li>MathML&#160;conversion from&#160;FrameMaker&#160;Imports is covered in the FrameMaker import FFT projects:&#160;<a href="../../Importing/Import Frame/Import Frame.htm">Import Frame</a></li>
+            <li>Free online equation authoring/testing tools:<ul><li> http://www.wiris.com/editor/demo/en/mathml-latex</li><li><p>https://www.codecogs.com/latex/eqneditor.php</p></li><li><p>http://cdn.mathjax.org/mathjax/latest/test/sample-dynamic.html</p></li></ul></li>
+        </ul>
+        <p>&#160;</p>
+        <p class="bold">Notes and things to add to the testing resources:</p>
+        <ul>
+            <li>None</li>
+        </ul>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Tip</span>
+                <ul>
+                    <li>
+                        <span class="bold">X:</span> enter distance of the pointer horizontally. </li>
+                    <li>
+                        <span class="bold">Y:</span> enter distance of the pointer vertically. </li>
+                    <li>
+                        <span class="bold">Curved Pointer:</span> enable/disable Curved Pointer. </li>
+                    <li>
+                        <span class="bold">Curve Factor:</span> enter amount of curve.</li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Rectangle:</span>
+                <ul>
+                    <li>
+                        <span class="bold">Width:</span> enter width for callout. </li>
+                    <li>
+                        <span class="bold">Height:</span> enter height for callout. </li>
+                </ul>
+            </li>
+            <li>
+                <span class="bold">Pointer Base:</span>
+                <ul>
+                    <li>
+                        <span class="bold">Base Edge:</span> select side of the bubble where the pointer is to be shown.<ul><li><span class="bold">Auto:</span></li><li><span class="bold">Top:</span></li><li><span class="bold">Right:</span></li><li><span class="bold">Bottom:</span></li><li><span class="bold">Left:</span></li></ul></li>
+                    <li>
+                        <span class="bold">Base&#160;Width:</span> Enter value for Base&#160;Width. <ul><li><span class="bold">%</span></li><li><span class="bold">pt</span></li><li><span class="bold">px</span></li><li><span class="bold">mm</span></li><li><span class="bold">cm</span></li><li><span class="bold">in</span></li><li><span class="bold">pc</span></li><li><span class="bold">ex</span></li><li><span class="bold">em</span></li><li><span class="bold">ch</span></li><li><span class="bold">rm</span></li><li><span class="bold">vw</span></li><li><span class="bold">vh</span></li><li><span class="bold">vmin</span></li><li><span class="bold">vmax</span></li></ul></li>
+                    <li>
+                        <span class="bold">Min Base Width:</span> Enter value for Minimum Base&#160;Width. </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

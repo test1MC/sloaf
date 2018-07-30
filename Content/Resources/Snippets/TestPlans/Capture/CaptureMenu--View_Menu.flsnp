@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="7" MadCap:lastHeight="379" MadCap:lastWidth="1453">
+    <head>
+    </head>
+    <body>
+        <p class="bold">View | Menu Items (Tooltips in parentheses)</p>
+        <p class="bold">&#160;</p>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Toolbars: </span>Invokes the Toolbars sub-menu</li>
+            <li>
+                <b>Zoom In:</b> Zoom in</li>
+            <li>
+                <b>Scale to 100%:</b> Set the scale to 100% </li>
+            <li>
+                <b>Zoom Out:</b> Zoom out</li>
+            <li>
+                <b>Grid:</b> Invokes the grid sub-menu<ul><li><b>Snap to Grid:</b> Snap elements to the layout grid</li><li><b>Show Grid:</b> Show the layout grid</li><li><b>Edit Grid:</b> Edit the grid size</li></ul></li>
+            <li>
+                <b>Anchors:</b> Shows the arrows that anchor shapes to the edges of the background</li>
+            <li>
+                <b>Conditional Indicators:</b> Hide\Show conditional indicators</li>
+            <li>
+                <b>Preview Conditions:</b> Preview what the picture would look like with conditions applied</li>
+            <li>
+                <b>Object Layers:</b> Open the <span class="UI">Object Layers</span> window</li>
+            <li>
+                <b>Palettes:</b> Open the <span class="UI">Palettes</span> window</li>
+            <li>
+                <b>Profiles:</b> Open the <span class="UI">Profile</span> window</li>
+            <li>
+                <span class="bold">Start Page (Open the Start Page): </span>Opens the <span class="UI">Start Page</span></li>
+            <li>
+                <span class="bold">Messages (Open the Messages window): </span>Opens the <span class="UI">Messages</span> pane</li>
+            <li>
+                <b>Status Bar:</b> Hide\Show the <span class="UI">Status Bar</span></li>
+        </ul>
+    </body>
+</html>

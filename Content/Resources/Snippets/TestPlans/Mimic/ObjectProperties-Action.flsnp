@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="8" MadCap:lastHeight="414" MadCap:lastWidth="1296">
+    <body>
+        <ul class="checkbox">
+            <li>
+                <span class="bold">Name</span>
+                <ul>
+                    <li>
+                        <span class="bold">Add Action:</span> Add an action to an object.</li>
+                    <li>
+                        <span class="bold">Delete:</span> Delete an action for selected object. </li>
+                    <li>
+                        <span class="bold">Event:</span>
+                        <ul>
+                            <li>
+                                <span class="bold">Click:</span>
+                            </li>
+                            <li>
+                                <span class="bold">DoubleClick:</span>
+                            </li>
+                            <li>
+                                <span class="bold">Mouse Enter:</span> object changes when the user moves the mouse over the object.</li>
+                            <li>
+                                <span class="bold">Mouse Leave:</span> object changes when the user moves the mouse off of the object.</li>
+                            <li>
+                                <span class="bold">Mouse Up:</span> object changes when the user clicks, and then releases, the mouse button.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="bold">Action:</span>
+                        <ul>
+                            <li>
+                                <span class="bold">(none):</span>
+                            </li>
+                            <li>
+                                <span class="bold">Play Action Object:</span> to trigger an action object to appear when an event occurs.</li>
+                            <li>
+                                <span class="bold">Set Visual State:</span> an object's look to change when an event occurs.</li>
+                            <li>
+                                <span class="bold">Pause/Resume Movie:</span> when you want the user to click an object in order to continue the movie.</li>
+                            <li>
+                                <span class="bold">Accept Input:</span> to accept the user's input.</li>
+                            <li>
+                                <span class="bold">Open URL:</span> to open a remote file (such as a website) when the specified event occurs (e.g., click, double-click).</li>
+                            <li>
+                                <span class="bold">Open URL in New Window:</span> to open a remote file (such as a website) when the specified event occurs (e.g., click, double-click).</li>
+                            <li>
+                                <span class="bold">Go to Frame:</span> to open a specific frame in the movie when the specified event occurs (e.g., click, double-click).</li>
+                            <li>
+                                <span class="bold">Go to Next&#160;Frame:</span> to open the next frame in the movie when the user clicks the button or other object.</li>
+                            <li>
+                                <span class="bold">Go to Previous Frame:</span> to open the previous frame in the movie when the specified event occurs (e.g., click, double-click).</li>
+                            <li>
+                                <span class="bold">Go to First Frame:</span> to open the first frame in the movie when the specified event occurs (e.g., click, double-click).</li>
+                            <li>
+                                <span class="bold">Go to Section:</span> to open a specific movie in the collection when the specified event occurs (e.g., click, double-click).</li>
+                            <li>
+                                <span class="bold">Go to Next Section:</span> to open the next movie in the collection when the specified event occurs (e.g., click, double-click).</li>
+                            <li>
+                                <span class="bold">Go to Previous Section:</span> to open the previous movie in the collection when the specified event occurs (e.g., click, double-click).</li>
+                            <li>
+                                <span class="bold">Go to First Section:</span> to open the first movie in the collection when the specified event occurs (e.g., click, double-click).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>
